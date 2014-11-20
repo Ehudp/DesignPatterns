@@ -16,6 +16,7 @@ namespace Logger
 
         private static void WriteToTxtBlock(string msg)
         {  
+
             if (_txt==null)return;
             _txt.Text += msg+"\n";
         }
