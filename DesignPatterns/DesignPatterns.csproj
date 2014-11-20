@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82421157-3148-4B96-8F3A-AD12E834647B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\AfricaFactory.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\AmericaFactory.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\AnimalWorld.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Bison.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Carnivore.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\ContinentFactory.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Herbivore.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Lion.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Wildebeest.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Wolf.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\Structural\AbstractFactory.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\Structural\AbstractProductA.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\Structural\AbstractProductB.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\Structural\Client.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\Structural\ConcreteFactory1.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\Structural\ConcreteFactory2.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\Structural\ProductA1.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\Structural\ProductA2.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\Structural\ProductB1.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\Structural\ProductB2.cs" />
+    <Compile Include="Utilities\ManagerApp.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\MethodService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{ba08fd5c-e8c2-4e53-9729-a5149bfac678}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

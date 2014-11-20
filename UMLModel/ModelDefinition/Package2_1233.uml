@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="45ea15eb-9ff8-486f-bf68-a925ec9c11cc"
+  name="Abstract_Factory"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="ea6565d3-6f94-46f9-9dc4-76842519bf99"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="dbdd18c0-13d1-47d0-83a4-77899a9f8ac2"
+        LastKnownName="RealWorld"
+        LastKnownLocation="Package3_1233.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="dcea1ea1-bcb2-4581-b3a6-21f02c716b44"
+        LastKnownName="Structural"
+        LastKnownLocation="Package_1234.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,2289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="dcea1ea1-bcb2-4581-b3a6-21f02c716b44"
+  name="Structural"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="df541cc6-ee8d-49e1-9dc5-5ad3a38023d9"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="863f2215-6852-44e5-a95f-6abb768f5e73"
+        name="AbstractFactory"
+        visibility="Package"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2d300d09-7bdc-48f8-b3bf-8754e7d6989a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="07d9cc43-9691-43d4-8b7e-417f14c57c2e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5d715f6e-2863-4d1b-ae9c-20817c059024">
+                <propertyInstance
+                  Id="036bec28-717a-4901-8386-9fefb65c4680"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="94984004-c435-41e2-9163-a3e620d02f55">
+                <propertyInstance
+                  Id="dc70e0f9-de74-4384-b97f-707f980dbd7b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="10bf217d-67cd-432d-80d2-6af76bfb46ef">
+                <propertyInstance
+                  Id="768b2ce5-5465-4be4-b226-057b1625b324"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5609d264-b3be-4810-9948-32e8159e1396">
+                <propertyInstance
+                  Id="70dcdd39-f127-48c7-ae59-06779fd907f5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="50ff5c90-bb72-4dcb-9b9c-346cefe3be8e">
+                <propertyInstance
+                  Id="41826f2c-100a-4d94-8ac1-bb77685428e5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b4ed9e3c-8055-4c37-b9cd-9af3a9834e36"
+            name="CreateProductA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dc3ce9b1-692b-4c2e-83b0-d54ffde5dc06"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractFactory Member%3DCreateProductA"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2b5ccdde-9d38-4a66-86ce-45a2a71e146d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2e305c9-d212-4955-9847-7ead5441ebd2">
+                    <propertyInstance
+                      Id="ee302fc4-7f94-4ac8-9ec8-0e7b79e4af3e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22c215f4-29fd-4101-8dd6-68dba2cc136f">
+                    <propertyInstance
+                      Id="6216b116-672f-45a9-b989-c4c0c529a762"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f84d49b-f315-41a2-9af0-febe741fdccc">
+                    <propertyInstance
+                      Id="671931a6-cc24-44dd-9147-9d27149a27a7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c83df993-970a-4ba6-821d-763b1a548c5f">
+                    <propertyInstance
+                      Id="f67e85a5-09d9-461a-939d-e67be59fd724"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e330eeff-3727-4e7b-9bb3-93b02b023a50">
+                    <propertyInstance
+                      Id="27da1c63-157b-4088-8405-9835e12de9d5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eceba898-2d56-480e-91ca-0b355c953a57">
+                    <propertyInstance
+                      Id="97232969-f416-4129-bf72-3c0c17d572dc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d106c0aa-6b40-4c5a-9d3c-e802b141d463"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="88623645-b249-4b65-8957-cdaa3f0e7d63"
+                      LastKnownName="AbstractProductA"
+                      LastKnownLocation="Package_1234.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ded31d26-c0f1-46f2-a3bc-aa786b54b56f"
+            name="CreateProductB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="76dc613a-a8ef-4980-8cfd-fac8a8619319"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractFactory Member%3DCreateProductB"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c5417e97-b409-4f35-92e7-0756eba15f07"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ab9ca3c-927d-4583-8eda-0e9ce149f469">
+                    <propertyInstance
+                      Id="c337f263-3ce5-4b47-9e41-485edfed4091"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76702df4-55b1-45a1-968c-6a37b935b05a">
+                    <propertyInstance
+                      Id="6478ee59-da68-461b-949d-95e8bf73ff8d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6250297f-7658-4598-9a0b-2618ec1ba2cf">
+                    <propertyInstance
+                      Id="f4627a4f-11a1-410b-a654-8a9092c4b3c0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="faa43388-3026-4293-92fe-d2aa2d3e6003">
+                    <propertyInstance
+                      Id="16312d46-9fa5-4e4a-bf4e-60eaf6a2b3bb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9703cee-c8bf-4bc4-9e8f-1ff8e0c4308d">
+                    <propertyInstance
+                      Id="3a9ab125-9000-4ad0-9dbf-0841796335bd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a05b54ef-8e78-418a-841f-0e246244aefc">
+                    <propertyInstance
+                      Id="c14126ba-bcf7-488f-972f-764b6a5a1759"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4d6f8b21-e5d1-4df6-93a7-a21999cbbec8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2734cd80-87a3-4fc8-8fdf-3261c149b809"
+                      LastKnownName="AbstractProductB"
+                      LastKnownLocation="Package_1234.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="47b34703-1e31-4ed1-950b-771df9a96aa8"
+            name="AbstractFactory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a2a7eb88-cc88-4701-b9e4-4c44c4d810fd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractFactory Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2cc53a20-fb05-4a94-8a66-4b6c1ef77718"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a76e1793-72e1-4d1d-968f-61a44ad8e564">
+                    <propertyInstance
+                      Id="7ced8163-67c4-4e64-ada4-80be07432b1e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10191596-503c-4446-84f1-4ebd9744bf7b">
+                    <propertyInstance
+                      Id="19baa606-89e2-4f51-938f-2202826a05e2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c91277cc-7bf6-419e-ad6d-be75c3f8b2ec">
+                    <propertyInstance
+                      Id="dab941c6-9252-49e1-ae2c-019a2d5b9821"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b10d891c-f4c4-4143-9f0b-5b4e7b70536c">
+                    <propertyInstance
+                      Id="30ec0cc3-1579-458d-a9e9-77535eb43d0f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb68a30a-7c2b-4622-96e4-a1615f82270a">
+                    <propertyInstance
+                      Id="b6d5da90-8854-40fa-8ee1-680d340e7715"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f6fda92-29f2-4410-b6f4-5cfc1ee3c96f">
+                    <propertyInstance
+                      Id="36b6e6ff-3404-4ec8-afcb-d398f63334d9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="88623645-b249-4b65-8957-cdaa3f0e7d63"
+        name="AbstractProductA"
+        visibility="Package"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8377d3a4-304b-489f-b087-10e47c118cde"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductA"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7ed20696-0981-411f-85a2-09e150f7b1da"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="557a1d70-8b02-43da-986e-fc6e51e07f17">
+                <propertyInstance
+                  Id="b47d7ca9-4977-413f-b7f5-81c3fb92b417"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="abbb6e2b-2bae-478f-b2a7-bdaf61242525">
+                <propertyInstance
+                  Id="4f222e20-53c3-453b-903f-6bf336c19cec"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d84f1b98-1f2e-4dd7-8d5c-3a0076abe173">
+                <propertyInstance
+                  Id="345d0c7f-67c5-4ebc-ae8d-66810e186234"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ba91f53d-3720-4fef-8999-64849ba124aa">
+                <propertyInstance
+                  Id="2f80404e-c864-4c99-b7de-b0c1ddeab752"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="61311153-dae8-440d-adfc-c4c49b4fd3aa">
+                <propertyInstance
+                  Id="005dd26a-55b0-48f4-bad5-20e51296e36e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="878007b8-fa15-4ec0-b4a2-feb1d9921c89"
+            name="AbstractProductA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3fc44c38-b79d-4ab7-aecf-b8840c8835ba"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductA Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9c8448cc-130a-456b-9138-c1a3177c11b1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d257e84-09e8-4f70-8a01-35c8b7f24c9f">
+                    <propertyInstance
+                      Id="7214105b-532c-44bd-adb5-4b0f9d9a88db"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c0bf876-68ff-46d5-aa51-93efc9fb31a9">
+                    <propertyInstance
+                      Id="3a3653eb-e39c-41d5-a5d1-844899e1b25f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9839c47f-8b5b-44ac-9b1c-fc23190510c3">
+                    <propertyInstance
+                      Id="439bac2f-0672-4467-bb9a-cc612d6a582e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08756063-c01d-4605-8245-234bb9c8bfef">
+                    <propertyInstance
+                      Id="0f680cc7-5a97-4b5d-b9ed-0b109480d8d7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33bc7445-a559-4741-933e-2ae6486c7067">
+                    <propertyInstance
+                      Id="682d0e33-7859-4925-9a36-473bdeda0f8d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88f49580-e97b-4485-b9af-2742d02a1c95">
+                    <propertyInstance
+                      Id="6bc1e003-3088-4397-b24e-f55a87e8e969"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2734cd80-87a3-4fc8-8fdf-3261c149b809"
+        name="AbstractProductB"
+        visibility="Package"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="73e757b0-379f-4879-8125-4950728bbb9e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductB"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="932ab594-e7ac-4fa9-b60d-fd174f993f89"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b1f9daf-dfc9-4ab1-9b2e-d12888638d0a">
+                <propertyInstance
+                  Id="07983c24-fcf9-4c28-bc69-f3807ad1b3e6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9da93ac3-0282-48ac-8ecc-2407cd9366e6">
+                <propertyInstance
+                  Id="f373bf43-dd3a-4f7c-bfc7-20cff60bc986"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="79f15ccf-443c-48fc-8d52-f5490c40eb42">
+                <propertyInstance
+                  Id="c35a27b8-ebf1-40f5-ac04-a43dc7056649"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="982d104b-aa90-467c-a410-d21faafa75a0">
+                <propertyInstance
+                  Id="f2b93419-d5c6-4cfc-a945-b7b23e144211"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="98125ca2-f7a7-40e2-bcd4-9d0592225150">
+                <propertyInstance
+                  Id="1bc72403-ad10-4fc8-9f89-aeeef7316bc6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d728894e-3779-4546-ab09-af23e1374268"
+            name="Interact"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1898fd1b-7366-404d-94b8-77fde71a2149"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductB Member%3D(Name%3DInteract OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductA)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="54b4eb1f-3259-4b8a-88fc-044108bbd8cf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="481da5b4-c742-43d2-8b6b-1c2dfe69ea27">
+                    <propertyInstance
+                      Id="b0b8095a-4318-4f6e-beaf-edfde368c820"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21e0d94f-76b9-41e1-9129-06b312b449c1">
+                    <propertyInstance
+                      Id="cf2238e6-6309-4f25-863b-c0b424f35347"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d34583d-29d3-4841-9079-0530770dddad">
+                    <propertyInstance
+                      Id="a941e7cb-afd7-443d-970f-a6de78039cb3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24d04b39-b8d8-499c-be77-d09d6b750363">
+                    <propertyInstance
+                      Id="3cc259cc-d839-4f3a-933d-1b0ad3aa24b0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e30c5c78-4a8c-4bd3-9a1a-1374111776c6">
+                    <propertyInstance
+                      Id="07d5f3c8-d74d-40cc-9a37-498ce1089d76"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="486229bd-ecf6-47ef-a3b4-a8d310fa9453">
+                    <propertyInstance
+                      Id="c08994a3-e92e-4fd9-8dd4-0c93eeb733b5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="94b2961f-4946-4229-a13c-713da2612220"
+                  name="a"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f01ba522-d4fd-442e-b36f-8b9c638a3663"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductB Member%3D(Name%3DInteract OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductA)]) ParameterIdentifier%3Da"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="88623645-b249-4b65-8957-cdaa3f0e7d63"
+                      LastKnownName="AbstractProductA"
+                      LastKnownLocation="Package_1234.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1177b2bd-510e-4d46-9426-27a8da52448a"
+            name="AbstractProductB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="423f398d-cce0-4010-a920-ed10b2b9c008"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductB Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9bff8e3f-5bc0-4a09-bec5-0976aeded008"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b80f793a-8b3d-4af0-9958-c83454f43412">
+                    <propertyInstance
+                      Id="fba977e7-15ce-4ddf-ac45-4e608ccb899a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd40f570-8933-484a-8869-e97bec48367a">
+                    <propertyInstance
+                      Id="cec07caf-2f87-4adb-9665-16e3373f312e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2a57540-6deb-44b2-9cd1-ff6830069e81">
+                    <propertyInstance
+                      Id="ea3bce08-c814-4391-9463-2b761f4f3e50"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d450742-bf60-483a-a0af-1da007e7353e">
+                    <propertyInstance
+                      Id="302d9245-d6fe-475d-a43e-6469057e0260"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c96e17c6-bfde-4174-aec0-f864200d498d">
+                    <propertyInstance
+                      Id="521b0d7e-388d-4812-a594-ac5c08687597"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31985d89-d80a-45d9-a4f8-84d5735de75e">
+                    <propertyInstance
+                      Id="90da48c2-d6bd-4726-9d52-9f5fb45c608c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5a5e2bc6-b38f-4b96-864e-954e99fd9586"
+        name="Client"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3f490dc6-0d69-4a16-9bad-bda31238ad97"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DClient"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ac6822ae-d3db-4230-844c-5b1d9f2aa731"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7d152e82-1e79-481f-88b9-f5c7406e7115">
+                <propertyInstance
+                  Id="55827a9c-6dcd-47c5-acd7-ec46a4f4941e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e7157bd9-1094-4e74-8c53-3abd10210e8e">
+                <propertyInstance
+                  Id="5e23cc7d-7458-418c-b667-ea08f3bc918a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4ab90a4f-a80c-4062-b8b7-fdf8854d5927">
+                <propertyInstance
+                  Id="d78f0b05-f167-437d-ab37-5ee1df464948"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5bdd9e80-626f-4ddb-8a00-886b6ae3f1cc">
+                <propertyInstance
+                  Id="0f92d1fd-abdd-4228-b7d5-34bf9c6fd79d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d705ec2f-af39-49a5-9a37-b2cb7e157fbd">
+                <propertyInstance
+                  Id="8e6d0483-eb2b-4ba5-9cf6-583ab0726d91"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="460b0c2d-f6f6-443f-819b-1bf4c65b0d1d"
+            name="_abstractProductA"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="81adaf2b-c6f6-4b66-9043-c44bee9bbd57"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DClient Member%3D_abstractProductA"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ebbbbb80-d622-42f7-8428-744f9e43ce7d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="125a6117-34e1-4eea-9394-e5ad424fde0c">
+                    <propertyInstance
+                      Id="1c21d32e-5552-4a6c-bca3-b648f51b17aa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0047620f-6857-4c2e-87d9-9009f14a6342">
+                    <propertyInstance
+                      Id="0ff58a49-c44c-4237-8045-b4f316bc179f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4df52bd-5513-41f6-ae0c-a13df4040acd">
+                    <propertyInstance
+                      Id="42a5c598-4cfb-4953-9332-0d4b75517ceb"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="877bd375-2fd3-46e5-9220-5c0fe5b140d4">
+                    <propertyInstance
+                      Id="d8ea954f-691e-44ee-8614-6154f671615a"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f53468a-588c-4763-ad05-7a70fa6021b1">
+                    <propertyInstance
+                      Id="f875a5ad-293b-4b13-982b-1c20493729c9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="88623645-b249-4b65-8957-cdaa3f0e7d63"
+                LastKnownName="AbstractProductA"
+                LastKnownLocation="Package_1234.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="58b75b93-1142-4507-b390-53bb73f1273d"
+            name="_abstractProductB"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2c20c406-b895-4a7e-bac7-e4b5dd4ba117"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DClient Member%3D_abstractProductB"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b5d14b61-15b8-4036-b510-a590c1096ac6"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="852beee5-8cc6-4cbe-8c94-56cac2ad92c6">
+                    <propertyInstance
+                      Id="ffd0db33-cefe-4a5a-852b-ae66e4f5ddd3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d88ab88-198d-44cc-802d-90109b364256">
+                    <propertyInstance
+                      Id="ba7aef26-28c7-41b9-973b-78b62183c8a7"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d826ca3-21b7-49f9-8f58-86a66b043f0b">
+                    <propertyInstance
+                      Id="26d732d9-b602-4404-b557-f3b2a9a0dc1c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99f8a13d-8a45-4c4f-8a9d-24db6c07a92a">
+                    <propertyInstance
+                      Id="420419e2-cbc5-4c64-98a2-ed09fb1800b3"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d195eb3-0e8a-4bc5-ba01-9fa19d4b5e61">
+                    <propertyInstance
+                      Id="12ad63e5-bc5a-4238-9a9d-f51c119a0e38"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="2734cd80-87a3-4fc8-8fdf-3261c149b809"
+                LastKnownName="AbstractProductB"
+                LastKnownLocation="Package_1234.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5b84d6dc-5bec-4723-a109-cd7c812ada2e"
+            name="Client"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b0421b7a-2c15-49f0-a013-a8b69da30a53"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DClient Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractFactory)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5267afc1-24d4-4a48-adb0-a38b1f8d6ebe"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9e89e04-be3f-4d7a-8162-08b202283f55">
+                    <propertyInstance
+                      Id="81288773-6ee1-4f74-b64d-428e05da0711"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2be28fc9-f96d-4349-a525-ac80d4aafdb6">
+                    <propertyInstance
+                      Id="c3540ebb-856c-4d5f-8b01-741ddbacaba3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="551ed3a6-eba7-4485-a2ac-ccd03a75b0e6">
+                    <propertyInstance
+                      Id="ad55fdcd-78ac-4013-a74d-c62fb495a37e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d0e1455-c4a1-4200-bb94-e482ed468249">
+                    <propertyInstance
+                      Id="5db5a0b2-c43c-4c4a-8bed-c752ea7836b8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbbc9462-0791-4c40-bd28-831b46b2eec4">
+                    <propertyInstance
+                      Id="593fae33-18e2-4542-b4b6-b8156532163a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bbb6166-6462-407a-8e91-ee98bb16ce3e">
+                    <propertyInstance
+                      Id="61cd42af-545a-4ac1-a353-8f7173a594d7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b86fdc28-aa5b-411e-b8b7-83ea77502c52"
+                  name="factory"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6dee4537-d6ed-4ba2-8135-f5abe96ad2fa"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DClient Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractFactory)]) ParameterIdentifier%3Dfactory"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="863f2215-6852-44e5-a95f-6abb768f5e73"
+                      LastKnownName="AbstractFactory"
+                      LastKnownLocation="Package_1234.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="330b0757-b241-4b38-b971-cd97af220aaf"
+            name="Run"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fe293a1e-8746-4b48-983e-ada67a8c7290"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DClient Member%3DRun"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="187ff3e5-a3de-40ec-97b6-5f17def2e312"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77104aa5-c3b9-4e41-b976-5a11b4e777d6">
+                    <propertyInstance
+                      Id="a1ac1521-b1b8-4ce7-b6d6-5bee161d76ee"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2f7bc5c-e5b2-4fa7-b2f5-cc03bba39fc5">
+                    <propertyInstance
+                      Id="60c53723-fb30-402d-a0c5-4952011c919c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e35f24e0-0da3-4ad0-a87a-67c16aa7241c">
+                    <propertyInstance
+                      Id="15bde0b0-286e-4a4c-bfdd-cfc06ac37fe9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c63ca88e-f76a-4b3c-9539-181e949fe22c">
+                    <propertyInstance
+                      Id="7104451a-4406-4e89-9e0d-d01e53d48bc1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f2b4033-13b8-424c-a030-a2f68fe0da2d">
+                    <propertyInstance
+                      Id="2809a3bf-b557-4d90-b38b-6d2b5363e887"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9767022a-cf12-4a22-9bd9-8b198c88ff33">
+                    <propertyInstance
+                      Id="784d5490-5f71-4c8c-9b66-13fe56f6f515"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="847655dc-f2b4-42e5-b6b4-951b106bf546"
+        name="ConcreteFactory1"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="35c28031-515b-4afb-8895-4e30017954cd"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DConcreteFactory1"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5c8be19b-c838-4051-a711-6b4123c9fdd1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a8b625a9-a63a-4be1-ad8c-1cccd51436ad">
+                <propertyInstance
+                  Id="0dbe58b1-e6af-4115-be1f-626dae1c3b02"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cc7ade38-e8dd-4880-8893-73f3d1f33e7e">
+                <propertyInstance
+                  Id="1c88e82a-f030-4164-a695-4298762a2ac5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d1c1d822-2c42-41e8-9374-86d25e9e70b4">
+                <propertyInstance
+                  Id="45185006-a638-416b-b006-511d7f6b2e3c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="230661db-616c-4813-b2bb-8f9a517097a9">
+                <propertyInstance
+                  Id="5f8dd99e-b41b-413f-be28-bc39b8ff27cb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f8e68a05-6adb-495d-8af8-9a396fea68c2">
+                <propertyInstance
+                  Id="81d4a370-38b5-4e3c-9978-e06b1f76903e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="2329d065-ec3b-4e75-a06b-caa4197da2c1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="863f2215-6852-44e5-a95f-6abb768f5e73"
+              LastKnownName="AbstractFactory"
+              LastKnownLocation="Package_1234.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8f38f17c-b6fe-42e6-aecb-cf573dfe292c"
+            name="CreateProductA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="78751390-1667-47c5-9226-7feee032ebfd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DConcreteFactory1 Member%3DCreateProductA"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="24490758-8b10-4f39-b982-6568d3e9b37a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b324d101-9689-444b-81fa-7fd2538844e7">
+                    <propertyInstance
+                      Id="b118d00d-4fc8-40b4-8b9b-f18661712ec3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a10ad45-28e4-4fcd-85d2-af6ab14ffdfe">
+                    <propertyInstance
+                      Id="051b2786-fed8-4a69-95d8-4f87086a6feb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea9cd3cd-6e1c-498a-85b7-4ea90670d467">
+                    <propertyInstance
+                      Id="1a71f2c4-62fe-46c0-b1f9-0749098ada7c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="423e96a0-6adb-4725-9155-37d447a3ba41">
+                    <propertyInstance
+                      Id="9d4e5a24-9148-4ee1-919c-90e23f449a38"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7c7a1b4-9290-4fd3-8b3d-326b0ba30953">
+                    <propertyInstance
+                      Id="097b040e-2982-4c82-931d-8c6f7c38f81d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7127ed1-fd5c-4a54-b79c-a0ebbb726844">
+                    <propertyInstance
+                      Id="42a3c2cd-a773-4d63-a5eb-967c32efc7fc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eb7fba9e-4b4a-424c-b16b-48e3daefdfd2"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="88623645-b249-4b65-8957-cdaa3f0e7d63"
+                      LastKnownName="AbstractProductA"
+                      LastKnownLocation="Package_1234.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4bc01b41-b38e-46f2-85f9-383d7bd0d27f"
+            name="CreateProductB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="84979a6c-58a4-4757-8a56-b0cc5f3fd3d3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DConcreteFactory1 Member%3DCreateProductB"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5f3e04e6-40d6-439c-a5f6-10f40eb27bae"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e46b1a1-cab0-49e0-bbc6-fb2ff308e637">
+                    <propertyInstance
+                      Id="705399ea-75fa-4688-ae23-8292568127d1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50d3c935-c268-42cb-baa3-17e78eb94c35">
+                    <propertyInstance
+                      Id="f873f433-c0dd-4a9a-a5c7-c6e2dafa774a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c78b4458-354e-4dc2-874e-3aa773b1a97f">
+                    <propertyInstance
+                      Id="5580926b-10b9-4f57-bcbe-8a82b734e8d2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ad40027-b3b8-4927-a8db-c448758e49c3">
+                    <propertyInstance
+                      Id="98a9585e-a7e9-4b03-a6a1-a196a383b994"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50f17f0c-30ac-4fa5-bf1a-5ba0aa723665">
+                    <propertyInstance
+                      Id="4a760a4f-8d83-44bc-8f48-d915482bd866"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad97a196-7ea4-43f7-91a5-e75cfaa80e81">
+                    <propertyInstance
+                      Id="0e42d0cf-0606-416a-9124-4907a0358bc1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bd189be5-bce4-477a-b582-cbd33a819363"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2734cd80-87a3-4fc8-8fdf-3261c149b809"
+                      LastKnownName="AbstractProductB"
+                      LastKnownLocation="Package_1234.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="15415d12-ee59-42f0-a620-e1d810bca919"
+            name="ConcreteFactory1"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1fcb84ef-d846-4184-888c-24ae25e916b0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DConcreteFactory1 Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7d982213-a958-4d6e-88a8-37f34ea49139"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7102bfc-65e5-432f-b738-7aac687b9ef5">
+                    <propertyInstance
+                      Id="4e12d536-0321-4ee1-a8da-ffa77c182f85"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66bd663b-2126-447d-8c75-2ff2bd509e93">
+                    <propertyInstance
+                      Id="5eb924d2-4453-48e6-8dbe-6611a8ceae1d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f06c000f-f77b-4e59-9e1a-209a1be37715">
+                    <propertyInstance
+                      Id="d75961e9-b2a6-4729-b9af-4644d078e477"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fad985f5-fb0b-4b51-9ab5-343a37a0343d">
+                    <propertyInstance
+                      Id="46069b7c-7cc4-4b19-905c-917470ec501d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c0cbd85-8db9-4f25-9b7f-1e3ee2927da7">
+                    <propertyInstance
+                      Id="af3de4d8-ba0e-449e-bb63-5af0d6053156"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="256bcd16-f457-4ba5-b2ff-146da11cb919">
+                    <propertyInstance
+                      Id="03010952-db7e-4bb6-a30b-d535f6c6e084"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7dc14b4a-a687-4c32-bd25-c4540e04247e"
+        name="ConcreteFactory2"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b1130503-f6b2-41cd-b17a-3521f4c5cf7b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DConcreteFactory2"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0e78b750-c479-4168-95c8-6fc1d625eb1d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="08137ac5-0442-4bb9-acb0-63c53e7a75eb">
+                <propertyInstance
+                  Id="71526876-f49d-4caf-8e74-f0ef4295dfa0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="501e6e28-1ca1-42b8-80f8-da84d2f32ff1">
+                <propertyInstance
+                  Id="6ac06152-75db-4ec5-9764-dfffe50d5425"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="499b5cfa-9ec0-4968-9114-d3957149a548">
+                <propertyInstance
+                  Id="727c608a-98cc-4956-b92c-de0a13e77f64"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8957b6fc-1f9b-4b4a-a13d-dfedfa74642e">
+                <propertyInstance
+                  Id="ed16c087-7595-4071-a8e5-bf9590c6ddd3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="25dc95f0-2872-42f4-af90-840ac171291b">
+                <propertyInstance
+                  Id="7e4be0b2-13f5-48c4-9f3e-5f7854adce37"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="974a3370-24a3-479e-a3ba-74a533ddac57"
+            isSubstitutable="false">
+            <classMoniker
+              Id="863f2215-6852-44e5-a95f-6abb768f5e73"
+              LastKnownName="AbstractFactory"
+              LastKnownLocation="Package_1234.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b6bbab3b-5f92-4f82-be7d-a094a7afab43"
+            name="CreateProductA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b43d3fdc-b8d2-4f80-8e97-489fa2aee6df"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DConcreteFactory2 Member%3DCreateProductA"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="54a8c19f-9227-41da-941f-d580b4b8b4c0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3bff0bd-d8a3-4d20-9401-cb5f99f3ecbb">
+                    <propertyInstance
+                      Id="e777ed47-36c9-4fb4-ba18-74507582bdf7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5683c027-26c9-450a-82e5-55c629361c0d">
+                    <propertyInstance
+                      Id="178f8f85-2a2b-4485-8a63-5f491c12adf6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b1ebb40-95c6-4974-b948-c329f41f6809">
+                    <propertyInstance
+                      Id="4bff374a-59e3-4d16-9be2-74c142504f45"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30c1b070-ab1f-4f22-960d-e4ce1f2a46fc">
+                    <propertyInstance
+                      Id="8edd576b-9326-4840-b8e3-6095dfbeb5f1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8922742f-036f-461b-a9c9-7ffd9da22940">
+                    <propertyInstance
+                      Id="8288bc18-b2ee-4471-821d-8c47503c6bcd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abc502d6-b6b8-473a-b5c1-83455bbbb62b">
+                    <propertyInstance
+                      Id="9a8ccf10-343d-4882-bdc4-e33b377c10a8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1abb5809-b504-411c-b1ba-554f995c1c3c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="88623645-b249-4b65-8957-cdaa3f0e7d63"
+                      LastKnownName="AbstractProductA"
+                      LastKnownLocation="Package_1234.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="912497da-c96f-4d69-9769-4aef2885ff73"
+            name="CreateProductB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f2465e2f-4922-4586-86ec-43e8f518fad6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DConcreteFactory2 Member%3DCreateProductB"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f34d5205-6b70-4503-af0a-8563d96bc32c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="856d370e-bbd7-41f8-a199-0fce627e0a32">
+                    <propertyInstance
+                      Id="83160ae8-754c-42d6-8da2-58a84f3b7156"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08ce2942-7a0a-4ac6-be0c-738dd19ab607">
+                    <propertyInstance
+                      Id="5c4bbab0-3327-4450-9d7a-e2e46c9878b6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c83fe145-ed82-41db-bba1-d56eb1fd5376">
+                    <propertyInstance
+                      Id="e23741e6-783f-48bc-b2f5-744a3d1932f9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3041ded-5a4b-49ff-9d03-90e013f4e409">
+                    <propertyInstance
+                      Id="6585d12e-ac8d-4dca-9dd8-3e7041109b2e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1f3a35f-8657-4660-afe6-26fda53dd32d">
+                    <propertyInstance
+                      Id="59a8871c-5439-428c-95d4-ad6d04bc0387"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3dd9aafd-8af2-4df8-b23c-171515669e47">
+                    <propertyInstance
+                      Id="4890cb1f-48dc-415e-96a4-3c5c34d3d27a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f856467-7004-4eb8-9dcf-0a6ad89d88b5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2734cd80-87a3-4fc8-8fdf-3261c149b809"
+                      LastKnownName="AbstractProductB"
+                      LastKnownLocation="Package_1234.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f39d32b9-481e-429b-9ac8-129b69914a50"
+            name="ConcreteFactory2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c4f3e55e-c9e3-412e-b71c-7de1ef31dae5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DConcreteFactory2 Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3f7e7fba-e955-4d1c-b5a6-d4359b083e2a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68fb81f3-e4d9-400d-9479-9c38051cd21d">
+                    <propertyInstance
+                      Id="64ccb884-71d8-4624-be21-3a4377983a6c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f19f9e0-1aee-439c-b0f0-af0f48fba15f">
+                    <propertyInstance
+                      Id="d83dc54a-1296-42a6-8d9d-7957363f4073"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="601fa05e-d0d0-4f50-811b-e3321921547b">
+                    <propertyInstance
+                      Id="303b9b58-9727-4d67-bb86-e3463b95dc15"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58e255ea-5c51-45e3-9a62-97c6efe7d24e">
+                    <propertyInstance
+                      Id="dbe6654c-9c32-47fd-b350-940f38520aee"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb5330b5-71b7-4dd8-9548-0f38cd8eefe1">
+                    <propertyInstance
+                      Id="6d4baf70-c4ed-4e6f-a9fe-1af52afc9d4e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba84eb6f-c7d8-4921-951d-89e073e6a4de">
+                    <propertyInstance
+                      Id="6e9b0347-2480-46c4-90e1-a02f802f907e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="84efce15-0f1c-4a9d-94d6-807133e84651"
+        name="ProductA1"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e0e559d3-1836-47e1-ab7e-3992efede6f6"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductA1"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="346af908-810b-43a1-a8d5-a074a7abd3dd"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="98c3a170-fd96-4ffb-9162-187195bf0cac">
+                <propertyInstance
+                  Id="e263d040-8771-485c-ad48-49fff0714b8c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d578730-0476-4fe9-b694-951d0063be9c">
+                <propertyInstance
+                  Id="760556bd-cc41-495a-b96f-02e260e2885d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8125dc37-bb28-460b-8ccd-b564f3c96ab6">
+                <propertyInstance
+                  Id="bb83b953-220e-4efd-b1b3-ac010cad207c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7c2fda25-168d-446c-98e0-80c56668d744">
+                <propertyInstance
+                  Id="db89aaff-5618-4bfe-a473-e55258f9c2b2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5897120f-533a-476d-aa05-b09e64e7e896">
+                <propertyInstance
+                  Id="94c7a304-7568-429b-8378-954b40ddd1a6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="07ff97ff-827f-432f-a764-a8a9f190a24b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="88623645-b249-4b65-8957-cdaa3f0e7d63"
+              LastKnownName="AbstractProductA"
+              LastKnownLocation="Package_1234.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bfd2126d-0bcb-49df-8e6e-8400714f7828"
+            name="ProductA1"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c34fe453-e905-44fb-bc27-c41364347a6d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductA1 Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c4d840e6-1ca9-4d08-9ba4-35cba71fc682"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f181ed11-c47f-4b9d-a1c1-bca62e832b69">
+                    <propertyInstance
+                      Id="e4d8aaff-0672-41e2-bb75-8bd066bb77e7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23318ef2-c261-41d0-857b-ae832f2facff">
+                    <propertyInstance
+                      Id="8adc1196-8d60-430f-bbbe-7ca494ebaa7f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a361d60c-d697-4c64-ad92-0c6b2e0c7ad9">
+                    <propertyInstance
+                      Id="5cfae847-96c2-4634-bac5-18a40d0da401"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84c70cbb-0ba8-4d7c-8cb5-3cf2ed6c911b">
+                    <propertyInstance
+                      Id="a78a7a61-7637-45fe-a719-7ce04947cca0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="045e5564-bb9c-4df6-ba92-8816804fd0a6">
+                    <propertyInstance
+                      Id="51ccfc18-d19b-4b26-a6d9-a59813e59c8f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43f5c012-a44d-40c4-a954-8b947b6abd29">
+                    <propertyInstance
+                      Id="1b3c7ce7-a3a3-4801-87fd-9ec289a4b960"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a33b7fa8-a49e-43dd-9fc3-260162e598c2"
+        name="ProductA2"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e5945026-4db2-49ae-bf79-5e701db73148"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductA2"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="100106e2-1901-4773-87d1-3b4a4a339729"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1436217f-e76f-4a7f-9935-7c47a55e7704">
+                <propertyInstance
+                  Id="181482b0-6cc5-4857-a5aa-1a27d9649deb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4025a694-5201-4fa4-a864-8e2b1b09bdf6">
+                <propertyInstance
+                  Id="62d45ddb-e645-4db2-9d63-02a7263d5b5c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8ba85e2a-dc5e-4f2a-93cd-9698cc543552">
+                <propertyInstance
+                  Id="394cbff3-7efc-4dcb-966d-6ff3040329f2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a916ae36-189c-452b-b0d4-14ea82b96b7a">
+                <propertyInstance
+                  Id="f1dd62cc-a93f-418a-b60b-6ca198091803"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="24538681-84a9-4de3-ba9b-d674763b13dd">
+                <propertyInstance
+                  Id="73d61915-eea6-4aef-a0d1-4c2d2ef0868f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="0daa8520-2964-4053-8267-8e5d025144d9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="88623645-b249-4b65-8957-cdaa3f0e7d63"
+              LastKnownName="AbstractProductA"
+              LastKnownLocation="Package_1234.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="46761773-bf41-4352-9e7e-0d63ce330e38"
+            name="ProductA2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c0ad31ad-93ef-4fc8-92ce-e80fec1451c4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductA2 Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="52614bdb-141d-482f-aaba-94be52cdb8ff"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fab3cd4b-d1a0-45d1-a0f3-61bdd774a2b5">
+                    <propertyInstance
+                      Id="cbb0ca8e-098d-49eb-a449-2511c3c6f15e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d3e2c3f-d5b7-4525-a61c-787ba70bde9b">
+                    <propertyInstance
+                      Id="97b77b42-5630-4d0d-9791-a8b3dd32df99"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b430ae46-8977-444b-9794-23f4ec153a10">
+                    <propertyInstance
+                      Id="d3836db9-02c3-41d4-b2da-32fdd0ab713e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5f6b0e5-a08a-4f7a-9ee5-b403f42119cb">
+                    <propertyInstance
+                      Id="4aa2ec9c-84a2-4a43-bedf-3f69a3ff7d8f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5581f7d7-ac66-45d3-86d7-973c615247dd">
+                    <propertyInstance
+                      Id="a1c6417e-36b6-4423-9d7f-28ce7feeefd4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9588cf64-1dab-49bb-a980-bb431ac41584">
+                    <propertyInstance
+                      Id="37a0f7be-aeb0-419b-b59d-faf3366a9de6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="51efa0d9-d941-4a0c-a728-d02448a93861"
+        name="ProductB1"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9de30bdf-e659-4184-b941-f2c1093ac947"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductB1"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="16d3715e-a11a-457b-a334-5a3e5bd94e3f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e5f9fdb5-43bd-4e5c-b91a-7ce10b25a040">
+                <propertyInstance
+                  Id="1cd9a7fd-b616-41c7-9677-73d48c37f725"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="44c0fc48-2469-4952-b22a-c9b34ef69e1b">
+                <propertyInstance
+                  Id="0fe9293e-e003-4bbd-8cb9-0b4e17c3a1ae"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="18dd32fa-602c-4a9a-92e9-1ab0b6aca18c">
+                <propertyInstance
+                  Id="a8360556-8b42-4f4f-ac6a-749b60c901f5"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dab6c5fd-e8a5-402d-a02d-f19e6ecc5c8e">
+                <propertyInstance
+                  Id="3607757f-0f29-4056-9dcd-05ce9bc2e8f5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4d33f73-71bb-4326-b283-7a87d4fb39cd">
+                <propertyInstance
+                  Id="f6226d71-3a63-40da-b998-3a8a7d3f2502"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="b8eb499a-451b-47e0-8765-dec516b258a3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2734cd80-87a3-4fc8-8fdf-3261c149b809"
+              LastKnownName="AbstractProductB"
+              LastKnownLocation="Package_1234.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ee2bd126-f32c-4480-af85-cbfe06b4a53e"
+            name="Interact"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e9d56a89-9106-430a-8c8d-f40f5a56199f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductB1 Member%3D(Name%3DInteract OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductA)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2fa00c54-692e-412f-963a-5d4f798c6125"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8ac1f36-6019-476d-8ce2-95f652a24e82">
+                    <propertyInstance
+                      Id="3ceb68e7-767d-480a-b0d2-5a556f0075e2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7dd168c-aeb2-4176-b470-23968beae7a9">
+                    <propertyInstance
+                      Id="67d2b98e-378c-45a3-b58a-e492fb3a3e97"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f684834-1aed-4926-9c30-30a06b78f251">
+                    <propertyInstance
+                      Id="b473910c-536d-4282-a93b-fd613fcd535c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e57494cd-ea94-46e4-898a-6350ab6123de">
+                    <propertyInstance
+                      Id="ec794797-31d7-4c7c-bd1d-22e181f652f5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11eca002-f4e6-4ee6-a798-e099c5ba0e45">
+                    <propertyInstance
+                      Id="cdcb4e56-d3aa-4433-81eb-5aa9a67352f1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fc65f49-4381-4055-b2ea-25dc43cf91f7">
+                    <propertyInstance
+                      Id="5b65092f-e89c-42ad-a577-9348172be130"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="88df125b-a05b-4148-bb87-1ffcd0b245df"
+                  name="a"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2eb5648d-7cd4-4db9-a593-64217314e512"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductB1 Member%3D(Name%3DInteract OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductA)]) ParameterIdentifier%3Da"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="88623645-b249-4b65-8957-cdaa3f0e7d63"
+                      LastKnownName="AbstractProductA"
+                      LastKnownLocation="Package_1234.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="dac96743-336b-4e5e-a165-ace61131ffe0"
+            name="ProductB1"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e91aeeb0-9fdd-4508-ad17-5612f7e2b9da"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductB1 Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="078a5aa5-8fd1-4ea2-ac9e-3076eebb8a45"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d38a313-b964-4849-8c95-fd062fe5304b">
+                    <propertyInstance
+                      Id="76b9cf24-2e1c-44ad-b37a-81276fbf337d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c98ac3e9-38fa-4cff-82ba-fdd3b47dfb98">
+                    <propertyInstance
+                      Id="c1a3a1e4-70f2-4d93-83f5-5feea5e21c75"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce3cebf9-9c8f-4d82-ba6b-2ad1b6ac5028">
+                    <propertyInstance
+                      Id="9b5ae57d-5296-4a61-a3a4-002b6560e392"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a70568a1-4ca6-4ade-a06c-5a2e81ae584b">
+                    <propertyInstance
+                      Id="41d785bf-471e-43d3-987c-ee684b8a8890"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7da3ba22-b4e1-4097-a2ce-cc643e36631f">
+                    <propertyInstance
+                      Id="6ab72586-81e8-4ac6-8c72-91cee26635d2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bb86cfb-9eb2-466a-a326-627a8f0d3dd1">
+                    <propertyInstance
+                      Id="5b58a56c-0283-4a29-ad0c-b9fc20a6a048"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3bfe3c3d-4c07-490e-bdce-f19783d95e12"
+        name="ProductB2"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a94ede31-6ca8-49d8-9094-0c2cccdd093e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductB2"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="fc91aed5-c3bd-4195-9cfe-69be2de017ee"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2bf70f91-23d7-4282-9b7f-1c0cd3e51919">
+                <propertyInstance
+                  Id="83cf8de4-8b78-439b-8f9d-cddf25bce0e2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1fecbfb5-b3c4-45ad-9352-52cc884d9923">
+                <propertyInstance
+                  Id="f7efde30-23ac-45f1-a73e-e8c62ea0dbdf"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a75b7062-ecd5-4474-a6eb-c07244bf3564">
+                <propertyInstance
+                  Id="f46e5e64-dc1c-4bf6-8428-1563f7ff8b52"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="67cd7478-942e-4198-aa3a-077d25a2e8b6">
+                <propertyInstance
+                  Id="cffc02a9-e77d-4ca8-a9d3-b9fbdb3613c9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d62f10f4-09a2-46e9-939a-f342558a1a9d">
+                <propertyInstance
+                  Id="4047c913-c46e-47ff-bbdd-3b4d86ca60f4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="354e8b0d-eb3c-40e8-8788-69544a307496"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2734cd80-87a3-4fc8-8fdf-3261c149b809"
+              LastKnownName="AbstractProductB"
+              LastKnownLocation="Package_1234.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c1e0e2ae-d35c-4d34-9f91-5feaee52c415"
+            name="Interact"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2f97c713-efb7-432a-b0ca-bb8d7cf12f7f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductB2 Member%3D(Name%3DInteract OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductA)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="23a44728-3bf6-486b-bc4a-eeb1f6f2360f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07507103-2191-411e-b760-2bcc5440ac25">
+                    <propertyInstance
+                      Id="256f436c-4af1-40a8-af1b-2b531aa27157"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69663524-694d-4c8f-bd6c-562c458a4b7e">
+                    <propertyInstance
+                      Id="b426cadb-88c0-429f-998a-b946758b42b1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4474b30a-2ced-48cc-9a69-1f4d345ea12a">
+                    <propertyInstance
+                      Id="9a2cc082-1e44-4e43-bc82-6b73160f8104"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9bad4958-046f-41a1-ac8d-c4445b627c4f">
+                    <propertyInstance
+                      Id="d77e8ff7-1a11-4224-a151-a65e833a6f97"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc32cee9-105c-4b30-a629-43fc951039ec">
+                    <propertyInstance
+                      Id="6d9f8a70-85bb-4efe-98d6-bdf2a94c6916"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e794ef5-6911-4f74-b645-ac468b527c74">
+                    <propertyInstance
+                      Id="6c835352-b588-468e-b1e6-4d61bf40de5c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e068fe30-906a-4e30-b04a-daa5a02f9596"
+                  name="a"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7def9ded-a86e-4811-b29c-c0fe8d38773f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductB2 Member%3D(Name%3DInteract OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DAbstractProductA)]) ParameterIdentifier%3Da"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="88623645-b249-4b65-8957-cdaa3f0e7d63"
+                      LastKnownName="AbstractProductA"
+                      LastKnownLocation="Package_1234.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5283abf9-766a-4197-8fe8-2f0b625fb963"
+            name="ProductB2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="51e24c0d-e68a-4387-9c7b-3130046f0b6b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fehudp%2FDocuments%2FVisual Studio 2012%2FProjects%2FDesignPatterns%2FDesignPatterns%2Fbin%2FDebug%2FDesignPatterns.exe&quot; Namespace%3DDesignPatterns.Creational_Patterns.Abstract_Factory.Structural Type%3DProductB2 Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fe8cc9f4-2d8d-458e-a6b0-bcc613502daa"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="493b9091-5e04-41e6-8e73-6721cd915cdc">
+                    <propertyInstance
+                      Id="d75e8623-cbc7-47ef-b068-c13c3cd84494"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c22ff399-de13-465e-8d3e-bcc78b80a4a6">
+                    <propertyInstance
+                      Id="579b2c58-3afa-4805-b4ca-ebc268dc0cb2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fae2a03-27aa-4cd8-842e-3fd7ab127d52">
+                    <propertyInstance
+                      Id="e7245d74-0080-4474-92b9-ed3e1ddcf3ed"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2627c5d3-7845-4498-a775-ac266edcc826">
+                    <propertyInstance
+                      Id="1797b658-b1d4-490c-9ea0-1e2aed915aff"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfe45977-0508-4fb9-b67d-a506df5cacd2">
+                    <propertyInstance
+                      Id="4813ae24-f001-4d61-8149-74cefb70c358"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6187e956-6369-4d3c-a09e-a53e325b0087">
+                    <propertyInstance
+                      Id="e76d8f14-2432-4d16-8ffb-fc8ae9e261e7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
