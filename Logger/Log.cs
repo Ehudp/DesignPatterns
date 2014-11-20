@@ -16,7 +16,7 @@ namespace Logger
 
         private static void WriteToTxtBlock(string msg)
         {  
-
+            //Print To Wpf TextBlock
             if (_txt==null)return;
             _txt.Text += msg+"\n";
         }
