@@ -55,7 +55,6 @@
     </ApplicationDefinition>
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModels\DesignPatternViewModel.cs" />
-    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\DesignPatternView.xaml.cs">
       <DependentUpon>DesignPatternView.xaml</DependentUpon>
     </Compile>
@@ -110,6 +109,10 @@
     <ProjectReference Include="..\DesignPatterns\DesignPatterns.csproj">
       <Project>{82421157-3148-4b96-8f3a-ad12e834647b}</Project>
       <Name>DesignPatterns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructures\Infrastructures.csproj">
+      <Project>{0ace046a-5af4-4017-89d1-14261a6ace1a}</Project>
+      <Name>Infrastructures</Name>
     </ProjectReference>
     <ProjectReference Include="..\Logger\Logger.csproj">
       <Project>{ba08fd5c-e8c2-4e53-9729-a5149bfac678}</Project>

@@ -1,20 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using DesignPatternsWpf.Annotations;
 
-namespace DesignPatternsWpf.ViewModels
+namespace Infrastructures.ViewModels
 {
     public class ViewModelBase : INotifyPropertyChanged
     {
         #region DataMembers
 
-        private Dictionary<string, object> _properties = new Dictionary<string, object>();
+        private readonly Dictionary<string, object> _properties = new Dictionary<string, object>();
 
         #endregion
 
@@ -42,8 +39,8 @@ namespace DesignPatternsWpf.ViewModels
         {
             foreach (var expression in expressions)
             {
-                MemberExpression memberExpression =
-                    (MemberExpression)expression.Body;
+                var memberExpression =
+                    (MemberExpression) expression.Body;
                 OnPropertyChanged(memberExpression.Member.Name);
             }
         }
@@ -54,17 +51,17 @@ namespace DesignPatternsWpf.ViewModels
             {
                 _properties.Add(propertyName, default(T));
             }
-            return (T)_properties[propertyName];
+            return (T) _properties[propertyName];
         }
 
         protected virtual bool SetProperty<T>(T value, Expression<Func<T>> currentExpression,
                                               params Expression<Func<T>>[] otherExpressions)
         {
-            MemberExpression memberExpression =
-                       (MemberExpression)currentExpression.Body;
-            var propertyName = memberExpression.Member.Name;
+            var memberExpression =
+                (MemberExpression) currentExpression.Body;
+            string propertyName = memberExpression.Member.Name;
             var oldValue = GetProperty<T>(propertyName);
-            var changed = !EqualityComparer<T>.Default.Equals(oldValue, value);
+            bool changed = !EqualityComparer<T>.Default.Equals(oldValue, value);
 
             if (changed)
             {
@@ -75,9 +72,7 @@ namespace DesignPatternsWpf.ViewModels
 
             return changed;
         }
-   
+
         #endregion
-
     }
-
 }
