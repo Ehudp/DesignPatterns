@@ -6,11 +6,14 @@
              xmlns:vm="clr-namespace:DesignPatternsWpf.ViewModels"
               xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"             
              xmlns:behaviors="clr-namespace:Infrastructures.Behaviors;assembly=Infrastructures"
-             xmlns:conv="clr-namespace:Infrastructures.Converters;assembly=Infrastructures"
+         
              mc:Ignorable="d" 
              d:DesignHeight="680" d:DesignWidth="780">
     <UserControl.Resources>
-         <conv:TestConverter x:Key="testConv"/>
+       
+                <ResourceDictionary Source="pack://application:,,,/DesignPatternsWpf;component/Resources/PatternDictionary.xaml"/>
+          
+    
     </UserControl.Resources>
     <UserControl.DataContext>
         <vm:DesignPatternViewModel/>       
