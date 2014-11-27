@@ -1,4 +1,5 @@
-﻿using DesignPatternsWpf.Model;
+﻿using DesignPatterns.Utilities;
+using DesignPatternsWpf.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,35 +11,58 @@ namespace DesignPatternsWpf.Services
     public static class PatternServices
     {
 
-        public static IList<PatternDetails> GetCreationalPatternsTree()
+        public static PatternDetails GetCreationalPatternsTree()
         {
-            List<PatternDetails> creationalPatternsTree = new List<PatternDetails>();
+           
+            PatternDetails creationaParent = new PatternDetails
+            {
+                Name = "CreationalPatterns",
+                Header = "Creational Patterns",
+                IsGofPattern = true
+            };
 
 
-            List<PatternDetails> abstractFactoryTree = new List<PatternDetails>();
 
+            creationaParent.Patterns.Add(GetAbstractFactoryTree());
+
+
+            return creationaParent;
+
+        }
+
+        private static PatternDetails GetAbstractFactoryTree()
+        {
+
+           
             PatternDetails abstractFactoryParent = new PatternDetails
             {
                 Name = "AbstractFactory",
-           
+                Header = "Abstract Factory",
+                IsGofPattern = true
 
             };
 
             PatternDetails abstractFactoryRealWorld = new PatternDetails
             {
                 Name = "AbstractFactoryRealWorld",
-             
-
+                Header = "Abstract Factory Real World",
+                IsGofPattern = true,
+                Method = MethodService.AbstractFactoryRealWorld
             };
 
             PatternDetails abstractFactoryStructural = new PatternDetails
             {
                 Name = "AbstractFactoryStructural",
-              
+                Header = "Abstract Factory Structural",
+                IsGofPattern = true,
+                Method = MethodService.AbstractFactoryStructural
 
             };
 
-            return abstractFactoryTree;
+            abstractFactoryParent.Patterns.Add(abstractFactoryRealWorld);
+            abstractFactoryParent.Patterns.Add(abstractFactoryStructural);
+
+            return abstractFactoryParent;
         }
     }
 }

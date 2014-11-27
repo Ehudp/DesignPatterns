@@ -25,13 +25,13 @@ namespace DesignPatternsWpf
         public MainWindow()
         {
             InitializeComponent();
-            Log.SetTextBox(txt);
+         //   Log.SetTextBox(txt);
         }
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            txt.Clear();
-            MethodService.AbstractFactoryRealWorld();
+          //  txt.Clear();
+           // MethodService.AbstractFactoryRealWorld();
         }
     }
 }

@@ -18,9 +18,9 @@ namespace DesignPatternsWpf.Views
     /// <summary>
     /// Interaction logic for MainView.xaml
     /// </summary>
-    public partial class MainView : UserControl
+    public partial class DesignPatternView : UserControl
     {
-        public MainView()
+        public DesignPatternView()
         {
             InitializeComponent();
         }
