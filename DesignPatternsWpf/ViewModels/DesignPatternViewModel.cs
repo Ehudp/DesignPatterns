@@ -1,8 +1,10 @@
 ﻿using DesignPatternsWpf.Model;
 using DesignPatternsWpf.Services;
+using Infrastructures.Common;
 using Infrastructures.ViewModels;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 namespace DesignPatternsWpf.ViewModels
 {
@@ -13,6 +15,12 @@ namespace DesignPatternsWpf.ViewModels
         public DesignPatternViewModel()
         {
             FillPattrensColleection();
+            SelectedItemChangedCommand = new RelayCommand<object>(OnSelectedItemChangedCommand);
+        }
+
+        private void OnSelectedItemChangedCommand(object obj)
+        {
+         
         }
         #endregion
         #region DataMembers
@@ -25,6 +33,7 @@ namespace DesignPatternsWpf.ViewModels
 
         #region Properties
 
+        public ICommand SelectedItemChangedCommand { get; set; }
 
         public string Name
         {
