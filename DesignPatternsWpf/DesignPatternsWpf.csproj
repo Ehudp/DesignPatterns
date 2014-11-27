@@ -103,9 +103,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\DesignPatterns\DesignPatterns.csproj">
       <Project>{82421157-3148-4b96-8f3a-ad12e834647b}</Project>
       <Name>DesignPatterns</Name>
@@ -118,6 +115,9 @@
       <Project>{ba08fd5c-e8c2-4e53-9729-a5149bfac678}</Project>
       <Name>Logger</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
