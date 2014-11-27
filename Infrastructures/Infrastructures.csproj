@@ -55,6 +55,7 @@
     <Compile Include="Behaviors\EventToCommand.cs" />
     <Compile Include="Behaviors\MouseDoubleClickBehavior.cs" />
     <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Converters\TestConverter.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\ImagesHelper.cs" />

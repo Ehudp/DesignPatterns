@@ -4,12 +4,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:vm="clr-namespace:DesignPatternsWpf.ViewModels"
-              xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-             xmlns:Behaviors="clr-namespace:Infrastructures.Behaviors"
+              xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"             
+             xmlns:behaviors="clr-namespace:Infrastructures.Behaviors;assembly=Infrastructures"
+             xmlns:conv="clr-namespace:Infrastructures.Converters;assembly=Infrastructures"
              mc:Ignorable="d" 
              d:DesignHeight="680" d:DesignWidth="780">
+    <UserControl.Resources>
+         <conv:TestConverter x:Key="testConv"/>
+    </UserControl.Resources>
     <UserControl.DataContext>
-        <vm:DesignPatternViewModel/>
+        <vm:DesignPatternViewModel/>       
     </UserControl.DataContext>
     <Grid>
         <Grid.RowDefinitions>
@@ -20,7 +24,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TreeView ItemsSource="{Binding Patterns}" >
+        <TreeView ItemsSource="{Binding Patterns}" x:Name="tree" >
             <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate ItemsSource="{Binding Patterns}">
                     <TextBlock Text="{Binding Header}"/>
@@ -28,11 +32,15 @@
             </TreeView.ItemTemplate>
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="SelectedItemChanged">
-                    <Behaviors:EventToCommand Command="{Binding SelectedItemChangedCommand}" PassEventArgs="True" />
+                    <behaviors:EventToCommand Command="{Binding SelectedItemChangedCommand}" 
+                                              CommandParameter="{Binding ElementName=tree,Path=SelectedItem}"
+                                              PassEventArgs="False" />
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </TreeView>
         <ContentControl Content="{Binding SelectedPattern}" Grid.Column="2"/>
-        <TextBox Grid.Row="1" Background="AliceBlue" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Row="1" Background="AliceBlue" Grid.ColumnSpan="2"
+                 IsReadOnly="True"
+                 Text="{Binding SelectedPattern.OutPut}"/>
     </Grid>
 </UserControl>

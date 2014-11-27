@@ -2,6 +2,7 @@
 using DesignPatternsWpf.Services;
 using Infrastructures.Common;
 using Infrastructures.ViewModels;
+using Logger;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
@@ -15,12 +16,17 @@ namespace DesignPatternsWpf.ViewModels
         public DesignPatternViewModel()
         {
             FillPattrensColleection();
-            SelectedItemChangedCommand = new RelayCommand<object>(OnSelectedItemChangedCommand);
+            SelectedItemChangedCommand = new RelayCommand<PatternDetails>(OnSelectedItemChangedCommand);
         }
 
-        private void OnSelectedItemChangedCommand(object obj)
+        private void OnSelectedItemChangedCommand(PatternDetails selectedItem)
         {
-         
+            SelectedPattern = selectedItem;
+            
+            Log.SetOutPutAction(SelectedPattern.OutPutAction);
+            
+            SelectedPattern.Run();
+            
         }
         #endregion
         #region DataMembers
@@ -45,7 +51,9 @@ namespace DesignPatternsWpf.ViewModels
         public ObservableCollection<PatternDetails> Patterns
         {
             get { return _patterns; }
-            set { _patterns = value; }
+            set { _patterns = value;
+            OnPropertyChanged(() => Patterns);
+            }
         }
 
       
@@ -53,7 +61,9 @@ namespace DesignPatternsWpf.ViewModels
         public PatternDetails SelectedPattern
         {
             get { return _selectedPattern; }
-            set { _selectedPattern = value; }
+            set { _selectedPattern = value;
+            OnPropertyChanged(() => SelectedPattern);
+            }
         }
 
         #endregion

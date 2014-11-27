@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Utilities;
 using DesignPatternsWpf.Model;
+using Infrastructures.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
