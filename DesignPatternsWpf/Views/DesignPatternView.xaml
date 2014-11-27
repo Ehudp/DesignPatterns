@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:vm="clr-namespace:DesignPatternsWpf.ViewModels"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="680" d:DesignWidth="780">
     <UserControl.DataContext>
         <vm:DesignPatternViewModel/>
     </UserControl.DataContext>
@@ -18,14 +18,14 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TreeView ItemsSource="{Binding Patterns}" DisplayMemberPath="Header"/>
-        <!--<ListView ItemsSource="{Binding Patterns}"  SelectedItem="{Binding SelectedPattern}">
-            <ListView.ItemTemplate>
+        <TreeView ItemsSource="{Binding Patterns}" >
+            <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate ItemsSource="{Binding Patterns}">
                     <TextBlock Text="{Binding Header}"/>
                 </HierarchicalDataTemplate>
-            </ListView.ItemTemplate>  
-        </ListView>-->
+            </TreeView.ItemTemplate>
+        </TreeView>
+        <ContentControl Content="{Binding SelectedPattern}" Grid.Column="2"/>
         <TextBox Grid.Row="1" Background="AliceBlue" Grid.ColumnSpan="2"/>
     </Grid>
 </UserControl>
