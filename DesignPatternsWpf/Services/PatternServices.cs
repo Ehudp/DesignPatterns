@@ -24,14 +24,14 @@ namespace DesignPatternsWpf.Services
 
 
 
-            creationaParent.Patterns.Add(GetAbstractFactoryTree());
-
+            creationaParent.Patterns.Add(AbstractFactoryTree());
+            creationaParent.Patterns.Add(BuilderTree());
 
             return creationaParent;
 
         }
 
-        private static PatternDetails GetAbstractFactoryTree()
+        private static PatternDetails AbstractFactoryTree()
         {
 
            
@@ -73,5 +73,49 @@ namespace DesignPatternsWpf.Services
 
             return abstractFactoryParent;
         }
+
+        private static PatternDetails BuilderTree()
+        {
+
+
+            PatternDetails BuilderParent = new PatternDetails
+            {
+                Name = "Builder",
+                Header = "Builder",
+                IsGofPattern = true
+
+            };
+
+            PatternDetails BuilderRealWorld = new PatternDetails
+            {
+                Name = "BuilderRealWorld",
+                Header = "Builder Real World",
+                IsGofPattern = true,
+                Method = MethodService.BuilderRealWorld,
+                Detailes = "This real-world code demonstates the Builder pattern in which different vehicles are assembled in a step-by-step fashion. "
+                +"The Shop uses VehicleBuilders to construct a variety of Vehicles in a series of sequential steps.",
+                Url = "http://www.dofactory.com/net/builder-design-pattern#rea",
+                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/BuilderUML.png"
+            };
+
+            PatternDetails Buildertructural = new PatternDetails
+            {
+                Name = "BuilderStructural",
+                Header = "Builder Structural",
+                IsGofPattern = false,
+                Method = MethodService.BuilderStructural,
+                Detailes = "This structural code demonstrates the Builder pattern in which complex objects are created in a step-by-step fashion."
+                + " The construction process can create different object representations and provides a high level of control over the assembly of the objects.",
+                Url = "http://www.dofactory.com/net/builder-design-pattern#str",
+                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/BuilderUML.png"
+
+            };
+
+            BuilderParent.Patterns.Add(BuilderRealWorld);
+            BuilderParent.Patterns.Add(Buildertructural);
+
+            return BuilderParent;
+        }
+    
     }
 }

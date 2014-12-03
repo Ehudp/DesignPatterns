@@ -61,6 +61,11 @@
     <Compile Include="Creational Patterns\Abstract Factory\Structural\ProductA2.cs" />
     <Compile Include="Creational Patterns\Abstract Factory\Structural\ProductB1.cs" />
     <Compile Include="Creational Patterns\Abstract Factory\Structural\ProductB2.cs" />
+    <Compile Include="Creational Patterns\Builder\Structural\Builder.cs" />
+    <Compile Include="Creational Patterns\Builder\Structural\ConcreteBuilder1.cs" />
+    <Compile Include="Creational Patterns\Builder\Structural\ConcreteBuilder2.cs" />
+    <Compile Include="Creational Patterns\Builder\Structural\Director.cs" />
+    <Compile Include="Creational Patterns\Builder\Structural\Product.cs" />
     <Compile Include="Utilities\ManagerApp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +82,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\AbstractFactoryUMl.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Creational Patterns\Builder\RealWorld\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BuilderUML.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

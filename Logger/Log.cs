@@ -12,10 +12,10 @@ namespace Logger
         {
             Console.WriteLine(msg);       
           //  WriteToTxtBlock(msg);
-            WriteToOtPut(msg);
+            WriteToOutPut(msg);
         }
 
-        private static void WriteToOtPut(string msg)
+        private static void WriteToOutPut(string msg)
         {
             _outPutAction(msg);
         }
