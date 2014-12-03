@@ -1,11 +1,17 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+<<<<<<< HEAD
                         xmlns:conv="clr-namespace:Infrastructures.Converters;assembly=Infrastructures"
                     xmlns:bev="clr-namespace:Infrastructures.Behaviors;assembly=Infrastructures"
                       xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
                     xmlns:model="clr-namespace:DesignPatternsWpf.Model">
 
 
+=======
+                    
+                    xmlns:model="clr-namespace:DesignPatternsWpf.Model">
+   
+>>>>>>> origin/master
     <DataTemplate DataType="{x:Type model:PatternDetails}">
         <Grid Margin="10">
             <Grid.ColumnDefinitions>
