@@ -19,7 +19,7 @@ namespace DesignPatternsWpf.Services
             {
                 Name = "CreationalPatterns",
                 Header = "Creational Patterns",
-                IsGofPattern = true
+               
             };
 
 
@@ -48,15 +48,23 @@ namespace DesignPatternsWpf.Services
                 Name = "AbstractFactoryRealWorld",
                 Header = "Abstract Factory Real World",
                 IsGofPattern = true,
-                Method = MethodService.AbstractFactoryRealWorld
+                Method = MethodService.AbstractFactoryRealWorld,
+                Detailes = "This real-world code demonstrates the creation of different animal worlds for a computer game using different factories." 
+               + "Although the animals created by the Continent factories are different, the interactions among the animals remain the same.",
+                Url = "http://www.dofactory.com/net/abstract-factory-design-pattern#rea",
+                ImageUrl = @"pack://application:,,,;component/Images/AbstractFactoryUMl.gif"
             };
 
             PatternDetails abstractFactoryStructural = new PatternDetails
             {
                 Name = "AbstractFactoryStructural",
                 Header = "Abstract Factory Structural",
-                IsGofPattern = true,
-                Method = MethodService.AbstractFactoryStructural
+                IsGofPattern = false,
+                Method = MethodService.AbstractFactoryStructural,
+                Detailes = "This structural code demonstrates the Abstract Factory pattern creating parallel hierarchies of objects."
+                +" Object creation has been abstracted and there is no need for hard-coded class names in the client code.",
+                Url="http://www.dofactory.com/net/abstract-factory-design-pattern#str",
+                ImageUrl = @"pack://application:,,,;component/Images/AbstractFactoryUMl.gif"
 
             };
 

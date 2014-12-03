@@ -41,8 +41,8 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </TreeView>
-        <ContentControl Content="{Binding SelectedPattern}" Grid.Column="2"/>
-        <TextBox Grid.Row="1" Background="AliceBlue" Grid.ColumnSpan="2"
+        <ContentControl Content="{Binding SelectedPattern}" Grid.Column="2" Grid.RowSpan="2"/>
+        <TextBox Grid.Row="1" Background="AliceBlue"
                  IsReadOnly="True"
                  Text="{Binding SelectedPattern.OutPut}"/>
     </Grid>

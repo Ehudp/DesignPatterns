@@ -9,7 +9,7 @@ namespace DesignPatternsWpf.Model
 {
     public class PatternDetails : ViewModelBase
     {
-        private string _outPut;
+
         public PatternDetails()
         {
             Patterns = new List<PatternDetails>();
@@ -33,9 +33,9 @@ namespace DesignPatternsWpf.Model
             set { SetProperty(value, () => Method); }
         }
 
-        public bool IsGofPattern
+        public bool? IsGofPattern
         {
-            get { return GetProperty<bool>(); }
+            get { return GetProperty<bool?>(); }
             set { SetProperty(value, () => IsGofPattern); }
         }
 
@@ -57,9 +57,21 @@ namespace DesignPatternsWpf.Model
             set { SetProperty(value, () => Patterns); }
         }
 
-        public Action<string> OutPutAction{ get; set; }
+        public string Detailes
+        {
+            get { return GetProperty<string>(); }
+            set { SetProperty(value, () => Detailes); }
+        }
 
-        private void UpdateOutPut(string msg) 
+        public string ImageUrl
+        {
+            get { return GetProperty<string>(); }
+            set { SetProperty(value, () => ImageUrl); }
+        }
+
+        public Action<string> OutPutAction { get; set; }
+
+        private void UpdateOutPut(string msg)
         {
             OutPut += msg + "\n";
         }
