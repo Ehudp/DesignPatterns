@@ -52,7 +52,7 @@ namespace DesignPatternsWpf.Services
                 Detailes = "This real-world code demonstrates the creation of different animal worlds for a computer game using different factories." 
                + "Although the animals created by the Continent factories are different, the interactions among the animals remain the same.",
                 Url = "http://www.dofactory.com/net/abstract-factory-design-pattern#rea",
-                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/AbstractFactoryUMl.gif"
+                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/AbstractFactoryUML.gif"
             };
 
             PatternDetails abstractFactoryStructural = new PatternDetails
@@ -64,7 +64,7 @@ namespace DesignPatternsWpf.Services
                 Detailes = "This structural code demonstrates the Abstract Factory pattern creating parallel hierarchies of objects."
                 +" Object creation has been abstracted and there is no need for hard-coded class names in the client code.",
                 Url="http://www.dofactory.com/net/abstract-factory-design-pattern#str",
-                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/AbstractFactoryUMl.gif"
+                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/AbstractFactoryUML.gif"
 
             };
 
@@ -95,7 +95,7 @@ namespace DesignPatternsWpf.Services
                 Detailes = "This real-world code demonstates the Builder pattern in which different vehicles are assembled in a step-by-step fashion. "
                 +"The Shop uses VehicleBuilders to construct a variety of Vehicles in a series of sequential steps.",
                 Url = "http://www.dofactory.com/net/builder-design-pattern#rea",
-                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/BuilderUML.png"
+                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/BuilderUML.GIF"
             };
 
             PatternDetails Buildertructural = new PatternDetails
@@ -107,7 +107,7 @@ namespace DesignPatternsWpf.Services
                 Detailes = "This structural code demonstrates the Builder pattern in which complex objects are created in a step-by-step fashion."
                 + " The construction process can create different object representations and provides a high level of control over the assembly of the objects.",
                 Url = "http://www.dofactory.com/net/builder-design-pattern#str",
-                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/BuilderUML.png"
+                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/BuilderUML.GIF"
 
             };
 

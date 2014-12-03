@@ -81,7 +81,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\AbstractFactoryUMl.gif">
+    <Resource Include="Images\AbstractFactoryUML.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -89,7 +89,7 @@
     <Folder Include="Creational Patterns\Builder\RealWorld\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\BuilderUML.PNG">
+    <Resource Include="Images\BuilderUML.GIF">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
