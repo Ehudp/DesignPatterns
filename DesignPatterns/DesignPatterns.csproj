@@ -11,6 +11,7 @@
     <AssemblyName>DesignPatterns</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,31 +42,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\AfricaFactory.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\AmericaFactory.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\AnimalWorld.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Bison.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Carnivore.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\ContinentFactory.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Herbivore.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Lion.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Wildebeest.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\RealWorld\Wolf.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\Structural\AbstractFactory.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\Structural\AbstractProductA.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\Structural\AbstractProductB.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\Structural\Client.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\Structural\ConcreteFactory1.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\Structural\ConcreteFactory2.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\Structural\ProductA1.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\Structural\ProductA2.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\Structural\ProductB1.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\Structural\ProductB2.cs" />
-    <Compile Include="Creational Patterns\Builder\Structural\Builder.cs" />
-    <Compile Include="Creational Patterns\Builder\Structural\ConcreteBuilder1.cs" />
-    <Compile Include="Creational Patterns\Builder\Structural\ConcreteBuilder2.cs" />
-    <Compile Include="Creational Patterns\Builder\Structural\Director.cs" />
-    <Compile Include="Creational Patterns\Builder\Structural\Product.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\Bison.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\Carnivore.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\ContinentFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\Herbivore.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\Lion.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\Wildebeest.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\Wolf.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structural\AbstractFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structural\AbstractProductA.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structural\AbstractProductB.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structural\Client.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structural\ConcreteFactory1.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structural\ConcreteFactory2.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structural\ProductA1.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structural\ProductA2.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structural\ProductB1.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Structural\ProductB2.cs" />
+    <Compile Include="CreationalPatterns\Builder\RealWorld\MotorCycleBuilder.cs" />
+    <Compile Include="CreationalPatterns\Builder\RealWorld\ScooterBuilder.cs" />
+    <Compile Include="CreationalPatterns\Builder\RealWorld\Shop.cs" />
+    <Compile Include="CreationalPatterns\Builder\RealWorld\Vehicle.cs" />
+    <Compile Include="CreationalPatterns\Builder\RealWorld\VehicleBuilder.cs" />
+    <Compile Include="CreationalPatterns\Builder\Structural\Builder.cs" />
+    <Compile Include="CreationalPatterns\Builder\RealWorld\CarBuilder.cs" />
+    <Compile Include="CreationalPatterns\Builder\Structural\ConcreteBuilder1.cs" />
+    <Compile Include="CreationalPatterns\Builder\Structural\ConcreteBuilder2.cs" />
+    <Compile Include="CreationalPatterns\Builder\Structural\Director.cs" />
+    <Compile Include="CreationalPatterns\Builder\Structural\Product.cs" />
+    <Compile Include="CreationalPatterns\Prototype\RealWorld\Color.cs" />
+    <Compile Include="CreationalPatterns\Prototype\RealWorld\ColorManager.cs" />
+    <Compile Include="CreationalPatterns\Prototype\RealWorld\ColorPrototype.cs" />
+    <Compile Include="CreationalPatterns\Prototype\Structural\ConcretePrototype1.cs" />
+    <Compile Include="CreationalPatterns\Prototype\Structural\ConcretePrototype2.cs" />
+    <Compile Include="CreationalPatterns\Prototype\Structural\Prototype.cs" />
+    <Compile Include="CreationalPatterns\Singleton\RealWorld\LoadBalancer.cs" />
+    <Compile Include="CreationalPatterns\Singleton\Structural\Singleton.cs" />
     <Compile Include="Utilities\ManagerApp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,10 +101,18 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Creational Patterns\Builder\RealWorld\" />
+    <Resource Include="Images\BuilderUML.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\PrototypeUML.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\BuilderUML.GIF">
+    <Resource Include="Images\SingletonUML.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

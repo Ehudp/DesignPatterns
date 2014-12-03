@@ -8,6 +8,13 @@ namespace Logger
         private static TextBox _txt;
         private static Action<string> _outPutAction;
 
+        public static void WriteLine(string format, params object[] args)
+        {
+            Console.WriteLine(format,args);
+            var msg = string.Format(format, args);
+            WriteLine(msg);
+        }
+     
         public static void WriteLine(string msg)
         {
             Console.WriteLine(msg);       

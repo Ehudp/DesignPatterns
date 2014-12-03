@@ -43,7 +43,7 @@
         </TreeView>
         <ContentControl Content="{Binding SelectedPattern}" Grid.Column="2" Grid.RowSpan="2"/>
         <TextBox Grid.Row="1" Background="AliceBlue"
-                 IsReadOnly="True"
+                 IsReadOnly="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"
                  Text="{Binding SelectedPattern.OutPut}"/>
     </Grid>
 </UserControl>
