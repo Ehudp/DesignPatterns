@@ -88,6 +88,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagrams\CreationalPatterns\AbstractFactorySt.cd" />
+    <None Include="ClassDiagrams\CreationalPatterns\AbstractFactoryRw.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Logger\Logger.csproj">
@@ -105,7 +107,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="Images\PrototypeUML.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -113,6 +114,16 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\SingletonUML.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ClassDiagrams\AbstractFactoryRw.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ClassDiagrams\AbstractFactorySt.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

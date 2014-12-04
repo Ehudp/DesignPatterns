@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Controls;
 
 namespace Logger
@@ -33,6 +34,20 @@ namespace Logger
             if (_txt==null)return;
             _txt.Text += msg+"\n";
         }
+
+        public static void AddSeparator(int lenght=10,string separator="-") 
+        {
+
+            string str = string.Empty;
+            for (int i = 0; i < lenght; i++)
+            {
+                str += separator;
+            }
+
+            WriteLine(str);
+        }
+
+      
 
         public static void SetTextBox(TextBox txt)
         {

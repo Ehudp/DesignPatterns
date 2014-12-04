@@ -38,7 +38,9 @@ namespace DesignPatternsWpf.Services
                 Name = "AbstractFactory",
                 Header = "Abstract Factory",
                 Detailes = "Creates an instance of several families of classes - " +
-                           "Provide an interface for creating families of related or dependent objects without specifying their concrete classes."
+                           "Provide an interface for creating families of related or dependent objects without specifying their concrete classes.",
+                Url = "http://www.dofactory.com/net/abstract-factory-design-pattern",
+                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/AbstractFactoryUML.gif"
             };
 
             PatternDetails abstractFactoryRealWorld = new PatternDetails
@@ -50,7 +52,7 @@ namespace DesignPatternsWpf.Services
                 Detailes = "This real-world code demonstrates the creation of different animal worlds for a computer game using different factories."
                + "Although the animals created by the Continent factories are different, the interactions among the animals remain the same.",
                 Url = "http://www.dofactory.com/net/abstract-factory-design-pattern#rea",
-                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/AbstractFactoryUML.gif"
+                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/ClassDiagrams/AbstractFactoryRw.png"
             };
 
             PatternDetails abstractFactoryStructural = new PatternDetails
@@ -62,7 +64,7 @@ namespace DesignPatternsWpf.Services
                 Detailes = "This structural code demonstrates the Abstract Factory pattern creating parallel hierarchies of objects."
                 + " Object creation has been abstracted and there is no need for hard-coded class names in the client code.",
                 Url = "http://www.dofactory.com/net/abstract-factory-design-pattern#str",
-                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/AbstractFactoryUML.gif"
+                ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/ClassDiagrams/AbstractFactorySt.png"
 
             };
 
@@ -115,7 +117,7 @@ namespace DesignPatternsWpf.Services
 
             return builderParent;
         }
-       
+
         private static PatternDetails PrototypeTree()
         {
 
@@ -134,7 +136,7 @@ namespace DesignPatternsWpf.Services
                 IsGofPattern = true,
                 Method = MethodService.PrototypeRealWorld,
                 Detailes = "This real-world code demonstrates the Prototype pattern in which new Color objects are created by copying pre-existing,"
-                +" user-defined Colors of the same type.",
+                + " user-defined Colors of the same type.",
                 Url = "http://www.dofactory.com/net/prototype-design-pattern#rea",
                 ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/PrototypeUML.PNG"
             };
@@ -175,9 +177,9 @@ namespace DesignPatternsWpf.Services
                 IsGofPattern = true,
                 Method = MethodService.SingletonRealWorld,
                 Detailes = "This real-world code demonstrates the Singleton pattern as a LoadBalancing object."
-                +" Only a single instance (the singleton) of the class can be created because servers may dynamically "
-                +"come on- or off-line and every request must go throught the one object that has knowledge"
-                +" about the state of the (web) farm.",
+                + " Only a single instance (the singleton) of the class can be created because servers may dynamically "
+                + "come on- or off-line and every request must go throught the one object that has knowledge"
+                + " about the state of the (web) farm.",
                 Url = "http://www.dofactory.com/net/singleton-design-pattern#rea",
                 ImageUrl = @"pack://application:,,,/DesignPatterns;component/Images/SingletonUML.PNG"
             };

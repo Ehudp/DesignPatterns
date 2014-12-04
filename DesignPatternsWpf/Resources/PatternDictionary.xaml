@@ -44,7 +44,7 @@
                 </Hyperlink>
             </TextBlock>
             <!--Picture-->
-            <TextBlock Text="Picture" Grid.Row="4"/>
+            <TextBlock Text="UML" Grid.Row="4"/>
             <ScrollViewer Grid.Row="4" Grid.Column="2">
                 <Image Source="{Binding ImageUrl}" /> 
             </ScrollViewer>

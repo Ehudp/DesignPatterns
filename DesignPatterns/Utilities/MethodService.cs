@@ -21,12 +21,23 @@ namespace DesignPatterns.Utilities
         public static void AbstractFactoryStructural()
         {
             // Abstract factory #1
+
             AbstractFactory factory1 = new ConcreteFactory1();
+            Log.WriteLine("{0} has Created", factory1.GetType().Name);
+
+          
             var client1 = new Client(factory1);
+            Log.WriteLine("{0} has Created", client1.GetType().Name);
+            Log.WriteLine("Client Create AbstractProductA and AbstractProductB");
+            Log.WriteLine("Client Run");
             client1.Run();
 
             // Abstract factory #2
             AbstractFactory factory2 = new ConcreteFactory2();
+            
+            Log.AddSeparator(5);
+            Log.WriteLine("{0} has Created", factory2.GetType().Name);
+        
             var client2 = new Client(factory2);
             client2.Run();
         }
@@ -119,11 +130,11 @@ namespace DesignPatterns.Utilities
             // Create two instances and clone each
 
             var p1 = new ConcretePrototype1("I");
-            var c1 = (ConcretePrototype1) p1.Clone();
+            var c1 = (ConcretePrototype1)p1.Clone();
             Log.WriteLine("Cloned: {0}", c1.Id);
 
             var p2 = new ConcretePrototype2("II");
-            var c2 = (ConcretePrototype2) p2.Clone();
+            var c2 = (ConcretePrototype2)p2.Clone();
             Log.WriteLine("Cloned: {0}", c2.Id);
         }
 
