@@ -1,5 +1,6 @@
 ﻿using DesignPatternsWpf.Model;
 using DesignPatternsWpf.Services;
+using DesignPatternsWpf.TreeFactory;
 using Infrastructures.Common;
 using Infrastructures.ViewModels;
 using Logger;
@@ -72,10 +73,14 @@ namespace DesignPatternsWpf.ViewModels
 
         private void FillPattrensColleection() 
         {
-            List<PatternDetails> patterns = new List<PatternDetails>();
+          //  List<PatternDetails> patterns = new List<PatternDetails>();
 
-            patterns.Add(PatternServices.GetCreationalPatternsTree());
-            Patterns = new ObservableCollection<PatternDetails>(patterns);
+           
+            //patterns.Add(PatternServices.GetCreationalPatternsTree());
+           // Patterns = new ObservableCollection<PatternDetails>(patterns);
+           // var patterns = new PatternsTreeFactory().GetPatterns();
+            Patterns = new ObservableCollection<PatternDetails>(PatternServices.GetPatternDetailsList());
+            
         }
 
         #endregion
