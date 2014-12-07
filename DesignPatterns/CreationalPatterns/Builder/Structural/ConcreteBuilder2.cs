@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.CreationalPatterns.Builder.Structural
 {
-    class ConcreteBuilder2 : CreationalPatterns.Builder.Structural.Builder
+    class ConcreteBuilder2 :Builder
     {
         private Product _product = new Product();
 

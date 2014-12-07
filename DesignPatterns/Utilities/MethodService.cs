@@ -32,13 +32,14 @@ namespace DesignPatterns.Utilities
             Log.WriteLine("Client Run");
             client1.Run();
 
-            // Abstract factory #2
-            AbstractFactory factory2 = new ConcreteFactory2();
-            
             Log.AddSeparator(5);
-            Log.WriteLine("{0} has Created", factory2.GetType().Name);
-        
+            // Abstract factory #2
+            AbstractFactory factory2 = new ConcreteFactory2();                       
+            Log.WriteLine("{0} has Created", factory2.GetType().Name);        
             var client2 = new Client(factory2);
+            Log.WriteLine("{0} has Created", client2.GetType().Name);
+            Log.WriteLine("Client Create AbstractProductA and AbstractProductB");
+            Log.WriteLine("Client Run");
             client2.Run();
         }
 
@@ -47,12 +48,21 @@ namespace DesignPatterns.Utilities
         {
             // Create and run the African animal world
             ContinentFactory africa = new AfricaFactory();
+            Log.WriteLine("{0} has Created", africa.GetType().Name);
             var world = new AnimalWorld(africa);
+            Log.WriteLine("{0} has Created", world.GetType().Name);
+            Log.WriteLine("Animal World Create Herbivore and Carnivore");
+            Log.WriteLine("Animal World Run Food Chain");
             world.RunFoodChain();
 
+            Log.AddSeparator(5);
             // Create and run the American animal world
             ContinentFactory america = new AmericaFactory();
+            Log.WriteLine("{0} has Created", america.GetType().Name);
             world = new AnimalWorld(america);
+            Log.WriteLine("{0} has Created", world.GetType().Name);
+            Log.WriteLine("Animal World Create Herbivore and Carnivore");
+            Log.WriteLine("Animal World Run Food Chain");
             world.RunFoodChain();
         }
 
@@ -64,17 +74,24 @@ namespace DesignPatterns.Utilities
         {
             // Create director and builders
             var director = new Director();
-
+            Log.WriteLine("{0} has Created", director.GetType().Name);
             Builder b1 = new ConcreteBuilder1();
             Builder b2 = new ConcreteBuilder2();
-
+            Log.WriteLine("{0} has Created", b1.GetType().Name);
+            Log.WriteLine("{0} has Created", b2.GetType().Name);
+          
+            Log.AddSeparator(5);
             // Construct two products
             director.Construct(b1);
+            Log.WriteLine("{0} has Construct {1}", director.GetType().Name,b1.GetType().Name);
             Product p1 = b1.GetResult();
+            Log.WriteLine("Get Resuult");
             p1.Show();
-
+            Log.AddSeparator(5);
             director.Construct(b2);
+            Log.WriteLine("{0} has Construct {1}", director.GetType().Name, b2.GetType().Name);
             Product p2 = b2.GetResult();
+            Log.WriteLine("Get Resuult");
             p2.Show();
 
             // Wait for user
@@ -89,14 +106,17 @@ namespace DesignPatterns.Utilities
 
             // Construct and display vehicles
             builder = new ScooterBuilder();
+            Log.WriteLine("\n{0} has Created", builder.GetType().Name);
             shop.Construct(builder);
             builder.Vehicle.Show();
 
             builder = new CarBuilder();
+            Log.WriteLine("\n{0} has Created", builder.GetType().Name);
             shop.Construct(builder);
             builder.Vehicle.Show();
 
             builder = new MotorCycleBuilder();
+            Log.WriteLine("\n{0} has Created", builder.GetType().Name);
             shop.Construct(builder);
             builder.Vehicle.Show();
         }

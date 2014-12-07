@@ -22,7 +22,7 @@ namespace DesignPatternsWpf.Views
     {
         public DesignPatternView()
         {
-            InitializeComponent();
+            InitializeComponent();        
         }
     }
 }

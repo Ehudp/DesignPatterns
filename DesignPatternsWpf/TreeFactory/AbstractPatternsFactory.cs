@@ -10,24 +10,23 @@ namespace DesignPatternsWpf.TreeFactory
 {
    abstract class AbstractPatternsFactory 
     {
-
+      protected PatternDetails _patternDetails;
        public abstract PatternDetails CreatePatternDetails();
-       public abstract PatternDetails GetPatternDetails();
+       public PatternDetails GetPatternDetails() 
+       {
+           return _patternDetails; 
+       }
     }
 
     class CreationalPatternsFactorry : AbstractPatternsFactory
     {
-        PatternDetails _creationalDetails;
+      
         public CreationalPatternsFactorry()
         {
-            _creationalDetails = CreatePatternDetails();
+            _patternDetails = CreatePatternDetails();
         }
 
-        public override PatternDetails GetPatternDetails()
-        {
-            return _creationalDetails;
-        }
-
+       
         public override PatternDetails CreatePatternDetails()
         {
             var creationalDetails = new PatternDetails
@@ -48,10 +47,10 @@ namespace DesignPatternsWpf.TreeFactory
   
     class SingletonPatternsFactorry : AbstractPatternsFactory 
     {
-        PatternDetails _singletonDetails;
+      
         public SingletonPatternsFactorry()
         {
-            _singletonDetails = CreatePatternDetails();
+            _patternDetails = CreatePatternDetails();
         }
         public override PatternDetails CreatePatternDetails()
         {
@@ -96,19 +95,16 @@ namespace DesignPatternsWpf.TreeFactory
             return singletonParent;
         }
 
-        public override PatternDetails GetPatternDetails()
-        {
-            return _singletonDetails;
-        }
+       
     }
 
     class BuilderPatternsFactorry : AbstractPatternsFactory
     {
-        PatternDetails _builderFactoryDetails;
+       
         
         public BuilderPatternsFactorry()
         {
-            _builderFactoryDetails = CreatePatternDetails();
+            _patternDetails = CreatePatternDetails();
         }
 
         public override PatternDetails CreatePatternDetails()
@@ -154,19 +150,15 @@ namespace DesignPatternsWpf.TreeFactory
             return builderParent;
         }
 
-        public override PatternDetails GetPatternDetails()
-        {
-            return _builderFactoryDetails;
-        }
+      
     }
 
     class PrototypePatternsFactorry : AbstractPatternsFactory 
     {
-        PatternDetails _PrototypeDetails;
-
+     
         public PrototypePatternsFactorry()
         {
-            _PrototypeDetails = CreatePatternDetails();
+            _patternDetails = CreatePatternDetails();
         }
 
         public override PatternDetails CreatePatternDetails()
@@ -209,19 +201,15 @@ namespace DesignPatternsWpf.TreeFactory
 
             return prototypeParent;
         }
-        public override PatternDetails GetPatternDetails()
-        {
-            return _PrototypeDetails;
-        }
+     
     }
 
     class AbstractFactoryPatternsFactorry : AbstractPatternsFactory 
     {
-        PatternDetails _abstractFactorydetails;
-
+       
         public AbstractFactoryPatternsFactorry()
         {
-            _abstractFactorydetails = CreatePatternDetails();
+            _patternDetails = CreatePatternDetails();
 
         }
 
@@ -269,10 +257,7 @@ namespace DesignPatternsWpf.TreeFactory
 
             return abstractFactoryParent;
         }
-        public override PatternDetails GetPatternDetails()
-        {
-            return _abstractFactorydetails;
-        }
+      
     }
   
 }

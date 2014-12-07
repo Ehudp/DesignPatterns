@@ -2,7 +2,7 @@
 {
     class Director
     {
-        public void Construct(CreationalPatterns.Builder.Structural.Builder builder)
+        public void Construct(Builder builder)
         {
             builder.BuildPartA();
             builder.BuildPartB();

@@ -21,7 +21,7 @@ namespace DesignPatterns.CreationalPatterns.Prototype.RealWorld
         {
             Log.WriteLine("Cloning color RGB: {0,3},{1,3},{2,3}",
                              _red, _green, _blue);
-
+          
             return MemberwiseClone() as ColorPrototype;
         }
     }
