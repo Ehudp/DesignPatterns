@@ -30,6 +30,7 @@ namespace DesignPatternsWpf.ViewModels
             
         }
         #endregion
+
         #region DataMembers
 
         private ObservableCollection<PatternDetails> _patterns;
@@ -79,8 +80,8 @@ namespace DesignPatternsWpf.ViewModels
             //patterns.Add(PatternServices.GetCreationalPatternsTree());
            // Patterns = new ObservableCollection<PatternDetails>(patterns);
            // var patterns = new PatternsTreeFactory().GetPatterns();
-            Patterns = new ObservableCollection<PatternDetails>(PatternServices.GetPatternDetailsList());
-            
+          //  Patterns = new ObservableCollection<PatternDetails>(PatternServices.GetPatternDetailsList());
+            Patterns = new ObservableCollection<PatternDetails>(TreePatterns.Instance.GetPatterns());
         }
 
         #endregion

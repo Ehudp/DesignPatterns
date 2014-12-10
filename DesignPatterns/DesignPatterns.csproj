@@ -81,6 +81,12 @@
     <Compile Include="CreationalPatterns\Prototype\Structural\Prototype.cs" />
     <Compile Include="CreationalPatterns\Singleton\RealWorld\LoadBalancer.cs" />
     <Compile Include="CreationalPatterns\Singleton\Structural\Singleton.cs" />
+    <Compile Include="StructuralPatterns\Adapter\RealWorld\ChemicalDatabank.cs" />
+    <Compile Include="StructuralPatterns\Adapter\RealWorld\Compound.cs" />
+    <Compile Include="StructuralPatterns\Adapter\RealWorld\RichCompound.cs" />
+    <Compile Include="StructuralPatterns\Adapter\Structural\Adaptee.cs" />
+    <Compile Include="StructuralPatterns\Adapter\Structural\Adapter.cs" />
+    <Compile Include="StructuralPatterns\Adapter\Structural\Target.cs" />
     <Compile Include="Utilities\ManagerApp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -127,7 +133,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ClassDiagrams\StructuralPatterns\" />
+    <Folder Include="StructuralPatterns\Bridge\RealWorld\" />
+    <Folder Include="StructuralPatterns\Bridge\Structural\" />
+    <Folder Include="StructuralPatterns\Composite\RealWorld\" />
+    <Folder Include="StructuralPatterns\Composite\Structural\" />
+    <Folder Include="StructuralPatterns\Decorator\RealWorld\" />
+    <Folder Include="StructuralPatterns\Decorator\Structural\" />
+    <Folder Include="StructuralPatterns\Facade\RealWorld\" />
+    <Folder Include="StructuralPatterns\Facade\Structural\" />
+    <Folder Include="StructuralPatterns\Flyweight\RealWorld\" />
+    <Folder Include="StructuralPatterns\Flyweight\Structural\" />
+    <Folder Include="StructuralPatterns\Proxy\RealWorld\" />
+    <Folder Include="StructuralPatterns\Proxy\Structural\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

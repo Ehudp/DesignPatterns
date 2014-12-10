@@ -1,6 +1,7 @@
 ﻿using DesignPatterns.Utilities;
 using DesignPatternsWpf.Model;
 using DesignPatternsWpf.TreeFactory;
+using DesignPatternsWpf.TreeFactory.Factories;
 using Infrastructures.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace DesignPatternsWpf.Services
 {
     public static class PatternServices
     {
+
         public static List<PatternDetails> GetPatternDetailsList()
         {
             List<PatternDetails> patterns;
@@ -20,23 +22,25 @@ namespace DesignPatternsWpf.Services
             return patterns;
         }
 
-        private static PatternDetails GetCreationalPatternsDetails()
+        #region Creational Patterns
+
+        public static PatternDetails GetCreationalPatternsDetails()
         {
-            var creationalPatterns = new CreationalPatternsFactorry();
+            var creationalPatterns = new CreationalPatternsFactory();
 
             return creationalPatterns.GetPatternDetails();
         }
 
         private static PatternDetails AbstractFactoryPatternsDetails()
         {
-            var abstractFactoryPatterns = new AbstractFactoryPatternsFactorry();
+            var abstractFactoryPatterns = new AbstractFactoryPatternsFactory();
 
             return abstractFactoryPatterns.GetPatternDetails();
         }
 
         private static PatternDetails BuilderPatternsDetails()
         {
-            var builderPatterns = new BuilderPatternsFactorry();
+            var builderPatterns = new BuilderPatternsFactory();
 
             return builderPatterns.GetPatternDetails();
 
@@ -44,7 +48,7 @@ namespace DesignPatternsWpf.Services
 
         private static PatternDetails PrototypePatternsDetails()
         {
-            var prototypePatterns = new PrototypePatternsFactorry();
+            var prototypePatterns = new PrototypePatternsFactory();
 
             return prototypePatterns.GetPatternDetails();
 
@@ -53,10 +57,29 @@ namespace DesignPatternsWpf.Services
         private static PatternDetails SingletonPatternsDetails()
         {
 
-            var singletonPatterns = new SingletonPatternsFactorry();
+            var singletonPatterns = new SingletonPatternsFactory();
 
             return singletonPatterns.GetPatternDetails();
 
         }
+
+        #endregion
+
+        #region Structural Patterns
+
+         public static PatternDetails GetStructuralPatternsDetails()
+        {
+            var structuralPatterns = new StructuralPatternsFactory();
+
+            return structuralPatterns.GetPatternDetails();
+        }
+
+        #endregion
+
+        #region Behavioral Patterns
+
+       
+
+        #endregion
     }
 }

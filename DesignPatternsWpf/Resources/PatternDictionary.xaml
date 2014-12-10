@@ -7,7 +7,17 @@
                     xmlns:model="clr-namespace:DesignPatternsWpf.Model">
 
 
-
+    <DataTemplate x:Key="HyperlinkTemplate">
+        <TextBlock  TextWrapping="Wrap" >
+                <Hyperlink NavigateUri="{Binding }" >
+                    <TextBlock Text="{Binding }"/>
+                     <i:Interaction.Behaviors>
+                         <bev:HyperlinkBehavior/>
+                     </i:Interaction.Behaviors>
+                </Hyperlink>
+            </TextBlock>
+    </DataTemplate>
+    
     <DataTemplate DataType="{x:Type model:PatternDetails}">
         <Grid Margin="10">
             <Grid.ColumnDefinitions>
@@ -35,14 +45,8 @@
             <TextBox Text="{Binding Detailes}" IsReadOnly="True" TextWrapping="Wrap" Grid.Row="2" Grid.Column="2"/>
             <!--Url-->          
             <TextBlock Text="Url" Grid.Row="3"/>
-            <TextBlock  TextWrapping="Wrap" Grid.Row="3" Grid.Column="2">
-                <Hyperlink NavigateUri="{Binding Url}" >
-                    <TextBlock Text="{Binding Url}"/>
-                     <i:Interaction.Behaviors>
-                         <bev:HyperlinkBehavior/>
-                     </i:Interaction.Behaviors>
-                </Hyperlink>
-            </TextBlock>
+            <ItemsControl Grid.Row="3" Grid.Column="2" ItemsSource="{Binding UrlsList}"
+                          ItemTemplate="{StaticResource HyperlinkTemplate}"/>
             <!--Picture-->
             <TextBlock Text="UML" Grid.Row="4"/>
             <ScrollViewer Grid.Row="4" Grid.Column="2">

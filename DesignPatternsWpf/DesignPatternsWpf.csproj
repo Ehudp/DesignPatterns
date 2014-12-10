@@ -58,7 +58,10 @@
     <Compile Include="Model\PatternDetails.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Services\PatternServices.cs" />
-    <Compile Include="TreeFactory\AbstractPatternsFactory.cs" />
+    <Compile Include="TreeFactory\Factories\AbstractPatternsFactory.cs" />
+    <Compile Include="TreeFactory\Factories\CreationalPatternsFactorry.cs" />
+    <Compile Include="TreeFactory\Factories\StructuralPatternsFactory.cs" />
+    <Compile Include="TreeFactory\TreePatterns.cs" />
     <Compile Include="ViewModels\DesignPatternViewModel.cs" />
     <Compile Include="Views\DesignPatternView.xaml.cs">
       <DependentUpon>DesignPatternView.xaml</DependentUpon>

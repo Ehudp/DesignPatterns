@@ -1,4 +1,5 @@
-﻿using Infrastructures.ViewModels;
+﻿using System.Security.Policy;
+using Infrastructures.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace DesignPatternsWpf.Model
 
         public PatternDetails()
         {
-            Patterns = new List<PatternDetails>();
+            Patterns = new List<PatternDetails>();         
             OutPutAction = UpdateOutPut;
         }
         public string Name
@@ -39,10 +40,10 @@ namespace DesignPatternsWpf.Model
             set { SetProperty(value, () => IsGofPattern); }
         }
 
-        public string Url
+        public List<Uri> UrlsList
         {
-            get { return GetProperty<string>(); }
-            set { SetProperty(value, () => Url); }
+            get { return GetProperty<List<Uri>>(); }
+            set { SetProperty(value, () => UrlsList); }
         }
 
         public string OutPut

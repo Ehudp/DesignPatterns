@@ -7,6 +7,8 @@ using DesignPatterns.CreationalPatterns.Prototype.RealWorld;
 using DesignPatterns.CreationalPatterns.Prototype.Structural;
 using DesignPatterns.CreationalPatterns.Singleton.RealWorld;
 using DesignPatterns.CreationalPatterns.Singleton.Structural;
+using DesignPatterns.StructuralPatterns.Adapter.RealWorld;
+using DesignPatterns.StructuralPatterns.Adapter.Structural;
 using Logger;
 
 namespace DesignPatterns.Utilities
@@ -25,7 +27,7 @@ namespace DesignPatterns.Utilities
             AbstractFactory factory1 = new ConcreteFactory1();
             Log.WriteLine("{0} has Created", factory1.GetType().Name);
 
-          
+
             var client1 = new Client(factory1);
             Log.WriteLine("{0} has Created", client1.GetType().Name);
             Log.WriteLine("Client Create AbstractProductA and AbstractProductB");
@@ -34,8 +36,8 @@ namespace DesignPatterns.Utilities
 
             Log.AddSeparator(5);
             // Abstract factory #2
-            AbstractFactory factory2 = new ConcreteFactory2();                       
-            Log.WriteLine("{0} has Created", factory2.GetType().Name);        
+            AbstractFactory factory2 = new ConcreteFactory2();
+            Log.WriteLine("{0} has Created", factory2.GetType().Name);
             var client2 = new Client(factory2);
             Log.WriteLine("{0} has Created", client2.GetType().Name);
             Log.WriteLine("Client Create AbstractProductA and AbstractProductB");
@@ -79,11 +81,11 @@ namespace DesignPatterns.Utilities
             Builder b2 = new ConcreteBuilder2();
             Log.WriteLine("{0} has Created", b1.GetType().Name);
             Log.WriteLine("{0} has Created", b2.GetType().Name);
-          
+
             Log.AddSeparator(5);
             // Construct two products
             director.Construct(b1);
-            Log.WriteLine("{0} has Construct {1}", director.GetType().Name,b1.GetType().Name);
+            Log.WriteLine("{0} has Construct {1}", director.GetType().Name, b1.GetType().Name);
             Product p1 = b1.GetResult();
             Log.WriteLine("Get Resuult");
             p1.Show();
@@ -198,6 +200,41 @@ namespace DesignPatterns.Utilities
         }
 
         #endregion
+
+        #endregion
+
+
+        #region Structural Patterns
+
+        public static void AdapterStructural()
+        {
+            Target target = new Adapter();
+            target.Request();
+        }
+
+        public static void AdapterRealWorld()
+        {
+            // Non-adapted chemical compound
+            Compound unknown = new Compound("Unknown");
+            unknown.Display();
+
+            // Adapted chemical compounds
+            Compound water = new RichCompound("Water");
+            water.Display();
+
+            Compound benzene = new RichCompound("Benzene");
+            benzene.Display();
+
+            Compound ethanol = new RichCompound("Ethanol");
+            ethanol.Display();
+ 
+        }
+
+        #endregion
+
+        #region Behavioral Patterns
+
+
 
         #endregion
     }
