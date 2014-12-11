@@ -13,7 +13,7 @@ namespace DesignPatternsWpf.Services
 {
     public static class PatternServices
     {
-
+         
         public static List<PatternDetails> GetPatternDetailsList()
         {
             List<PatternDetails> patterns;
