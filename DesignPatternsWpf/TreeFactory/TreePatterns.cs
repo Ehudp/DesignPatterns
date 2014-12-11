@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DesignPatternsWpf.Model;
 using DesignPatternsWpf.Services;
+using DesignPatternsWpf.TreeFactory.Factories;
 
 namespace DesignPatternsWpf.TreeFactory
 {
@@ -46,10 +47,17 @@ namespace DesignPatternsWpf.TreeFactory
         {
             var patterns = new List<PatternDetails>
            {
-               PatternServices.GetCreationalPatternsDetails()
+               PatternServices.GetCreationalPatternsDetails(),
+               GetPatternsFromFactory<StructuralPatternsFactory>()
            };
 
             return patterns;
+        }
+
+        private  PatternDetails GetPatternsFromFactory<T>() where T : AbstractPatternsFactory
+        {
+            return PatternServices.GetPatternsFromFactory<T>();          
+
         }
     }
 }

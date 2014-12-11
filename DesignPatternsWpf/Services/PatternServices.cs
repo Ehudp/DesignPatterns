@@ -22,6 +22,20 @@ namespace DesignPatternsWpf.Services
             return patterns;
         }
 
+        public static PatternDetails GetPatternsFromFactory<T>() where T : AbstractPatternsFactory
+        {
+
+            var factory = Activator.CreateInstance<T>();
+            return factory.GetPatternDetails();
+
+        }
+
+        public static PatternDetails GetPatternsFromFactory<T>(this AbstractPatternsFactory factory) where T : AbstractPatternsFactory
+        {
+            return GetPatternsFromFactory<T>();
+        }
+
+
         #region Creational Patterns
 
         public static PatternDetails GetCreationalPatternsDetails()
@@ -67,7 +81,7 @@ namespace DesignPatternsWpf.Services
 
         #region Structural Patterns
 
-         public static PatternDetails GetStructuralPatternsDetails()
+        public static PatternDetails GetStructuralPatternsDetails()
         {
             var structuralPatterns = new StructuralPatternsFactory();
 
@@ -78,7 +92,7 @@ namespace DesignPatternsWpf.Services
 
         #region Behavioral Patterns
 
-       
+
 
         #endregion
     }
