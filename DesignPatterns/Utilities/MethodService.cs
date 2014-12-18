@@ -9,6 +9,8 @@ using DesignPatterns.CreationalPatterns.Singleton.RealWorld;
 using DesignPatterns.CreationalPatterns.Singleton.Structural;
 using DesignPatterns.StructuralPatterns.Adapter.RealWorld;
 using DesignPatterns.StructuralPatterns.Adapter.Structural;
+using DesignPatterns.StructuralPatterns.Bridge.RealWorld;
+using DesignPatterns.StructuralPatterns.Bridge.Structural;
 using Logger;
 
 namespace DesignPatterns.Utilities
@@ -228,6 +230,37 @@ namespace DesignPatterns.Utilities
             Compound ethanol = new RichCompound("Ethanol");
             ethanol.Display();
  
+        }
+
+        public static void BridgeStructural()
+        {
+            Abstraction ab = new RefinedAbstraction();
+
+            // Set implementation and call
+            ab.Implementor = new ConcreteImplementorA();
+            ab.Operation();
+
+            // Change implemention and call
+            ab.Implementor = new ConcreteImplementorB();
+            ab.Operation();
+        }
+
+        public static void BridgeRealWorld()
+        {
+            Customers customers = new Customers("Chicago");
+
+            // Set ConcreteImplementor
+            customers.Data = new CustomersData();
+
+            // Exercise the bridge
+            customers.Show();
+            customers.Next();
+            customers.Show();
+            customers.Next();
+            customers.Show();
+            customers.Add("Henry Velasquez");
+
+            customers.ShowAll();
         }
 
         #endregion

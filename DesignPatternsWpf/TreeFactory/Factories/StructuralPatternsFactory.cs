@@ -18,6 +18,7 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             };
 
             structuralDetails.Patterns.Add(this.GetPatternsFromFactory<AdapterPatternsFactory>());
+            structuralDetails.Patterns.Add(this.GetPatternsFromFactory<BridgePatternsFactory>());
 
             return structuralDetails;
         }
@@ -78,6 +79,61 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 adapterParent.Patterns.Add(adapterRealWorld);
 
                 return adapterParent;
+            }
+        }
+
+        public class BridgePatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var bridgeParent = new PatternDetails
+                {
+                    Name = "Bridge",
+                    Header = "Bridge",
+                    Detailes = "Separates an object’s interface from its implementation - " +
+                               "Decouple an abstraction from its implementation so that the two can vary independently.",
+                    ImageUrl ="",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/bridge-design-pattern"),
+                }
+                };
+
+                var bridgeStructural = new PatternDetails
+                {
+                    Name = "BridgeStructural",
+                    Header = "Bridge Structural",
+                    IsGofPattern = true,
+                    Method = MethodService.BridgeStructural,
+                    Detailes ="This structural code demonstrates the Bridge pattern which separates (decouples) the interface from its implementation."
+                    +" The implementation can evolve without changing clients which use the abstraction of the object.",
+                    ImageUrl ="",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/bridge-design-pattern#str"),
+                }
+                };
+
+
+                var bridgeRealWorld = new PatternDetails
+                {
+                    Name = "BridgeRealWorld",
+                    Header = "Bridge Real World",
+                    IsGofPattern = true,
+                    Method = MethodService.BridgeRealWorld,
+                    Detailes = "This real-world code demonstrates the Bridge pattern in which a BusinessObject abstraction is decoupled from the implementation in DataObject."
+                    +" The DataObject implementations can evolve dynamically without changing any clients.",
+                    ImageUrl ="",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/bridge-design-pattern#rea"),
+                }
+                };
+
+                bridgeParent.Patterns.Add(bridgeStructural);
+                bridgeParent.Patterns.Add(bridgeRealWorld);
+
+                return bridgeParent;
             }
         }
     }
