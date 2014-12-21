@@ -96,6 +96,22 @@
     <Compile Include="StructuralPatterns\Bridge\Structural\ConcreteImplementorB.cs" />
     <Compile Include="StructuralPatterns\Bridge\Structural\Implementor.cs" />
     <Compile Include="StructuralPatterns\Bridge\Structural\RefinedAbstraction.cs" />
+    <Compile Include="StructuralPatterns\Composite\RealWorld\CompositeElement.cs" />
+    <Compile Include="StructuralPatterns\Composite\RealWorld\DrawingElement.cs" />
+    <Compile Include="StructuralPatterns\Composite\RealWorld\PrimitiveElement.cs" />
+    <Compile Include="StructuralPatterns\Composite\Structural\Component.cs" />
+    <Compile Include="StructuralPatterns\Composite\Structural\Composite.cs" />
+    <Compile Include="StructuralPatterns\Composite\Structural\Leaf.cs" />
+    <Compile Include="StructuralPatterns\Decorator\RealWorld\Book.cs" />
+    <Compile Include="StructuralPatterns\Decorator\RealWorld\Borrowable.cs" />
+    <Compile Include="StructuralPatterns\Decorator\RealWorld\Decorator.cs" />
+    <Compile Include="StructuralPatterns\Decorator\RealWorld\LibraryItem.cs" />
+    <Compile Include="StructuralPatterns\Decorator\RealWorld\Video.cs" />
+    <Compile Include="StructuralPatterns\Decorator\Structural\Component.cs" />
+    <Compile Include="StructuralPatterns\Decorator\Structural\ConcreteComponent.cs" />
+    <Compile Include="StructuralPatterns\Decorator\Structural\ConcreteDecoratorA.cs" />
+    <Compile Include="StructuralPatterns\Decorator\Structural\ConcreteDecoratorB.cs" />
+    <Compile Include="StructuralPatterns\Decorator\Structural\Decorator.cs" />
     <Compile Include="Utilities\ManagerApp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -144,10 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClassDiagrams\StructuralPatterns\" />
-    <Folder Include="StructuralPatterns\Composite\RealWorld\" />
-    <Folder Include="StructuralPatterns\Composite\Structural\" />
-    <Folder Include="StructuralPatterns\Decorator\RealWorld\" />
-    <Folder Include="StructuralPatterns\Decorator\Structural\" />
     <Folder Include="StructuralPatterns\Facade\RealWorld\" />
     <Folder Include="StructuralPatterns\Facade\Structural\" />
     <Folder Include="StructuralPatterns\Flyweight\RealWorld\" />

@@ -19,6 +19,8 @@ namespace DesignPatternsWpf.TreeFactory.Factories
 
             structuralDetails.Patterns.Add(this.GetPatternsFromFactory<AdapterPatternsFactory>());
             structuralDetails.Patterns.Add(this.GetPatternsFromFactory<BridgePatternsFactory>());
+            structuralDetails.Patterns.Add(this.GetPatternsFromFactory<CompositePatternsFactory>());
+            structuralDetails.Patterns.Add(this.GetPatternsFromFactory<DecoratorePatternsFactory>());
 
             return structuralDetails;
         }
@@ -134,6 +136,118 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 bridgeParent.Patterns.Add(bridgeRealWorld);
 
                 return bridgeParent;
+            }
+        }
+
+        public class CompositePatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var compositeParent = new PatternDetails
+                {
+                    Name = "Composite",
+                    Header = "Composite",
+                    Detailes = "A tree structure of simple and composite objects - " +
+                               "Compose objects into tree structures to represent part-whole hierarchies."
+                               +" Composite lets clients treat individual objects and compositions of objects uniformly.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Composite-design-pattern"),
+                }
+                };
+
+                var compositeStructural = new PatternDetails
+                {
+                    Name = "CompositeStructural",
+                    Header = "Composite Structural",
+                    IsGofPattern = true,
+                    Method = MethodService.CompositeStructural,
+                    Detailes = "This structural code demonstrates the Composite pattern which allows the creation "
+                    +"of a tree structure in which individual nodes are accessed uniformly whether they are leaf nodes or branch (composite) nodes.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Composite-design-pattern#str"),
+                }
+                };
+
+
+                var compositeRealWorld = new PatternDetails
+                {
+                    Name = "CompositeRealWorld",
+                    Header = "Composite Real World",
+                    IsGofPattern = true,
+                    Method = MethodService.CompositeRealWorld,
+                    Detailes = "This real-world code demonstrates the Composite pattern used in"
+                    +" building a graphical tree structure made up of primitive nodes (lines, circles, etc) and composite nodes (groups of drawing elements that make up more complex elements).",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Composite-design-pattern#rea"),
+                }
+                };
+
+                compositeParent.Patterns.Add(compositeStructural);
+                compositeParent.Patterns.Add(compositeRealWorld);
+
+                return compositeParent;
+            }
+        }
+
+        public class DecoratorePatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var decoratorParent = new PatternDetails
+                {
+                    Name = "Decorator",
+                    Header = "Decorator",
+                    Detailes = "Add responsibilities to objects dynamically - " +
+                               "Attach additional responsibilities to an object dynamically. "
+                               +"Decorators provide a flexible alternative to subclassing for extending functionality.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Decorator-design-pattern"),
+                }
+                };
+
+                var decoratorStructural = new PatternDetails
+                {
+                    Name = "DecoratorStructural",
+                    Header = "Decorator Structural",
+                    IsGofPattern = true,
+                    Method = MethodService.DecoratorStructural,
+                    Detailes = "This structural code demonstrates the Decorator pattern which dynamically adds"
+                    +" extra functionality to an existing object.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Decorator-design-pattern#str"),
+                }
+                };
+
+
+                var decoratorRealWorld = new PatternDetails
+                {
+                    Name = "DecoratorRealWorld",
+                    Header = "Decorator Real World",
+                    IsGofPattern = true,
+                    Method = MethodService.DecoratorRealWorld,
+                    Detailes = "This real-world code demonstrates the Decorator pattern in which 'borrowable' "
+                    +"functionality is added to existing library items (books and videos).",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Decorator-design-pattern#rea"),
+                }
+                };
+
+                decoratorParent.Patterns.Add(decoratorStructural);
+                decoratorParent.Patterns.Add(decoratorRealWorld);
+
+                return decoratorParent;
             }
         }
     }

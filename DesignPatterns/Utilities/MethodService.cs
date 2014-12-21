@@ -11,6 +11,10 @@ using DesignPatterns.StructuralPatterns.Adapter.RealWorld;
 using DesignPatterns.StructuralPatterns.Adapter.Structural;
 using DesignPatterns.StructuralPatterns.Bridge.RealWorld;
 using DesignPatterns.StructuralPatterns.Bridge.Structural;
+using DesignPatterns.StructuralPatterns.Composite.RealWorld;
+using DesignPatterns.StructuralPatterns.Composite.Structural;
+using DesignPatterns.StructuralPatterns.Decorator.RealWorld;
+using DesignPatterns.StructuralPatterns.Decorator.Structural;
 using Logger;
 
 namespace DesignPatterns.Utilities
@@ -263,6 +267,87 @@ namespace DesignPatterns.Utilities
             customers.ShowAll();
         }
 
+
+        public static void CompositeStructural()
+        {
+            // Create a tree structure
+            Composite root = new Composite("root");
+            root.Add(new Leaf("Leaf A"));
+            root.Add(new Leaf("Leaf B"));
+
+            Composite comp = new Composite("Composite X");
+            comp.Add(new Leaf("Leaf XA"));
+            comp.Add(new Leaf("Leaf XB"));
+
+            root.Add(comp);
+            root.Add(new Leaf("Leaf C"));
+
+            // Add and remove a leaf
+            Leaf leaf = new Leaf("Leaf D");
+            root.Add(leaf);
+            root.Remove(leaf);
+
+            // Recursively display tree
+            root.Display(1);
+        }
+
+        public static void CompositeRealWorld()
+        {
+            CompositeElement root =new CompositeElement("Picture");
+            root.Add(new PrimitiveElement("Red Line"));
+            root.Add(new PrimitiveElement("Blue Circle"));
+            root.Add(new PrimitiveElement("Green Box"));
+
+            // Create a branch
+            CompositeElement comp =new CompositeElement("Two Circles");
+            comp.Add(new PrimitiveElement("Black Circle"));
+            comp.Add(new PrimitiveElement("White Circle"));
+            root.Add(comp);
+
+            // Add and remove a PrimitiveElement
+            PrimitiveElement pe =new PrimitiveElement("Yellow Line");
+            root.Add(pe);
+            root.Remove(pe);
+
+            // Recursively display nodes
+            root.Display(1);
+        }
+
+        public static void DecoratorStructural()
+        {
+            // Create ConcreteComponent and two Decorators
+            ConcreteComponent c = new ConcreteComponent();
+            ConcreteDecoratorA d1 = new ConcreteDecoratorA();
+            ConcreteDecoratorB d2 = new ConcreteDecoratorB();
+
+            // Link decorators
+            d1.SetComponent(c);
+            d2.SetComponent(d1);
+
+            d2.Operation();
+ 
+        }
+
+        public static void DecoratorRealWorld()
+        {
+            // Create book
+            Book book = new Book("Worley", "Inside ASP.NET", 10);
+            book.Display();
+
+            // Create video
+            Video video = new Video("Spielberg", "Jaws", 23, 92);
+            video.Display();
+
+            // Make video borrowable, then borrow and display
+            Log.WriteLine("\nMaking video borrowable:");
+
+            Borrowable borrowvideo = new Borrowable(video);
+            borrowvideo.BorrowItem("Customer #1");
+            borrowvideo.BorrowItem("Customer #2");
+
+            borrowvideo.Display();
+        }
+   
         #endregion
 
         #region Behavioral Patterns
