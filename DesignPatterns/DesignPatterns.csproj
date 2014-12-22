@@ -112,6 +112,25 @@
     <Compile Include="StructuralPatterns\Decorator\Structural\ConcreteDecoratorA.cs" />
     <Compile Include="StructuralPatterns\Decorator\Structural\ConcreteDecoratorB.cs" />
     <Compile Include="StructuralPatterns\Decorator\Structural\Decorator.cs" />
+    <Compile Include="StructuralPatterns\Facade\RealWorld\Bank.cs" />
+    <Compile Include="StructuralPatterns\Facade\RealWorld\Credit.cs" />
+    <Compile Include="StructuralPatterns\Facade\RealWorld\Customer.cs" />
+    <Compile Include="StructuralPatterns\Facade\RealWorld\Loan.cs" />
+    <Compile Include="StructuralPatterns\Facade\RealWorld\Mortgage.cs" />
+    <Compile Include="StructuralPatterns\Facade\Structural\Facade.cs" />
+    <Compile Include="StructuralPatterns\Facade\Structural\SubSystemFour.cs" />
+    <Compile Include="StructuralPatterns\Facade\Structural\SubSystemOne.cs" />
+    <Compile Include="StructuralPatterns\Facade\Structural\SubSystemThree.cs" />
+    <Compile Include="StructuralPatterns\Facade\Structural\SubSystemTwo.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\RealWorld\Character.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\RealWorld\CharacterA.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\RealWorld\CharacterB.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\RealWorld\CharacterFactory.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\RealWorld\CharacterZ.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\Structural\ConcreteFlyweight.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\Structural\Flyweight.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\Structural\FlyweightFactory.cs" />
+    <Compile Include="StructuralPatterns\Flyweight\Structural\UnsharedConcreteFlyweight.cs" />
     <Compile Include="Utilities\ManagerApp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -160,10 +179,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClassDiagrams\StructuralPatterns\" />
-    <Folder Include="StructuralPatterns\Facade\RealWorld\" />
-    <Folder Include="StructuralPatterns\Facade\Structural\" />
-    <Folder Include="StructuralPatterns\Flyweight\RealWorld\" />
-    <Folder Include="StructuralPatterns\Flyweight\Structural\" />
     <Folder Include="StructuralPatterns\Proxy\RealWorld\" />
     <Folder Include="StructuralPatterns\Proxy\Structural\" />
   </ItemGroup>

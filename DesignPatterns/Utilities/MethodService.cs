@@ -15,6 +15,10 @@ using DesignPatterns.StructuralPatterns.Composite.RealWorld;
 using DesignPatterns.StructuralPatterns.Composite.Structural;
 using DesignPatterns.StructuralPatterns.Decorator.RealWorld;
 using DesignPatterns.StructuralPatterns.Decorator.Structural;
+using DesignPatterns.StructuralPatterns.Facade.RealWorld;
+using DesignPatterns.StructuralPatterns.Facade.Structural;
+using DesignPatterns.StructuralPatterns.Flyweight.RealWorld;
+using DesignPatterns.StructuralPatterns.Flyweight.Structural;
 using Logger;
 
 namespace DesignPatterns.Utilities
@@ -267,7 +271,6 @@ namespace DesignPatterns.Utilities
             customers.ShowAll();
         }
 
-
         public static void CompositeStructural()
         {
             // Create a tree structure
@@ -346,6 +349,75 @@ namespace DesignPatterns.Utilities
             borrowvideo.BorrowItem("Customer #2");
 
             borrowvideo.Display();
+        }
+
+        public static void FacadeStructural()
+        {
+            // Create ConcreteComponent and two Decorators
+            Facade facade = new Facade();
+
+            facade.MethodA();
+            facade.MethodB();
+ 
+
+        }
+
+        public static void FacadeRealWorld()
+        {
+            Mortgage mortgage = new Mortgage();
+
+            // Evaluate mortgage eligibility for customer
+            Customer customer = new Customer("Ann McKinsey");
+            bool eligible = mortgage.IsEligible(customer, 125000);
+
+            Log.WriteLine("\n" + customer.Name +
+                " has been " + (eligible ? "Approved" : "Rejected"));
+ 
+        }
+
+        public static void FlyweightStructural()
+        {
+            // Arbitrary extrinsic state
+            int extrinsicstate = 22;
+
+            FlyweightFactory factory = new FlyweightFactory();
+
+            // Work with different flyweight instances
+            Flyweight fx = factory.GetFlyweight("X");
+            fx.Operation(--extrinsicstate);
+
+            Flyweight fy = factory.GetFlyweight("Y");
+            fy.Operation(--extrinsicstate);
+
+            Flyweight fz = factory.GetFlyweight("Z");
+            fz.Operation(--extrinsicstate);
+
+            UnsharedConcreteFlyweight fu = new
+              UnsharedConcreteFlyweight();
+
+            fu.Operation(--extrinsicstate);
+
+        }
+
+        public static void FlyweightRealWorld()
+        {
+          
+            // Build a document with text
+            string document = "AAZZBBZB";
+            char[] chars = document.ToCharArray();
+
+            CharacterFactory factory = new CharacterFactory();
+
+            // extrinsic state
+            int pointSize = 10;
+
+            // For each character use a flyweight object
+            foreach (char c in chars)
+            {
+                pointSize++;
+                Character character = factory.GetCharacter(c);
+                character.Display(pointSize);
+            }
         }
    
         #endregion

@@ -21,7 +21,9 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             structuralDetails.Patterns.Add(this.GetPatternsFromFactory<BridgePatternsFactory>());
             structuralDetails.Patterns.Add(this.GetPatternsFromFactory<CompositePatternsFactory>());
             structuralDetails.Patterns.Add(this.GetPatternsFromFactory<DecoratorePatternsFactory>());
-
+            structuralDetails.Patterns.Add(this.GetPatternsFromFactory<FacadePatternsFactory>());
+            structuralDetails.Patterns.Add(this.GetPatternsFromFactory<FlyweightPatternsFactory>());
+            
             return structuralDetails;
         }
 
@@ -248,6 +250,117 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 decoratorParent.Patterns.Add(decoratorRealWorld);
 
                 return decoratorParent;
+            }
+        }
+
+        public class FacadePatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var facadeParent = new PatternDetails
+                {
+                    Name = "Facade",
+                    Header = "Facade",
+                    Detailes = "A single class that represents an entire subsystem - " +
+                               "Provide a unified interface to a set of interfaces in a subsystem."
+                               +" Façade defines a higher-level interface that makes the subsystem easier to use.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Facade-design-pattern"),
+                }
+                };
+
+                var facadeStructural = new PatternDetails
+                {
+                    Name = "FacadeStructural",
+                    Header = "Facade Structural",
+                    IsGofPattern = true,
+                    Method = MethodService.FacadeStructural,
+                    Detailes = "This structural code demonstrates the Facade pattern which provides"
+                    +" a simplified and uniform interface to a large subsystem of classes.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Facade-design-pattern#str"),
+                }
+                };
+
+
+                var facadeRealWorld = new PatternDetails
+                {
+                    Name = "FacadeRealWorld",
+                    Header = "Facade Real World",
+                    IsGofPattern = true,
+                    Method = MethodService.FacadeRealWorld,
+                    Detailes = "This real-world code demonstrates the Facade pattern as a MortgageApplication object " 
+                    + "which provides a simplified interface to a large subsystem of classes measuring the creditworthyness of an applicant.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Facade-design-pattern#rea"),
+                }
+                };
+
+                facadeParent.Patterns.Add(facadeStructural);
+                facadeParent.Patterns.Add(facadeRealWorld);
+
+                return facadeParent;
+            }
+        }
+
+        public class FlyweightPatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var flyweightParent = new PatternDetails
+                {
+                    Name = "Flyweight",
+                    Header = "Flyweight",
+                    Detailes = "A fine-grained instance used for efficient sharing - " +
+                               "Use sharing to support large numbers of fine-grained objects efficiently.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Flyweight-design-pattern"),
+                }
+                };
+
+                var flyweightStructural = new PatternDetails
+                {
+                    Name = "FlyweightStructural",
+                    Header = "Flyweight Structural",
+                    IsGofPattern = true,
+                    Method = MethodService.FlyweightStructural,
+                    Detailes = "This structural code demonstrates the Flyweight pattern"
+                    +" in which a relatively small number of objects is shared many times by different clients.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Flyweight-design-pattern#str"),
+                }
+                };
+
+
+                var flyweightRealWorld = new PatternDetails
+                {
+                    Name = "FlyweightRealWorld",
+                    Header = "Flyweight Real World",
+                    IsGofPattern = true,
+                    Method = MethodService.FlyweightRealWorld,
+                    Detailes = "This real-world code demonstrates the Flyweight pattern in which a relatively "
+                    +"small number of Character objects is shared many times by a document that has potentially many characters.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Flyweight-design-pattern#rea"),
+                }
+                };
+
+                flyweightParent.Patterns.Add(flyweightStructural);
+                flyweightParent.Patterns.Add(flyweightRealWorld);
+
+                return flyweightParent;
             }
         }
     }
