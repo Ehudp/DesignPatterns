@@ -60,6 +60,7 @@
     <Compile Include="Services\PatternServices.cs" />
     <Compile Include="TreeFactory\Factories\AbstractPatternsFactory.cs" />
     <Compile Include="TreeFactory\Factories\CreationalPatternsFactorry.cs" />
+    <Compile Include="TreeFactory\Factories\BehavioralPatternsFactory.cs" />
     <Compile Include="TreeFactory\Factories\StructuralPatternsFactory.cs" />
     <Compile Include="TreeFactory\TreePatterns.cs" />
     <Compile Include="ViewModels\DesignPatternViewModel.cs" />

@@ -48,7 +48,8 @@ namespace DesignPatternsWpf.TreeFactory
             var patterns = new List<PatternDetails>
            {
                PatternServices.GetCreationalPatternsDetails(),
-               GetPatternsFromFactory<StructuralPatternsFactory>()
+               GetPatternsFromFactory<StructuralPatternsFactory>(),
+               GetPatternsFromFactory<BehavioralPatternsFactory>()
            };
 
             return patterns;

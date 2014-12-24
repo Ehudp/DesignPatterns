@@ -1,4 +1,7 @@
-﻿using System;
+﻿
+
+using DesignPatterns.BehavioralPatterns.ChainOfResp.RealWorld;
+using DesignPatterns.BehavioralPatterns.ChainOfResp.Structural;
 using DesignPatterns.CreationalPatterns.AbstractFactory.RealWorld;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Structural;
 using DesignPatterns.CreationalPatterns.Builder.RealWorld;
@@ -22,6 +25,7 @@ using DesignPatterns.StructuralPatterns.Flyweight.Structural;
 using DesignPatterns.StructuralPatterns.Proxy.RealWorld;
 using DesignPatterns.StructuralPatterns.Proxy.Structural;
 using Logger;
+
 
 namespace DesignPatterns.Utilities
 {
@@ -214,7 +218,6 @@ namespace DesignPatterns.Utilities
         #endregion
 
         #endregion
-
 
         #region Structural Patterns
 
@@ -446,7 +449,46 @@ namespace DesignPatterns.Utilities
 
         #region Behavioral Patterns
 
+        public static void ChainOfRespStructural()
+        {
+            // Setup Chain of Responsibility
+            Handler h1 = new ConcreteHandler1();
+            Handler h2 = new ConcreteHandler2();
+            Handler h3 = new ConcreteHandler3();
+            h1.SetSuccessor(h2);
+            h2.SetSuccessor(h3);
 
+            // Generate and process request
+            int[] requests = { 2, 5, 14, 22, 18, 3, 27, 20 };
+
+            foreach (int request in requests)
+            {
+                h1.HandleRequest(request);
+            }
+
+        }
+
+        public static void ChainOfRespRealWorld()
+        {
+
+            // Setup Chain of Responsibility
+            Approver larry = new Boss();
+            Approver sam = new VicePresident();
+            Approver tammy = new President();
+
+            larry.SetSuccessor(sam);
+            sam.SetSuccessor(tammy);
+
+            // Generate and process purchase requests
+            Purchase p = new Purchase(2034, 350.00, "Assets");
+            larry.ProcessRequest(p);
+
+            p = new Purchase(2035, 32590.10, "Project X");
+            larry.ProcessRequest(p);
+
+            p = new Purchase(2036, 122100.00, "Project Y");
+            larry.ProcessRequest(p);
+        }
 
         #endregion
     }

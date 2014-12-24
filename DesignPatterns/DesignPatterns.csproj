@@ -42,6 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BehavioralPatterns\ChainOfResp\RealWorld\Approver.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResp\RealWorld\Boss.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResp\RealWorld\President.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResp\RealWorld\Purchase.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResp\RealWorld\VicePresident.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResp\Structural\ConcreteHandler1.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResp\Structural\ConcreteHandler2.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResp\Structural\ConcreteHandler3.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResp\Structural\Handler.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
@@ -184,6 +193,26 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BehavioralPatterns\Command\RealWorld\" />
+    <Folder Include="BehavioralPatterns\Command\Structural\" />
+    <Folder Include="BehavioralPatterns\Interpreter\RealWorld\" />
+    <Folder Include="BehavioralPatterns\Interpreter\Structural\" />
+    <Folder Include="BehavioralPatterns\Iterator\RealWorld\" />
+    <Folder Include="BehavioralPatterns\Iterator\Structural\" />
+    <Folder Include="BehavioralPatterns\Mediator\RealWorld\" />
+    <Folder Include="BehavioralPatterns\Mediator\Structural\" />
+    <Folder Include="BehavioralPatterns\Memento\RealWorld\" />
+    <Folder Include="BehavioralPatterns\Memento\Structural\" />
+    <Folder Include="BehavioralPatterns\Observer\RealWorld\" />
+    <Folder Include="BehavioralPatterns\Observer\Structural\" />
+    <Folder Include="BehavioralPatterns\State\RealWorld\" />
+    <Folder Include="BehavioralPatterns\State\Structural\" />
+    <Folder Include="BehavioralPatterns\Strategy\RealWorld\" />
+    <Folder Include="BehavioralPatterns\Strategy\Structural\" />
+    <Folder Include="BehavioralPatterns\Template Method\RealWorld\" />
+    <Folder Include="BehavioralPatterns\Template Method\Structural\" />
+    <Folder Include="BehavioralPatterns\Visitor\RealWorld\" />
+    <Folder Include="BehavioralPatterns\Visitor\Structural\" />
     <Folder Include="ClassDiagrams\StructuralPatterns\" />
   </ItemGroup>
   <ItemGroup>
