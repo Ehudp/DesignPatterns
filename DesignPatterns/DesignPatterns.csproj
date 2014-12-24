@@ -131,6 +131,12 @@
     <Compile Include="StructuralPatterns\Flyweight\Structural\Flyweight.cs" />
     <Compile Include="StructuralPatterns\Flyweight\Structural\FlyweightFactory.cs" />
     <Compile Include="StructuralPatterns\Flyweight\Structural\UnsharedConcreteFlyweight.cs" />
+    <Compile Include="StructuralPatterns\Proxy\RealWorld\IMath.cs" />
+    <Compile Include="StructuralPatterns\Proxy\RealWorld\Math.cs" />
+    <Compile Include="StructuralPatterns\Proxy\RealWorld\MathProxy.cs" />
+    <Compile Include="StructuralPatterns\Proxy\Structural\Proxy.cs" />
+    <Compile Include="StructuralPatterns\Proxy\Structural\RealSubject.cs" />
+    <Compile Include="StructuralPatterns\Proxy\Structural\Subject.cs" />
     <Compile Include="Utilities\ManagerApp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -179,8 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClassDiagrams\StructuralPatterns\" />
-    <Folder Include="StructuralPatterns\Proxy\RealWorld\" />
-    <Folder Include="StructuralPatterns\Proxy\Structural\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\AdapterUML.GIF">

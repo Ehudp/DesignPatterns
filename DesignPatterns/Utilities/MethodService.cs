@@ -19,6 +19,8 @@ using DesignPatterns.StructuralPatterns.Facade.RealWorld;
 using DesignPatterns.StructuralPatterns.Facade.Structural;
 using DesignPatterns.StructuralPatterns.Flyweight.RealWorld;
 using DesignPatterns.StructuralPatterns.Flyweight.Structural;
+using DesignPatterns.StructuralPatterns.Proxy.RealWorld;
+using DesignPatterns.StructuralPatterns.Proxy.Structural;
 using Logger;
 
 namespace DesignPatterns.Utilities
@@ -418,6 +420,26 @@ namespace DesignPatterns.Utilities
                 Character character = factory.GetCharacter(c);
                 character.Display(pointSize);
             }
+        }
+
+        public static void ProxyStructural()
+        {
+            // Create proxy and request a service
+            Proxy proxy = new Proxy();
+            proxy.Request();
+
+        }
+
+        public static void ProxyRealWorld()
+        {
+
+            MathProxy proxy = new MathProxy();
+
+            // Do the math
+            Log.WriteLine("4 + 2 = " + proxy.Add(4, 2));
+            Log.WriteLine("4 - 2 = " + proxy.Sub(4, 2));
+            Log.WriteLine("4 * 2 = " + proxy.Mul(4, 2));
+            Log.WriteLine("4 / 2 = " + proxy.Div(4, 2));
         }
    
         #endregion

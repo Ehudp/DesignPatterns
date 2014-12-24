@@ -23,6 +23,8 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             structuralDetails.Patterns.Add(this.GetPatternsFromFactory<DecoratorePatternsFactory>());
             structuralDetails.Patterns.Add(this.GetPatternsFromFactory<FacadePatternsFactory>());
             structuralDetails.Patterns.Add(this.GetPatternsFromFactory<FlyweightPatternsFactory>());
+            structuralDetails.Patterns.Add(this.GetPatternsFromFactory<ProxyweightPatternsFactory>());
+            
             
             return structuralDetails;
         }
@@ -361,6 +363,61 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 flyweightParent.Patterns.Add(flyweightRealWorld);
 
                 return flyweightParent;
+            }
+        }
+
+        public class ProxyweightPatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var proxyParent = new PatternDetails
+                {
+                    Name = "Proxy",
+                    Header = "Proxy",
+                    Detailes = "An object representing another object - " +
+                               "Provide a surrogate or placeholder for another object to control access to it.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Proxy-design-pattern"),
+                }
+                };
+
+                var proxyStructural = new PatternDetails
+                {
+                    Name = "ProxyStructural",
+                    Header = "Proxy Structural",
+                    IsGofPattern = true,
+                    Method = MethodService.ProxyStructural,
+                    Detailes = "This structural code demonstrates the Proxy pattern which provides "
+                    +"a representative object (proxy) that controls access to another similar object.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Proxy-design-pattern#str"),
+                }
+                };
+
+
+                var proxyRealWorld = new PatternDetails
+                {
+                    Name = "ProxyRealWorld",
+                    Header = "Proxy Real World",
+                    IsGofPattern = true,
+                    Method = MethodService.ProxyRealWorld,
+                    Detailes = "This real-world code demonstrates the Proxy pattern for "
+                    +"a Math object represented by a MathProxy object.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Proxy-design-pattern#rea"),
+                }
+                };
+
+                proxyParent.Patterns.Add(proxyStructural);
+                proxyParent.Patterns.Add(proxyRealWorld);
+
+                return proxyParent;
             }
         }
     }
