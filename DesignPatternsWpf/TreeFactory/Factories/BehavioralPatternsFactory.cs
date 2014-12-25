@@ -46,8 +46,7 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 var chainOfRespStructural = new PatternDetails
                 {
                     Name = "ChainOfRespStructural",
-                    Header = "ChainOfResp Structural",
-                    IsGofPattern = true,
+                    Header = "ChainOfResp Structural",                
                     Method = MethodService.ChainOfRespStructural,
                     Detailes =
                         "This structural code demonstrates the Chain of Responsibility pattern in"
@@ -64,8 +63,7 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 var chainOfRespRealWorld = new PatternDetails
                 {
                     Name = "ChainOfRespRealWorld",
-                    Header = "ChainOfResp Real World",
-                    IsGofPattern = true,
+                    Header = "ChainOfResp Real World",               
                     Method = MethodService.ChainOfRespRealWorld,
                     Detailes = "This real-world code demonstrates the Chain of Responsibility pattern in"
                     +" which several linked managers and executives can respond to a purchase request or hand it"

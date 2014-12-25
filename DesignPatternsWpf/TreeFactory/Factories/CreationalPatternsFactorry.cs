@@ -45,7 +45,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             {
                 Name = "AbstractFactoryRealWorld",
                 Header = "Abstract Factory Real World",
-                IsGofPattern = true,
                 Method = MethodService.AbstractFactoryRealWorld,
                 Detailes =
                     "This real-world code demonstrates the creation of different animal worlds for a computer game using different factories."
@@ -63,7 +62,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             {
                 Name = "AbstractFactoryStructural",
                 Header = "Abstract Factory Structural",
-                IsGofPattern = true,
                 Method = MethodService.AbstractFactoryStructural,
                 Detailes =
                     "This structural code demonstrates the Abstract Factory pattern creating parallel hierarchies of objects."
@@ -105,7 +103,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             {
                 Name = "BuilderRealWorld",
                 Header = "Builder Real World",
-                IsGofPattern = true,
                 Method = MethodService.BuilderRealWorld,
                 Detailes =
                     "This real-world code demonstates the Builder pattern in which different vehicles are assembled in a step-by-step fashion. "
@@ -122,7 +119,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             {
                 Name = "BuilderStructural",
                 Header = "Builder Structural",
-                IsGofPattern = true,
                 Method = MethodService.BuilderStructural,
                 Detailes =
                     "This structural code demonstrates the Builder pattern in which complex objects are created in a step-by-step fashion."
@@ -163,7 +159,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             {
                 Name = "PrototypeRealWorld",
                 Header = "Prototype Real World",
-                IsGofPattern = true,
                 Method = MethodService.PrototypeRealWorld,
                 Detailes =
                     "This real-world code demonstrates the Prototype pattern in which new Color objects are created by copying pre-existing,"
@@ -179,7 +174,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             {
                 Name = "PrototypeStructural",
                 Header = "Prototype Structural",
-                IsGofPattern = true,
                 Method = MethodService.PrototypeStructural,
                 Detailes =
                     "This structural code demonstrates the Prototype pattern in which new objects are created by copying pre-existing objects (prototypes) of the same class.",
@@ -218,7 +212,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             {
                 Name = "SingletonRealWorld",
                 Header = "Singleton Real World",
-                IsGofPattern = true,
                 Method = MethodService.SingletonRealWorld,
                 Detailes = "This real-world code demonstrates the Singleton pattern as a LoadBalancing object."
                            +
@@ -238,7 +231,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             {
                 Name = "SingletonStructural",
                 Header = "Singleton Structural",
-                IsGofPattern = true,
                 Method = MethodService.SingletonStructural,
                 Detailes = "This structural code demonstrates the Singleton pattern which assures only"
                            + " a single instance (the singleton) of the class can be created.",

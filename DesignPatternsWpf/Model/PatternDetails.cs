@@ -33,12 +33,7 @@ namespace DesignPatternsWpf.Model
             get { return GetProperty<Action>(); }
             set { SetProperty(value, () => Method); }
         }
-
-        public bool? IsGofPattern
-        {
-            get { return GetProperty<bool?>(); }
-            set { SetProperty(value, () => IsGofPattern); }
-        }
+      
 
         public List<Uri> UrlsList
         {

@@ -51,7 +51,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "AdapterStructural",
                     Header = "Adapter Structural",
-                    IsGofPattern = true,
                     Method = MethodService.AdapterStructural,
                     Detailes =
                         "This structural code demonstrates the Adapter pattern which maps the interface of one class " +
@@ -69,7 +68,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "AdapterRealWorld",
                     Header = "Adapter Real World",
-                    IsGofPattern = true,
                     Method = MethodService.AdapterRealWorld,
                     Detailes = "This real-world code demonstrates the use of a legacy chemical databank." +
                     " Chemical compound objects access the databank through an Adapter interface.",
@@ -109,7 +107,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "BridgeStructural",
                     Header = "Bridge Structural",
-                    IsGofPattern = true,
                     Method = MethodService.BridgeStructural,
                     Detailes ="This structural code demonstrates the Bridge pattern which separates (decouples) the interface from its implementation."
                     +" The implementation can evolve without changing clients which use the abstraction of the object.",
@@ -125,7 +122,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "BridgeRealWorld",
                     Header = "Bridge Real World",
-                    IsGofPattern = true,
                     Method = MethodService.BridgeRealWorld,
                     Detailes = "This real-world code demonstrates the Bridge pattern in which a BusinessObject abstraction is decoupled from the implementation in DataObject."
                     +" The DataObject implementations can evolve dynamically without changing any clients.",
@@ -165,7 +161,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "CompositeStructural",
                     Header = "Composite Structural",
-                    IsGofPattern = true,
                     Method = MethodService.CompositeStructural,
                     Detailes = "This structural code demonstrates the Composite pattern which allows the creation "
                     +"of a tree structure in which individual nodes are accessed uniformly whether they are leaf nodes or branch (composite) nodes.",
@@ -181,7 +176,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "CompositeRealWorld",
                     Header = "Composite Real World",
-                    IsGofPattern = true,
                     Method = MethodService.CompositeRealWorld,
                     Detailes = "This real-world code demonstrates the Composite pattern used in"
                     +" building a graphical tree structure made up of primitive nodes (lines, circles, etc) and composite nodes (groups of drawing elements that make up more complex elements).",
@@ -221,7 +215,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "DecoratorStructural",
                     Header = "Decorator Structural",
-                    IsGofPattern = true,
                     Method = MethodService.DecoratorStructural,
                     Detailes = "This structural code demonstrates the Decorator pattern which dynamically adds"
                     +" extra functionality to an existing object.",
@@ -237,7 +230,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "DecoratorRealWorld",
                     Header = "Decorator Real World",
-                    IsGofPattern = true,
                     Method = MethodService.DecoratorRealWorld,
                     Detailes = "This real-world code demonstrates the Decorator pattern in which 'borrowable' "
                     +"functionality is added to existing library items (books and videos).",
@@ -277,7 +269,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "FacadeStructural",
                     Header = "Facade Structural",
-                    IsGofPattern = true,
                     Method = MethodService.FacadeStructural,
                     Detailes = "This structural code demonstrates the Facade pattern which provides"
                     +" a simplified and uniform interface to a large subsystem of classes.",
@@ -293,7 +284,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "FacadeRealWorld",
                     Header = "Facade Real World",
-                    IsGofPattern = true,
                     Method = MethodService.FacadeRealWorld,
                     Detailes = "This real-world code demonstrates the Facade pattern as a MortgageApplication object " 
                     + "which provides a simplified interface to a large subsystem of classes measuring the creditworthyness of an applicant.",
@@ -332,7 +322,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "FlyweightStructural",
                     Header = "Flyweight Structural",
-                    IsGofPattern = true,
                     Method = MethodService.FlyweightStructural,
                     Detailes = "This structural code demonstrates the Flyweight pattern"
                     +" in which a relatively small number of objects is shared many times by different clients.",
@@ -348,7 +337,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "FlyweightRealWorld",
                     Header = "Flyweight Real World",
-                    IsGofPattern = true,
                     Method = MethodService.FlyweightRealWorld,
                     Detailes = "This real-world code demonstrates the Flyweight pattern in which a relatively "
                     +"small number of Character objects is shared many times by a document that has potentially many characters.",
@@ -387,7 +375,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "ProxyStructural",
                     Header = "Proxy Structural",
-                    IsGofPattern = true,
                     Method = MethodService.ProxyStructural,
                     Detailes = "This structural code demonstrates the Proxy pattern which provides "
                     +"a representative object (proxy) that controls access to another similar object.",
@@ -403,7 +390,6 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 {
                     Name = "ProxyRealWorld",
                     Header = "Proxy Real World",
-                    IsGofPattern = true,
                     Method = MethodService.ProxyRealWorld,
                     Detailes = "This real-world code demonstrates the Proxy pattern for "
                     +"a Math object represented by a MathProxy object.",
