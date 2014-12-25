@@ -18,6 +18,7 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             };
 
             behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<ChainOfRespPatternsFactory>());
+            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<CommandPatternsFactory>());
          
             
             
@@ -79,6 +80,62 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 chainOfRespParent.Patterns.Add(chainOfRespRealWorld);
 
                 return chainOfRespParent;
+            }
+        }
+
+        public class CommandPatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var commandParent = new PatternDetails
+                {
+                    Name = "Command",
+                    Header = "Command",
+                    Detailes = "Encapsulate a command request as an object - " +
+                               "Encapsulate a request as an object, thereby letting you parameterize clients with " +
+                               "different requests, queue or log requests, and support undoable operations.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Command-design-pattern"),
+                }
+                };
+
+                var commandStructural = new PatternDetails
+                {
+                    Name = "CommandStructural",
+                    Header = "Command Structural",
+                    Method = MethodService.CommandStructural,
+                    Detailes =
+                        "This structural code demonstrates the Command pattern which" +
+                        " stores requests as objects allowing clients to execute or playback the requests.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Command-design-pattern#str"),
+                }
+                };
+
+
+                var commandRealWorld = new PatternDetails
+                {
+                    Name = "CommandRealWorld",
+                    Header = "Command Real World",
+                    Method = MethodService.CommandRealWorld,
+                    Detailes = "TThis real-world code demonstrates the Command pattern used in a simple" +
+                               " calculator with unlimited number of undo's and redo's. Note that in C#  " +
+                               "the word 'operator' is a keyword. Prefixing it with '@' allows using it as an identifier.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/chain-of-responsibility-design-pattern#rea"),
+                }
+                };
+
+                commandParent.Patterns.Add(commandStructural);
+                commandParent.Patterns.Add(commandRealWorld);
+
+                return commandParent;
             }
         }
 

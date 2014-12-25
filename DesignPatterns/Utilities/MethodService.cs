@@ -2,6 +2,8 @@
 
 using DesignPatterns.BehavioralPatterns.ChainOfResp.RealWorld;
 using DesignPatterns.BehavioralPatterns.ChainOfResp.Structural;
+using DesignPatterns.BehavioralPatterns.Command.RealWorld;
+using DesignPatterns.BehavioralPatterns.Command.Structural;
 using DesignPatterns.CreationalPatterns.AbstractFactory.RealWorld;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Structural;
 using DesignPatterns.CreationalPatterns.Builder.RealWorld;
@@ -25,6 +27,7 @@ using DesignPatterns.StructuralPatterns.Flyweight.Structural;
 using DesignPatterns.StructuralPatterns.Proxy.RealWorld;
 using DesignPatterns.StructuralPatterns.Proxy.Structural;
 using Logger;
+using Command = DesignPatterns.BehavioralPatterns.Command.Structural.Command;
 
 
 namespace DesignPatterns.Utilities
@@ -488,6 +491,38 @@ namespace DesignPatterns.Utilities
 
             p = new Purchase(2036, 122100.00, "Project Y");
             larry.ProcessRequest(p);
+        }
+
+        public static void CommandStructural()
+        {
+            // Create receiver, command, and invoker
+            Receiver receiver = new Receiver();
+            Command command = new ConcreteCommand(receiver);
+            Invoker invoker = new Invoker();
+
+            // Set and execute command
+            invoker.SetCommand(command);
+            invoker.ExecuteCommand();
+
+        }
+
+        public static void CommandRealWorld()
+        {
+
+            // Create user and let her compute
+            User user = new User();
+
+            // User presses calculator buttons
+            user.Compute('+', 100);
+            user.Compute('-', 50);
+            user.Compute('*', 10);
+            user.Compute('/', 2);
+
+            // Undo 4 commands
+            user.Undo(4);
+
+            // Redo 3 commands
+            user.Redo(3);
         }
 
         #endregion

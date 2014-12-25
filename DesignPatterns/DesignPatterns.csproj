@@ -51,6 +51,14 @@
     <Compile Include="BehavioralPatterns\ChainOfResp\Structural\ConcreteHandler2.cs" />
     <Compile Include="BehavioralPatterns\ChainOfResp\Structural\ConcreteHandler3.cs" />
     <Compile Include="BehavioralPatterns\ChainOfResp\Structural\Handler.cs" />
+    <Compile Include="BehavioralPatterns\Command\RealWorld\Calculator.cs" />
+    <Compile Include="BehavioralPatterns\Command\RealWorld\CalculatorCommand.cs" />
+    <Compile Include="BehavioralPatterns\Command\RealWorld\Command.cs" />
+    <Compile Include="BehavioralPatterns\Command\RealWorld\User.cs" />
+    <Compile Include="BehavioralPatterns\Command\Structural\Command.cs" />
+    <Compile Include="BehavioralPatterns\Command\Structural\ConcreteCommand.cs" />
+    <Compile Include="BehavioralPatterns\Command\Structural\Invoker.cs" />
+    <Compile Include="BehavioralPatterns\Command\Structural\Receiver.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
@@ -193,8 +201,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BehavioralPatterns\Command\RealWorld\" />
-    <Folder Include="BehavioralPatterns\Command\Structural\" />
     <Folder Include="BehavioralPatterns\Interpreter\RealWorld\" />
     <Folder Include="BehavioralPatterns\Interpreter\Structural\" />
     <Folder Include="BehavioralPatterns\Iterator\RealWorld\" />
