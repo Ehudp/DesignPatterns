@@ -9,6 +9,8 @@ using DesignPatterns.BehavioralPatterns.Command.RealWorld;
 using DesignPatterns.BehavioralPatterns.Command.Structural;
 using DesignPatterns.BehavioralPatterns.Interpreter.RealWorld;
 using DesignPatterns.BehavioralPatterns.Interpreter.Structural;
+using DesignPatterns.BehavioralPatterns.Iterator.RealWorld;
+using DesignPatterns.BehavioralPatterns.Iterator.Structural;
 using DesignPatterns.CreationalPatterns.AbstractFactory.RealWorld;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Structural;
 using DesignPatterns.CreationalPatterns.Builder.RealWorld;
@@ -34,6 +36,7 @@ using DesignPatterns.StructuralPatterns.Proxy.Structural;
 using Logger;
 using Command = DesignPatterns.BehavioralPatterns.Command.Structural.Command;
 using Context = System.Runtime.Remoting.Contexts.Context;
+using Iterator = DesignPatterns.BehavioralPatterns.Iterator.Structural.StructIterator;
 
 
 namespace DesignPatterns.Utilities
@@ -573,6 +576,58 @@ namespace DesignPatterns.Utilities
             }
 
             Log.WriteLine("{0} = {1}",roman, context.Output);
+        }
+
+        public static void IteratorStructural()
+        {
+            ConcreteAggregate a = new ConcreteAggregate();
+            a[0] = "Item A";
+            a[1] = "Item B";
+            a[2] = "Item C";
+            a[3] = "Item D";
+
+            // Create Iterator and provide aggregate
+            ConcreteIterator i = new ConcreteIterator(a);
+
+            Log.WriteLine("Iterating over collection:");
+
+            object item = i.First();
+            while (item != null)
+            {
+                Log.WriteLine(item.ToString());
+                item = i.Next();
+            }
+
+        }
+
+        public static void IteratorRealWorld()
+        {
+
+            // Build a collection
+            Collection collection = new Collection();
+            collection[0] = new Item("Item 0");
+            collection[1] = new Item("Item 1");
+            collection[2] = new Item("Item 2");
+            collection[3] = new Item("Item 3");
+            collection[4] = new Item("Item 4");
+            collection[5] = new Item("Item 5");
+            collection[6] = new Item("Item 6");
+            collection[7] = new Item("Item 7");
+            collection[8] = new Item("Item 8");
+
+            // Create iterator
+            RealIterator iterator = new RealIterator(collection);
+
+            // Skip every other item
+            iterator.Step = 2;
+
+            Log.WriteLine("Iterating over collection:");
+
+            for (Item item = iterator.First();
+                !iterator.IsDone; item = iterator.Next())
+            {
+                Log.WriteLine(item.Name);
+            }
         }
 
         #endregion

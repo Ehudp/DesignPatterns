@@ -59,15 +59,25 @@
     <Compile Include="BehavioralPatterns\Command\Structural\ConcreteCommand.cs" />
     <Compile Include="BehavioralPatterns\Command\Structural\Invoker.cs" />
     <Compile Include="BehavioralPatterns\Command\Structural\Receiver.cs" />
-    <Compile Include="BehavioralPatterns\Interpreter\RealWorld\Context.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\RealWorld\RealContext.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\RealWorld\HundredExpression.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\RealWorld\OneExpression.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\RealWorld\RealExpression.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\RealWorld\TenExpression.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\RealWorld\ThousandExpression.cs" />
-    <Compile Include="BehavioralPatterns\Interpreter\Structural\Context.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\Structural\AbstractExpression.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\Structural\StructContext.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\Structural\NonterminalExpression.cs" />
     <Compile Include="BehavioralPatterns\Interpreter\Structural\TerminalExpression.cs" />
+    <Compile Include="BehavioralPatterns\Iterator\RealWorld\Collection.cs" />
+    <Compile Include="BehavioralPatterns\Iterator\RealWorld\IAbstractCollection.cs" />
+    <Compile Include="BehavioralPatterns\Iterator\RealWorld\IAbstractIterator.cs" />
+    <Compile Include="BehavioralPatterns\Iterator\RealWorld\Item.cs" />
+    <Compile Include="BehavioralPatterns\Iterator\RealWorld\RealIterator.cs" />
+    <Compile Include="BehavioralPatterns\Iterator\Structural\Aggregate.cs" />
+    <Compile Include="BehavioralPatterns\Iterator\Structural\ConcreteAggregate.cs" />
+    <Compile Include="BehavioralPatterns\Iterator\Structural\ConcreteIterator.cs" />
+    <Compile Include="BehavioralPatterns\Iterator\Structural\StructIterator.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
@@ -210,8 +220,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BehavioralPatterns\Iterator\RealWorld\" />
-    <Folder Include="BehavioralPatterns\Iterator\Structural\" />
     <Folder Include="BehavioralPatterns\Mediator\RealWorld\" />
     <Folder Include="BehavioralPatterns\Mediator\Structural\" />
     <Folder Include="BehavioralPatterns\Memento\RealWorld\" />

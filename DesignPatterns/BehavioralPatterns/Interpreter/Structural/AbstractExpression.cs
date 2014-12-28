@@ -1,9 +1,5 @@
 ﻿namespace DesignPatterns.BehavioralPatterns.Interpreter.Structural
 {
-    internal class StructContext
-    {
-    }
-
     /// <summary>
     ///     The 'AbstractExpression' abstract class
     /// </summary>

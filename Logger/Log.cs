@@ -15,7 +15,8 @@ namespace Logger
             var msg = string.Format(format, args);
             WriteLine(msg);
         }
-     
+       
+
         public static void WriteLine(string msg)
         {
             Console.WriteLine(msg);       

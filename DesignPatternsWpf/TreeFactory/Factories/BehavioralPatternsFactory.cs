@@ -19,7 +19,8 @@ namespace DesignPatternsWpf.TreeFactory.Factories
 
             behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<ChainOfRespPatternsFactory>());
             behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<CommandPatternsFactory>());
-            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<InterpreterPatternsFactory>());                     
+            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<InterpreterPatternsFactory>());
+            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<IteratorPatternsFactory>());         
             
             return behavioralDetails;
         }
@@ -190,6 +191,61 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 interpreterParent.Patterns.Add(interpreterRealWorld);
 
                 return interpreterParent;
+            }
+        }
+
+        public class IteratorPatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var iteratorParent = new PatternDetails
+                {
+                    Name = "Iterator",
+                    Header = "Iterator",
+                    Detailes = "Sequentially access the elements of a collection - " +
+                               "Provide a way to access the elements of an aggregate object" +
+                               " sequentially without exposing its underlying representation.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Iterator-design-pattern"),
+                }
+                };
+
+                var iteratorStructural = new PatternDetails
+                {
+                    Name = "IteratorStructural",
+                    Header = "Iterator Structural",
+                    Method = MethodService.IteratorStructural,
+                    Detailes =
+                        "This structural code demonstrates the Iterator pattern which provides for a way to traverse (iterate) over" +
+                        " a collection of items without detailing the underlying structure of the collection.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Iterator-design-pattern#str"),
+                }
+                };
+
+
+                var iteratorRealWorld = new PatternDetails
+                {
+                    Name = "IteratorRealWorld",
+                    Header = "Iterator Real World",
+                    Method = MethodService.IteratorRealWorld,
+                    Detailes = "This real-world code demonstrates the Iterator pattern which is used to" +
+                               " iterate over a collection of items and skip a specific number of items each iteration.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Iterator-design-pattern#rea"),
+                }
+                };
+
+                iteratorParent.Patterns.Add(iteratorStructural);
+                iteratorParent.Patterns.Add(iteratorRealWorld);
+
+                return iteratorParent;
             }
         }
 
