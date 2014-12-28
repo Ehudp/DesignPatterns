@@ -59,6 +59,15 @@
     <Compile Include="BehavioralPatterns\Command\Structural\ConcreteCommand.cs" />
     <Compile Include="BehavioralPatterns\Command\Structural\Invoker.cs" />
     <Compile Include="BehavioralPatterns\Command\Structural\Receiver.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\RealWorld\Context.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\RealWorld\HundredExpression.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\RealWorld\OneExpression.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\RealWorld\RealExpression.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\RealWorld\TenExpression.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\RealWorld\ThousandExpression.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\Structural\Context.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\Structural\NonterminalExpression.cs" />
+    <Compile Include="BehavioralPatterns\Interpreter\Structural\TerminalExpression.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
@@ -201,8 +210,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BehavioralPatterns\Interpreter\RealWorld\" />
-    <Folder Include="BehavioralPatterns\Interpreter\Structural\" />
     <Folder Include="BehavioralPatterns\Iterator\RealWorld\" />
     <Folder Include="BehavioralPatterns\Iterator\Structural\" />
     <Folder Include="BehavioralPatterns\Mediator\RealWorld\" />

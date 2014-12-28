@@ -1,9 +1,14 @@
 ﻿
 
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 using DesignPatterns.BehavioralPatterns.ChainOfResp.RealWorld;
 using DesignPatterns.BehavioralPatterns.ChainOfResp.Structural;
 using DesignPatterns.BehavioralPatterns.Command.RealWorld;
 using DesignPatterns.BehavioralPatterns.Command.Structural;
+using DesignPatterns.BehavioralPatterns.Interpreter.RealWorld;
+using DesignPatterns.BehavioralPatterns.Interpreter.Structural;
 using DesignPatterns.CreationalPatterns.AbstractFactory.RealWorld;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Structural;
 using DesignPatterns.CreationalPatterns.Builder.RealWorld;
@@ -28,6 +33,7 @@ using DesignPatterns.StructuralPatterns.Proxy.RealWorld;
 using DesignPatterns.StructuralPatterns.Proxy.Structural;
 using Logger;
 using Command = DesignPatterns.BehavioralPatterns.Command.Structural.Command;
+using Context = System.Runtime.Remoting.Contexts.Context;
 
 
 namespace DesignPatterns.Utilities
@@ -523,6 +529,50 @@ namespace DesignPatterns.Utilities
 
             // Redo 3 commands
             user.Redo(3);
+        }
+
+        public static void InterpreterStructural()
+        {
+            StructContext context = new StructContext();
+
+            // Usually a tree 
+            ArrayList list = new ArrayList();
+
+            // Populate 'abstract syntax tree' 
+            list.Add(new TerminalExpression());
+            list.Add(new NonterminalExpression());
+            list.Add(new TerminalExpression());
+            list.Add(new TerminalExpression());
+
+            // Interpret
+            foreach (AbstractExpression exp in list)
+            {
+                exp.Interpret(context);
+            }
+ 
+
+        }
+
+        public static void InterpreterRealWorld()
+        {
+
+            string roman = "MCMXXVIII";
+            RealContext context = new RealContext(roman);
+
+            // Build the 'parse tree'
+            List<RealExpression> tree = new List<RealExpression>();
+            tree.Add(new ThousandExpression());
+            tree.Add(new HundredExpression());
+            tree.Add(new TenExpression());
+            tree.Add(new OneExpression());
+
+            // Interpret
+            foreach (RealExpression exp in tree)
+            {
+                exp.Interpret(context);
+            }
+
+            Log.WriteLine("{0} = {1}",roman, context.Output);
         }
 
         #endregion

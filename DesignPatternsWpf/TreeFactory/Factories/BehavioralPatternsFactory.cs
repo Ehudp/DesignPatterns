@@ -19,8 +19,7 @@ namespace DesignPatternsWpf.TreeFactory.Factories
 
             behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<ChainOfRespPatternsFactory>());
             behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<CommandPatternsFactory>());
-         
-            
+            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<InterpreterPatternsFactory>());                     
             
             return behavioralDetails;
         }
@@ -122,13 +121,13 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                     Name = "CommandRealWorld",
                     Header = "Command Real World",
                     Method = MethodService.CommandRealWorld,
-                    Detailes = "TThis real-world code demonstrates the Command pattern used in a simple" +
+                    Detailes = "This real-world code demonstrates the Command pattern used in a simple" +
                                " calculator with unlimited number of undo's and redo's. Note that in C#  " +
                                "the word 'operator' is a keyword. Prefixing it with '@' allows using it as an identifier.",
                     ImageUrl = "",
                     UrlsList = new List<Uri>
                 {
-                    new Uri("http://www.dofactory.com/net/chain-of-responsibility-design-pattern#rea"),
+                    new Uri("http://www.dofactory.com/net/Command-design-pattern#rea"),
                 }
                 };
 
@@ -136,6 +135,61 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 commandParent.Patterns.Add(commandRealWorld);
 
                 return commandParent;
+            }
+        }
+
+        public class InterpreterPatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var interpreterParent = new PatternDetails
+                {
+                    Name = "Interpreter",
+                    Header = "Interpreter",
+                    Detailes = "A way to include language elements in a program - " +
+                               "Given a language, define a representation for its grammar along with an " +
+                               "interpreter that uses the representation to interpret sentences in the language.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Interpreter-design-pattern"),
+                }
+                };
+
+                var interpreterStructural = new PatternDetails
+                {
+                    Name = "InterpreterStructural",
+                    Header = "Interpreter Structural",
+                    Method = MethodService.InterpreterStructural,
+                    Detailes =
+                        "This structural code demonstrates the Interpreter patterns, which using a " +
+                        "defined grammer, provides the interpreter that processes parsed statements.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Interpreter-design-pattern#str"),
+                }
+                };
+
+
+                var interpreterRealWorld = new PatternDetails
+                {
+                    Name = "InterpreterRealWorld",
+                    Header = "Interpreter Real World",
+                    Method = MethodService.InterpreterRealWorld,
+                    Detailes = "This real-world code demonstrates the Interpreter " +
+                               "pattern which is used to convert a Roman numeral to a decimal.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Interpreter-design-pattern#rea"),
+                }
+                };
+
+                interpreterParent.Patterns.Add(interpreterStructural);
+                interpreterParent.Patterns.Add(interpreterRealWorld);
+
+                return interpreterParent;
             }
         }
 
