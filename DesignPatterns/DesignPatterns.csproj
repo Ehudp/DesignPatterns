@@ -78,6 +78,16 @@
     <Compile Include="BehavioralPatterns\Iterator\Structural\ConcreteAggregate.cs" />
     <Compile Include="BehavioralPatterns\Iterator\Structural\ConcreteIterator.cs" />
     <Compile Include="BehavioralPatterns\Iterator\Structural\StructIterator.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\RealWorld\AbstractChatroom.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\RealWorld\Beatle.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\RealWorld\Chatroom.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\RealWorld\NonBeatle.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\RealWorld\Participant.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\Structural\Colleague.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\Structural\ConcreteColleague1.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\Structural\ConcreteColleague2.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\Structural\ConcreteMediator.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\Structural\Mediator.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
@@ -220,8 +230,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BehavioralPatterns\Mediator\RealWorld\" />
-    <Folder Include="BehavioralPatterns\Mediator\Structural\" />
     <Folder Include="BehavioralPatterns\Memento\RealWorld\" />
     <Folder Include="BehavioralPatterns\Memento\Structural\" />
     <Folder Include="BehavioralPatterns\Observer\RealWorld\" />

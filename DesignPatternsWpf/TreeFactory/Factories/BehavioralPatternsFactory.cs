@@ -20,7 +20,8 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<ChainOfRespPatternsFactory>());
             behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<CommandPatternsFactory>());
             behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<InterpreterPatternsFactory>());
-            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<IteratorPatternsFactory>());         
+            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<IteratorPatternsFactory>());
+            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<MediatorPatternsFactory>());                 
             
             return behavioralDetails;
         }
@@ -246,6 +247,66 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 iteratorParent.Patterns.Add(iteratorRealWorld);
 
                 return iteratorParent;
+            }
+        }
+
+        public class MediatorPatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var mediatorParent = new PatternDetails
+                {
+                    Name = "Mediator",
+                    Header = "Mediator",
+                    Detailes = "Defines simplified communication between classes - " +
+                               "Define an object that encapsulates how a set of objects interact. Mediator promotes loose " +
+                               "coupling by keeping objects from referring to each other explicitly, and it lets" +
+                               " you vary their interaction independently.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Mediator-design-pattern"),
+                }
+                };
+
+                var mediatorStructural = new PatternDetails
+                {
+                    Name = "MediatorStructural",
+                    Header = "Mediator Structural",
+                    Method = MethodService.MediatorStructural,
+                    Detailes =
+                        "This structural code demonstrates the Mediator pattern facilitating loosely coupled communication " +
+                        "between different objects and object types. The mediator is a central hub through which" +
+                        " all interaction must take place.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Mediator-design-pattern#str"),
+                }
+                };
+
+
+                var mediatorRealWorld = new PatternDetails
+                {
+                    Name = "MediatorRealWorld",
+                    Header = "Mediator Real World",
+                    Method = MethodService.MediatorRealWorld,
+                    Detailes = "This real-world code demonstrates the Mediator pattern facilitating loosely" +
+                               " coupled communication between different Participants registering with a Chatroom. " +
+                               "The Chatroom is the central hub through which all communication takes place." +
+                               " At this point only one-to-one communication is implemented in the Chatroom, " +
+                               "but would be trivial to change to one-to-many.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Mediator-design-pattern#rea"),
+                }
+                };
+
+                mediatorParent.Patterns.Add(mediatorStructural);
+                mediatorParent.Patterns.Add(mediatorRealWorld);
+
+                return mediatorParent;
             }
         }
 

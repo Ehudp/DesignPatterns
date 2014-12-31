@@ -7,7 +7,7 @@ namespace Logger
     public static class Log
     {
         private static TextBox _txt;
-        private static Action<string> _outPutAction;
+        private static Action<string,bool> _outPutAction;
 
         public static void WriteLine(string format, params object[] args)
         {
@@ -15,18 +15,25 @@ namespace Logger
             var msg = string.Format(format, args);
             WriteLine(msg);
         }
-       
+
+
+        public static void Write(string msg)
+        {
+            Console.Write(msg);
+
+            WriteToOutPut(msg,false);
+        }
 
         public static void WriteLine(string msg)
         {
             Console.WriteLine(msg);       
-          //  WriteToTxtBlock(msg);
+          
             WriteToOutPut(msg);
         }
 
-        private static void WriteToOutPut(string msg)
+        private static void WriteToOutPut(string msg,bool lineDown=true)
         {
-            _outPutAction(msg);
+            _outPutAction(msg,lineDown);
         }
 
         private static void WriteToTxtBlock(string msg)
@@ -55,7 +62,7 @@ namespace Logger
             _txt = txt;
         }
 
-        public static void SetOutPutAction(Action<string> outPutAction)
+        public static void SetOutPutAction(Action<string,bool> outPutAction)
         {
             _outPutAction = outPutAction;
         }

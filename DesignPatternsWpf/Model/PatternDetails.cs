@@ -65,11 +65,16 @@ namespace DesignPatternsWpf.Model
             set { SetProperty(value, () => ImageUrl); }
         }
 
-        public Action<string> OutPutAction { get; set; }
+        public Action<string,bool> OutPutAction { get; set; }
 
-        private void UpdateOutPut(string msg)
+        private void UpdateOutPut(string msg,bool lineDown)
         {
-            OutPut += msg + "\n";
+
+            OutPut += msg;
+            if (lineDown)
+            {
+                OutPut += "\n";
+            }
         }
 
         public void Run()

@@ -30,6 +30,7 @@ namespace DesignPatternsWpf.Services
 
         }
 
+        //extension method
         public static PatternDetails GetPatternsFromFactory<T>(this AbstractPatternsFactory factory) where T : AbstractPatternsFactory
         {
             return GetPatternsFromFactory<T>();
