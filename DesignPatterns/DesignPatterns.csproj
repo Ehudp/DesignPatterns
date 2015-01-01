@@ -88,6 +88,20 @@
     <Compile Include="BehavioralPatterns\Mediator\Structural\ConcreteColleague2.cs" />
     <Compile Include="BehavioralPatterns\Mediator\Structural\ConcreteMediator.cs" />
     <Compile Include="BehavioralPatterns\Mediator\Structural\Mediator.cs" />
+    <Compile Include="BehavioralPatterns\Memento\RealWorld\Memento.cs" />
+    <Compile Include="BehavioralPatterns\Memento\RealWorld\ProspectMemory.cs" />
+    <Compile Include="BehavioralPatterns\Memento\RealWorld\SalesProspect.cs" />
+    <Compile Include="BehavioralPatterns\Memento\Structural\Caretaker.cs" />
+    <Compile Include="BehavioralPatterns\Memento\Structural\Memento.cs" />
+    <Compile Include="BehavioralPatterns\Memento\Structural\Originator.cs" />
+    <Compile Include="BehavioralPatterns\Observer\RealWorld\IBM.cs" />
+    <Compile Include="BehavioralPatterns\Observer\RealWorld\IInvestor.cs" />
+    <Compile Include="BehavioralPatterns\Observer\RealWorld\Investor.cs" />
+    <Compile Include="BehavioralPatterns\Observer\RealWorld\Stock.cs" />
+    <Compile Include="BehavioralPatterns\Observer\Structural\ConcreteObserver.cs" />
+    <Compile Include="BehavioralPatterns\Observer\Structural\ConcreteSubject.cs" />
+    <Compile Include="BehavioralPatterns\Observer\Structural\Observer.cs" />
+    <Compile Include="BehavioralPatterns\Observer\Structural\Subject.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
@@ -230,10 +244,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BehavioralPatterns\Memento\RealWorld\" />
-    <Folder Include="BehavioralPatterns\Memento\Structural\" />
-    <Folder Include="BehavioralPatterns\Observer\RealWorld\" />
-    <Folder Include="BehavioralPatterns\Observer\Structural\" />
     <Folder Include="BehavioralPatterns\State\RealWorld\" />
     <Folder Include="BehavioralPatterns\State\Structural\" />
     <Folder Include="BehavioralPatterns\Strategy\RealWorld\" />

@@ -8,6 +8,16 @@ namespace DesignPatternsWpf.TreeFactory.Factories
 {
     public class BehavioralPatternsFactory : AbstractPatternsFactory
     {
+        private readonly List<AbstractPatternsFactory> _factoryTypes = new List<AbstractPatternsFactory>
+        {
+           new ChainOfRespPatternsFactory(),
+           new CommandPatternsFactory(),
+           new InterpreterPatternsFactory(),
+           new IteratorPatternsFactory(),
+           new MediatorPatternsFactory(),
+           new MementoPatternsFactory(),
+           new ObserverPatternsFactory(),
+        };
 
         protected override PatternDetails CreatePatternDetails()
         {
@@ -17,16 +27,12 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 Header = "Behavioral Patterns",
             };
 
-            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<ChainOfRespPatternsFactory>());
-            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<CommandPatternsFactory>());
-            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<InterpreterPatternsFactory>());
-            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<IteratorPatternsFactory>());
-            behavioralDetails.Patterns.Add(this.GetPatternsFromFactory<MediatorPatternsFactory>());                 
-            
+            _factoryTypes.ForEach((factoryType) => behavioralDetails.Patterns.Add(factoryType.GetPatternDetails()));
+          
             return behavioralDetails;
         }
 
-        public class  ChainOfRespPatternsFactory : AbstractPatternsFactory
+        public class ChainOfRespPatternsFactory : AbstractPatternsFactory
         {
             protected override PatternDetails CreatePatternDetails()
             {
@@ -36,8 +42,8 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                     Header = "ChainOfResp",
                     Detailes = "A way of passing a request between a chain of objects - " +
                                "Avoid coupling the sender of a request to its receiver by giving more than one object"
-                               +" a chance to handle the request. Chain the receiving objects and "
-                               +"pass the request along the chain until an object handles it.",
+                               + " a chance to handle the request. Chain the receiving objects and "
+                               + "pass the request along the chain until an object handles it.",
                     ImageUrl = "",
                     UrlsList = new List<Uri>
                 {
@@ -48,13 +54,13 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 var chainOfRespStructural = new PatternDetails
                 {
                     Name = "ChainOfRespStructural",
-                    Header = "ChainOfResp Structural",                
+                    Header = "ChainOfResp Structural",
                     Method = MethodService.ChainOfRespStructural,
                     Detailes =
                         "This structural code demonstrates the Chain of Responsibility pattern in"
-                        +" which several linked objects (the Chain) are offered the opportunity to "
-                        +"respond to a request or hand it off to the object next in line.",
-                    ImageUrl ="",
+                        + " which several linked objects (the Chain) are offered the opportunity to "
+                        + "respond to a request or hand it off to the object next in line.",
+                    ImageUrl = "",
                     UrlsList = new List<Uri>
                 {
                     new Uri("http://www.dofactory.com/net/chain-of-responsibility-design-pattern#str"),
@@ -65,12 +71,12 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 var chainOfRespRealWorld = new PatternDetails
                 {
                     Name = "ChainOfRespRealWorld",
-                    Header = "ChainOfResp Real World",               
+                    Header = "ChainOfResp Real World",
                     Method = MethodService.ChainOfRespRealWorld,
                     Detailes = "This real-world code demonstrates the Chain of Responsibility pattern in"
-                    +" which several linked managers and executives can respond to a purchase request or hand it"
-                    +"off to a superior. Each position has can have its own set of rules which orders they can approve.",
-                    ImageUrl ="",
+                    + " which several linked managers and executives can respond to a purchase request or hand it"
+                    + "off to a superior. Each position has can have its own set of rules which orders they can approve.",
+                    ImageUrl = "",
                     UrlsList = new List<Uri>
                 {
                     new Uri("http://www.dofactory.com/net/chain-of-responsibility-design-pattern#rea"),
@@ -309,6 +315,118 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 return mediatorParent;
             }
         }
+
+        public class MementoPatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var mementoParent = new PatternDetails
+                {
+                    Name = "Memento",
+                    Header = "Memento",
+                    Detailes = "Capture and restore an object's internal state - " +
+                               "Without violating encapsulation, capture and externalize an object's " +
+                               "internal state so that the object can be restored to this state later.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Memento-design-pattern"),
+                }
+                };
+
+                var mementoStructural = new PatternDetails
+                {
+                    Name = "MementoStructural",
+                    Header = "Memento Structural",
+                    Method = MethodService.MementoStructural,
+                    Detailes =
+                        "This structural code demonstrates the Memento pattern which" +
+                        " temporary saves and restores another object's internal state.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Memento-design-pattern#str"),
+                }
+                };
+
+
+                var mementoRealWorld = new PatternDetails
+                {
+                    Name = "MementoRealWorld",
+                    Header = "Memento Real World",
+                    Method = MethodService.MementoRealWorld,
+                    Detailes = "This real-world code demonstrates the Memento pattern" +
+                               " which temporarily saves and then restores the SalesProspect's internal state.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Memento-design-pattern#rea"),
+                }
+                };
+
+                mementoParent.Patterns.Add(mementoStructural);
+                mementoParent.Patterns.Add(mementoRealWorld);
+
+                return mementoParent;
+            }
+        }
+
+        public class ObserverPatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var observerParent = new PatternDetails
+                {
+                    Name = "Observer",
+                    Header = "Observer",
+                    Detailes = "A way of notifying change to a number of classes - " +
+                               "Define a one-to-many dependency between objects so that when one object" +
+                               " changes state, all its dependents are notified and updated automatically.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Observer-design-pattern"),
+                }
+                };
+
+                var observerStructural = new PatternDetails
+                {
+                    Name = "ObserverStructural",
+                    Header = "Observer Structural",
+                    Method = MethodService.ObserverStructural,
+                    Detailes =
+                        "This structural code demonstrates the Observer pattern in which " +
+                        "registered objects are notified of and updated with a state change.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Observer-design-pattern#str"),
+                }
+                };
+
+
+                var observerRealWorld = new PatternDetails
+                {
+                    Name = "ObserverRealWorld",
+                    Header = "Observer Real World",
+                    Method = MethodService.ObserverRealWorld,
+                    Detailes = "This real-world code demonstrates the Observer pattern in" +
+                               " which registered investors are notified every time a stock changes value.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Observer-design-pattern#rea"),
+                }
+                };
+
+                observerParent.Patterns.Add(observerStructural);
+                observerParent.Patterns.Add(observerRealWorld);
+
+                return observerParent;
+            }
+        }
+
+
 
     }
 }

@@ -13,6 +13,10 @@ using DesignPatterns.BehavioralPatterns.Iterator.RealWorld;
 using DesignPatterns.BehavioralPatterns.Iterator.Structural;
 using DesignPatterns.BehavioralPatterns.Mediator.RealWorld;
 using DesignPatterns.BehavioralPatterns.Mediator.Structural;
+using DesignPatterns.BehavioralPatterns.Memento.RealWorld;
+using DesignPatterns.BehavioralPatterns.Memento.Structural;
+using DesignPatterns.BehavioralPatterns.Observer.RealWorld;
+using DesignPatterns.BehavioralPatterns.Observer.Structural;
 using DesignPatterns.CreationalPatterns.AbstractFactory.RealWorld;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Structural;
 using DesignPatterns.CreationalPatterns.Builder.RealWorld;
@@ -672,6 +676,74 @@ namespace DesignPatterns.Utilities
             Ringo.Send("George", "My sweet Lord");
             Paul.Send("John", "Can't buy me love");
             John.Send("Yoko", "My sweet love");
+        }
+
+        public static void MementoStructural()
+        {
+            Originator o = new Originator();
+            o.State = "On";
+
+            // Store internal state
+            Caretaker c = new Caretaker();
+            c.Memento = o.CreateMemento();
+
+            // Continue changing originator
+            o.State = "Off";
+
+            // Restore saved state
+            o.SetMemento(c.Memento);
+
+        }
+
+        public static void MementoRealWorld()
+        {
+
+            SalesProspect s = new SalesProspect();
+            s.Name = "Noel van Halen";
+            s.Phone = "(412) 256-0990";
+            s.Budget = 25000.0;
+
+            // Store internal state
+            ProspectMemory m = new ProspectMemory();
+            m.Memento = s.SaveMemento();
+
+            // Continue changing originator
+            s.Name = "Leo Welch";
+            s.Phone = "(310) 209-7111";
+            s.Budget = 1000000.0;
+
+            // Restore saved state
+            s.RestoreMemento(m.Memento);
+        }
+
+        public static void ObserverStructural()
+        {
+            // Configure Observer pattern
+            ConcreteSubject s = new ConcreteSubject();
+
+            s.Attach(new ConcreteObserver(s, "X"));
+            s.Attach(new ConcreteObserver(s, "Y"));
+            s.Attach(new ConcreteObserver(s, "Z"));
+
+            // Change subject and notify observers
+            s.SubjectState = "ABC";
+            s.Notify();
+
+        }
+
+        public static void ObserverRealWorld()
+        {
+
+            // Create IBM stock and attach investors
+            IBM ibm = new IBM("IBM", 120.00);
+            ibm.Attach(new Investor("Sorros"));
+            ibm.Attach(new Investor("Berkshire"));
+
+            // Fluctuating prices will notify investors
+            ibm.Price = 120.10;
+            ibm.Price = 121.00;
+            ibm.Price = 120.50;
+            ibm.Price = 120.75;
         }
         
         #endregion
