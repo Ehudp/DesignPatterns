@@ -121,6 +121,12 @@
     <Compile Include="BehavioralPatterns\Strategy\Structural\ConcreteStrategyC.cs" />
     <Compile Include="BehavioralPatterns\Strategy\Structural\Strategy.cs" />
     <Compile Include="BehavioralPatterns\Strategy\Structural\StrategyContext.cs" />
+    <Compile Include="BehavioralPatterns\Template Method\RealWorld\Categories.cs" />
+    <Compile Include="BehavioralPatterns\Template Method\RealWorld\DataAccessObject.cs" />
+    <Compile Include="BehavioralPatterns\Template Method\RealWorld\Products.cs" />
+    <Compile Include="BehavioralPatterns\Template Method\Structural\AbstractClass.cs" />
+    <Compile Include="BehavioralPatterns\Template Method\Structural\ConcreteClassA.cs" />
+    <Compile Include="BehavioralPatterns\Template Method\Structural\ConcreteClassB.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
@@ -263,8 +269,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BehavioralPatterns\Template Method\RealWorld\" />
-    <Folder Include="BehavioralPatterns\Template Method\Structural\" />
     <Folder Include="BehavioralPatterns\Visitor\RealWorld\" />
     <Folder Include="BehavioralPatterns\Visitor\Structural\" />
     <Folder Include="ClassDiagrams\StructuralPatterns\" />

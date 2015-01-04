@@ -19,6 +19,7 @@ namespace DesignPatternsWpf.TreeFactory.Factories
            new ObserverPatternsFactory(),
            new StatePatternsFactory(),
            new StrategyPatternsFactory(),
+           new TemplateMethodPatternsFactory(),
         };
 
         protected override PatternDetails CreatePatternDetails()
@@ -540,6 +541,65 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 strategyParent.Patterns.Add(strategyRealWorld);
 
                 return strategyParent;
+            }
+        }
+
+        public class TemplateMethodPatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var templateMethodParent = new PatternDetails
+                {
+                    Name = "TemplateMethod",
+                    Header = "Template Method",
+                    Detailes = "Defer the exact steps of an algorithm to a subclass - " +
+                               "Define the skeleton of an algorithm in an operation, deferring " +
+                               "some steps to subclasses. Template Method lets subclasses redefine certain " +
+                               "steps of an algorithm without changing the algorithm's structure.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Template-Method-design-pattern"),
+                }
+                };
+
+                var templateMethodStructural = new PatternDetails
+                {
+                    Name = "TemplateMethodStructural",
+                    Header = "TemplateMethod Structural",
+                    Method = MethodService.TemplateMethodStructural,
+                    Detailes =
+                        "This structural code demonstrates the Template method which provides a skeleton " +
+                        "calling sequence of methods. One or more steps can be deferred to subclasses which" +
+                        " implement these steps without changing the overall calling sequence.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Template-Method-design-pattern#str"),
+                }
+                };
+
+
+                var templateMethodRealWorld = new PatternDetails
+                {
+                    Name = "TemplateMethodRealWorld",
+                    Header = "TemplateMethod Real World",
+                    Method = MethodService.TemplateMethodRealWorld,
+                    Detailes = "This real-world code demonstrates a Template method named Run() " +
+                               "which provides a skeleton calling sequence of methods. Implementation of " +
+                               "these steps are deferred to the CustomerDataObject subclass which implements the " +
+                               "Connect, Select, Process, and Disconnect methods.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Template-Method-design-pattern#rea"),
+                }
+                };
+
+                templateMethodParent.Patterns.Add(templateMethodStructural);
+                templateMethodParent.Patterns.Add(templateMethodRealWorld);
+
+                return templateMethodParent;
             }
         }
         

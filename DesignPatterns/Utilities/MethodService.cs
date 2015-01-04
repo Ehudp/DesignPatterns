@@ -21,6 +21,8 @@ using DesignPatterns.BehavioralPatterns.State.RealWorld;
 using DesignPatterns.BehavioralPatterns.State.Structural;
 using DesignPatterns.BehavioralPatterns.Strategy.RealWorld;
 using DesignPatterns.BehavioralPatterns.Strategy.Structural;
+using DesignPatterns.BehavioralPatterns.Template_Method.RealWorld;
+using DesignPatterns.BehavioralPatterns.Template_Method.Structural;
 using DesignPatterns.CreationalPatterns.AbstractFactory.RealWorld;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Structural;
 using DesignPatterns.CreationalPatterns.Builder.RealWorld;
@@ -817,6 +819,28 @@ namespace DesignPatterns.Utilities
             studentRecords.Sort();
  
         }
+
+        public static void TemplateMethodStructural()
+        {
+            AbstractClass aA = new ConcreteClassA();
+            aA.TemplateMethod();
+
+            AbstractClass aB = new ConcreteClassB();
+            aB.TemplateMethod();
+ 
+
+        }
+
+        public static void TemplateMethodRealWorld()
+        {
+
+            DataAccessObject daoCategories = new Categories();
+            daoCategories.Run();
+
+            DataAccessObject daoProducts = new Products();
+            daoProducts.Run();
+        }
+     
         
         #endregion
     }
