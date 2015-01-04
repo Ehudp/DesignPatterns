@@ -10,9 +10,7 @@ namespace DesignPatterns.BehavioralPatterns.Template_Method.RealWorld
         public virtual void Connect()
         {
             // Make sure mdb is available to app
-            connectionString =
-                "provider=Microsoft.JET.OLEDB.4.0; " +
-                "data source=..\\..\\..\\db1.mdb";
+            connectionString = global::DesignPatterns.Properties.Settings1.Default.Database1ConnectionString;
         }
 
         public abstract void Select();

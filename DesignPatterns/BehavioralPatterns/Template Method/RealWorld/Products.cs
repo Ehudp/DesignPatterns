@@ -1,5 +1,6 @@
 using System.Data;
 using System.Data.OleDb;
+using System.Data.SqlClient;
 using Logger;
 
 namespace DesignPatterns.BehavioralPatterns.Template_Method.RealWorld
@@ -12,7 +13,7 @@ namespace DesignPatterns.BehavioralPatterns.Template_Method.RealWorld
         public override void Select()
         {
             string sql = "select ProductName from Products";
-            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(
                 sql, connectionString);
 
             dataSet = new DataSet();
