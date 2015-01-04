@@ -17,6 +17,7 @@ namespace DesignPatternsWpf.TreeFactory.Factories
            new MediatorPatternsFactory(),
            new MementoPatternsFactory(),
            new ObserverPatternsFactory(),
+           new StatePatternsFactory(),
         };
 
         protected override PatternDetails CreatePatternDetails()
@@ -27,7 +28,7 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 Header = "Behavioral Patterns",
             };
 
-            _factoryTypes.ForEach((factoryType) => behavioralDetails.Patterns.Add(factoryType.GetPatternDetails()));
+            _factoryTypes.ForEach(factoryType => behavioralDetails.Patterns.Add(factoryType.GetPatternDetails()));
           
             return behavioralDetails;
         }
@@ -426,7 +427,65 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             }
         }
 
+        public class StatePatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var stateParent = new PatternDetails
+                {
+                    Name = "State",
+                    Header = "State",
+                    Detailes = "Alter an object's behavior when its state changes - " +
+                               "Allow an object to alter its behavior when its" +
+                               " internal state changes. The object will appear to change its class.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/State-design-pattern"),
+                }
+                };
 
+                var stateStructural = new PatternDetails
+                {
+                    Name = "StateStructural",
+                    Header = "State Structural",
+                    Method = MethodService.StateStructural,
+                    Detailes =
+                        "This structural code demonstrates the State pattern which allows an object to " +
+                        "behave differently depending on " +"its internal state. The difference in behavior " +
+                        "is delegated to objects that represent this state.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/State-design-pattern#str"),
+                }
+                };
+
+
+                var stateRealWorld = new PatternDetails
+                {
+                    Name = "StateRealWorld",
+                    Header = "State Real World",
+                    Method = MethodService.StateRealWorld,
+                    Detailes = "This real-world code demonstrates the State pattern which allows an Account " +
+                               "to behave differently depending on its balance. The difference in " +
+                               "behavior is delegated to State objects called RedState, SilverState and GoldState." +
+                               " These states represent overdrawn accounts, starter accounts, and accounts in good standing.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/State-design-pattern#rea"),
+                }
+                };
+
+                stateParent.Patterns.Add(stateStructural);
+                stateParent.Patterns.Add(stateRealWorld);
+
+                return stateParent;
+            }
+        }
+
+        
 
     }
 }

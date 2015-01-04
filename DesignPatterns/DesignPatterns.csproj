@@ -102,6 +102,15 @@
     <Compile Include="BehavioralPatterns\Observer\Structural\ConcreteSubject.cs" />
     <Compile Include="BehavioralPatterns\Observer\Structural\Observer.cs" />
     <Compile Include="BehavioralPatterns\Observer\Structural\Subject.cs" />
+    <Compile Include="BehavioralPatterns\State\RealWorld\Account.cs" />
+    <Compile Include="BehavioralPatterns\State\RealWorld\GoldState.cs" />
+    <Compile Include="BehavioralPatterns\State\RealWorld\RealState.cs" />
+    <Compile Include="BehavioralPatterns\State\RealWorld\RedState.cs" />
+    <Compile Include="BehavioralPatterns\State\RealWorld\SilverState.cs" />
+    <Compile Include="BehavioralPatterns\State\Structural\ConcreteStateA.cs" />
+    <Compile Include="BehavioralPatterns\State\Structural\ConcreteStateB.cs" />
+    <Compile Include="BehavioralPatterns\State\Structural\Context.cs" />
+    <Compile Include="BehavioralPatterns\State\Structural\State.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
@@ -244,8 +253,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BehavioralPatterns\State\RealWorld\" />
-    <Folder Include="BehavioralPatterns\State\Structural\" />
     <Folder Include="BehavioralPatterns\Strategy\RealWorld\" />
     <Folder Include="BehavioralPatterns\Strategy\Structural\" />
     <Folder Include="BehavioralPatterns\Template Method\RealWorld\" />

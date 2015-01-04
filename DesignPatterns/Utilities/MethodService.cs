@@ -17,6 +17,8 @@ using DesignPatterns.BehavioralPatterns.Memento.RealWorld;
 using DesignPatterns.BehavioralPatterns.Memento.Structural;
 using DesignPatterns.BehavioralPatterns.Observer.RealWorld;
 using DesignPatterns.BehavioralPatterns.Observer.Structural;
+using DesignPatterns.BehavioralPatterns.State.RealWorld;
+using DesignPatterns.BehavioralPatterns.State.Structural;
 using DesignPatterns.CreationalPatterns.AbstractFactory.RealWorld;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Structural;
 using DesignPatterns.CreationalPatterns.Builder.RealWorld;
@@ -745,6 +747,35 @@ namespace DesignPatterns.Utilities
             ibm.Price = 120.50;
             ibm.Price = 120.75;
         }
+
+        public static void StateStructural()
+        {
+            // Setup context in a state
+            StateContext c = new StateContext(new ConcreteStateA());
+
+            // Issue requests, which toggles state
+            c.Request();
+            c.Request();
+            c.Request();
+            c.Request();
+
+        }
+
+        public static void StateRealWorld()
+        {
+
+            // Open a new account
+            Account account = new Account("Jim Johnson");
+
+            // Apply financial transactions
+            account.Deposit(500.0);
+            account.Deposit(300.0);
+            account.Deposit(550.0);
+            account.PayInterest();
+            account.Withdraw(2000.00);
+            account.Withdraw(1100.00);
+        }
+        
         
         #endregion
     }
