@@ -136,12 +136,12 @@
     <Compile Include="BehavioralPatterns\Strategy\Structural\ConcreteStrategyC.cs" />
     <Compile Include="BehavioralPatterns\Strategy\Structural\Strategy.cs" />
     <Compile Include="BehavioralPatterns\Strategy\Structural\StrategyContext.cs" />
-    <Compile Include="BehavioralPatterns\Template Method\RealWorld\Categories.cs" />
-    <Compile Include="BehavioralPatterns\Template Method\RealWorld\DataAccessObject.cs" />
-    <Compile Include="BehavioralPatterns\Template Method\RealWorld\Products.cs" />
-    <Compile Include="BehavioralPatterns\Template Method\Structural\AbstractClass.cs" />
-    <Compile Include="BehavioralPatterns\Template Method\Structural\ConcreteClassA.cs" />
-    <Compile Include="BehavioralPatterns\Template Method\Structural\ConcreteClassB.cs" />
+    <Compile Include="BehavioralPatterns\TemplateMethod\RealWorld\Categories.cs" />
+    <Compile Include="BehavioralPatterns\TemplateMethod\RealWorld\DataAccessObject.cs" />
+    <Compile Include="BehavioralPatterns\TemplateMethod\RealWorld\Products.cs" />
+    <Compile Include="BehavioralPatterns\TemplateMethod\Structural\AbstractClass.cs" />
+    <Compile Include="BehavioralPatterns\TemplateMethod\Structural\ConcreteClassA.cs" />
+    <Compile Include="BehavioralPatterns\TemplateMethod\Structural\ConcreteClassB.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
@@ -305,10 +305,10 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BehavioralPatterns\Template Method\RealWorld\Database1.mdf">
+    <Content Include="BehavioralPatterns\TemplateMethod\RealWorld\Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="BehavioralPatterns\Template Method\RealWorld\Database1_log.ldf">
+    <Content Include="BehavioralPatterns\TemplateMethod\RealWorld\Database1_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>

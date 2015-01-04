@@ -1,9 +1,8 @@
 using System.Data;
-using System.Data.OleDb;
 using System.Data.SqlClient;
 using Logger;
 
-namespace DesignPatterns.BehavioralPatterns.Template_Method.RealWorld
+namespace DesignPatterns.BehavioralPatterns.TemplateMethod.RealWorld
 {
     /// <summary>
     /// A 'ConcreteClass' class

@@ -1,6 +1,6 @@
 ﻿using Logger;
 
-namespace DesignPatterns.BehavioralPatterns.Template_Method.Structural
+namespace DesignPatterns.BehavioralPatterns.TemplateMethod.Structural
 {
     /// <summary>
     ///     A 'ConcreteClass' class

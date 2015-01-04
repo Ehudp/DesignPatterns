@@ -1,6 +1,6 @@
 ﻿using System.Data;
 
-namespace DesignPatterns.BehavioralPatterns.Template_Method.RealWorld
+namespace DesignPatterns.BehavioralPatterns.TemplateMethod.RealWorld
 {
     internal abstract class DataAccessObject
     {
