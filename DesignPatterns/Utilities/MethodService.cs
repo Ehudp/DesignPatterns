@@ -19,6 +19,8 @@ using DesignPatterns.BehavioralPatterns.Observer.RealWorld;
 using DesignPatterns.BehavioralPatterns.Observer.Structural;
 using DesignPatterns.BehavioralPatterns.State.RealWorld;
 using DesignPatterns.BehavioralPatterns.State.Structural;
+using DesignPatterns.BehavioralPatterns.Strategy.RealWorld;
+using DesignPatterns.BehavioralPatterns.Strategy.Structural;
 using DesignPatterns.CreationalPatterns.AbstractFactory.RealWorld;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Structural;
 using DesignPatterns.CreationalPatterns.Builder.RealWorld;
@@ -45,6 +47,7 @@ using Logger;
 using Command = DesignPatterns.BehavioralPatterns.Command.Structural.Command;
 using Context = System.Runtime.Remoting.Contexts.Context;
 using Iterator = DesignPatterns.BehavioralPatterns.Iterator.Structural.StructIterator;
+using SortedList = System.Collections.SortedList;
 
 
 namespace DesignPatterns.Utilities
@@ -775,7 +778,45 @@ namespace DesignPatterns.Utilities
             account.Withdraw(2000.00);
             account.Withdraw(1100.00);
         }
-        
+
+        public static void StrategyStructural()
+        {
+            StrategyContext context;
+
+            // Three contexts following different strategies
+            context = new StrategyContext(new ConcreteStrategyA());
+            context.ContextInterface();
+
+            context = new StrategyContext(new ConcreteStrategyB());
+            context.ContextInterface();
+
+            context = new StrategyContext(new ConcreteStrategyC());
+            context.ContextInterface();
+
+        }
+
+        public static void StrategyRealWorld()
+        {
+
+            // Two contexts following different strategies
+            StrategySortedList studentRecords = new StrategySortedList();
+
+            studentRecords.Add("Samuel");
+            studentRecords.Add("Jimmy");
+            studentRecords.Add("Sandra");
+            studentRecords.Add("Vivek");
+            studentRecords.Add("Anna");
+
+            studentRecords.SetSortStrategy(new QuickSort());
+            studentRecords.Sort();
+
+            studentRecords.SetSortStrategy(new ShellSort());
+            studentRecords.Sort();
+
+            studentRecords.SetSortStrategy(new MergeSort());
+            studentRecords.Sort();
+ 
+        }
         
         #endregion
     }

@@ -18,6 +18,7 @@ namespace DesignPatternsWpf.TreeFactory.Factories
            new MementoPatternsFactory(),
            new ObserverPatternsFactory(),
            new StatePatternsFactory(),
+           new StrategyPatternsFactory(),
         };
 
         protected override PatternDetails CreatePatternDetails()
@@ -485,6 +486,62 @@ namespace DesignPatternsWpf.TreeFactory.Factories
             }
         }
 
+        public class StrategyPatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var strategyParent = new PatternDetails
+                {
+                    Name = "Strategy",
+                    Header = "Strategy",
+                    Detailes = "Encapsulates an algorithm inside a class - " +
+                               "Define a family of algorithms, encapsulate each one, and make them interchangeable. " +
+                               "Strategy lets the algorithm vary independently from clients that use it.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Strategy-design-pattern"),
+                }
+                };
+
+                var strategyStructural = new PatternDetails
+                {
+                    Name = "StrategyStructural",
+                    Header = "Strategy Structural",
+                    Method = MethodService.StrategyStructural,
+                    Detailes =
+                        "This structural code demonstrates the Strategy pattern which encapsulates functionality " +
+                        "in the form of an object. This allows clients to dynamically change algorithmic strategies.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Strategy-design-pattern#str"),
+                }
+                };
+
+
+                var strategyRealWorld = new PatternDetails
+                {
+                    Name = "StrategyRealWorld",
+                    Header = "Strategy Real World",
+                    Method = MethodService.StrategyRealWorld,
+                    Detailes = "This real-world code demonstrates the Strategy pattern which " +
+                               "encapsulates sorting algorithms in the form of sorting objects." +
+                               " This allows clients to dynamically change sorting strategies including" +
+                               " Quicksort, Shellsort, and Mergesort.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Strategy-design-pattern#rea"),
+                }
+                };
+
+                strategyParent.Patterns.Add(strategyStructural);
+                strategyParent.Patterns.Add(strategyRealWorld);
+
+                return strategyParent;
+            }
+        }
         
 
     }

@@ -111,6 +111,16 @@
     <Compile Include="BehavioralPatterns\State\Structural\ConcreteStateB.cs" />
     <Compile Include="BehavioralPatterns\State\Structural\Context.cs" />
     <Compile Include="BehavioralPatterns\State\Structural\State.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\RealWorld\MergeSort.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\RealWorld\QuickSort.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\RealWorld\ShellSort.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\RealWorld\SortedList.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\RealWorld\SortStrategy.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\Structural\ConcreteStrategyA.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\Structural\ConcreteStrategyB.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\Structural\ConcreteStrategyC.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\Structural\Strategy.cs" />
+    <Compile Include="BehavioralPatterns\Strategy\Structural\StrategyContext.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
@@ -253,8 +263,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BehavioralPatterns\Strategy\RealWorld\" />
-    <Folder Include="BehavioralPatterns\Strategy\Structural\" />
     <Folder Include="BehavioralPatterns\Template Method\RealWorld\" />
     <Folder Include="BehavioralPatterns\Template Method\Structural\" />
     <Folder Include="BehavioralPatterns\Visitor\RealWorld\" />
