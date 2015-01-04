@@ -23,6 +23,8 @@ using DesignPatterns.BehavioralPatterns.Strategy.RealWorld;
 using DesignPatterns.BehavioralPatterns.Strategy.Structural;
 using DesignPatterns.BehavioralPatterns.TemplateMethod.RealWorld;
 using DesignPatterns.BehavioralPatterns.TemplateMethod.Structural;
+using DesignPatterns.BehavioralPatterns.Visitor.RealWorld;
+using DesignPatterns.BehavioralPatterns.Visitor.Structural;
 using DesignPatterns.CreationalPatterns.AbstractFactory.RealWorld;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Structural;
 using DesignPatterns.CreationalPatterns.Builder.RealWorld;
@@ -48,7 +50,9 @@ using DesignPatterns.StructuralPatterns.Proxy.Structural;
 using Logger;
 using Command = DesignPatterns.BehavioralPatterns.Command.Structural.Command;
 using Context = System.Runtime.Remoting.Contexts.Context;
+using Director = DesignPatterns.CreationalPatterns.Builder.Structural.Director;
 using Iterator = DesignPatterns.BehavioralPatterns.Iterator.Structural.StructIterator;
+using President = DesignPatterns.BehavioralPatterns.ChainOfResp.RealWorld.President;
 using SortedList = System.Collections.SortedList;
 
 
@@ -840,7 +844,37 @@ namespace DesignPatterns.Utilities
             DataAccessObject daoProducts = new Products();
             daoProducts.Run();
         }
-     
+
+        public static void VisitorStructural()
+        {
+            // Setup structure
+            ObjectStructure o = new ObjectStructure();
+            o.Attach(new ConcreteElementA());
+            o.Attach(new ConcreteElementB());
+
+            // Create visitor objects
+            ConcreteVisitor1 v1 = new ConcreteVisitor1();
+            ConcreteVisitor2 v2 = new ConcreteVisitor2();
+
+            // Structure accepting visitors
+            o.Accept(v1);
+            o.Accept(v2);
+        }
+
+        public static void VisitorRealWorld()
+        {
+
+            // Setup employee collection
+            Employees e = new Employees();
+            e.Attach(new VisitorClerk());
+            e.Attach(new VisitorDirector());
+            e.Attach(new VisitorPresident());
+
+            // Employees are 'visited'
+            e.Accept(new IncomeVisitor());
+            e.Accept(new VacationVisitor());
+ 
+        }
         
         #endregion
     }

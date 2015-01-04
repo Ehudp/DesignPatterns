@@ -142,6 +142,22 @@
     <Compile Include="BehavioralPatterns\TemplateMethod\Structural\AbstractClass.cs" />
     <Compile Include="BehavioralPatterns\TemplateMethod\Structural\ConcreteClassA.cs" />
     <Compile Include="BehavioralPatterns\TemplateMethod\Structural\ConcreteClassB.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\RealWorld\VisitorClerk.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\RealWorld\VisitorDirector.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\RealWorld\Element.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\RealWorld\Employee.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\RealWorld\Employees.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\RealWorld\IncomeVisitor.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\RealWorld\IVisitor.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\RealWorld\VisitorPresident.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\RealWorld\VacationVisitor.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\Structural\ConcreteElementA.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\Structural\ConcreteElementB.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\Structural\ConcreteVisitor1.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\Structural\ConcreteVisitor2.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\Structural\Element.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\Structural\ObjectStructure.cs" />
+    <Compile Include="BehavioralPatterns\Visitor\Structural\Visitor.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AfricaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AmericaFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\RealWorld\AnimalWorld.cs" />
@@ -295,8 +311,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BehavioralPatterns\Visitor\RealWorld\" />
-    <Folder Include="BehavioralPatterns\Visitor\Structural\" />
     <Folder Include="ClassDiagrams\StructuralPatterns\" />
   </ItemGroup>
   <ItemGroup>

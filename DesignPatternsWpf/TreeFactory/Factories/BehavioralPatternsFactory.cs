@@ -20,6 +20,7 @@ namespace DesignPatternsWpf.TreeFactory.Factories
            new StatePatternsFactory(),
            new StrategyPatternsFactory(),
            new TemplateMethodPatternsFactory(),
+           new VisitorMethodPatternsFactory(),
         };
 
         protected override PatternDetails CreatePatternDetails()
@@ -602,7 +603,64 @@ namespace DesignPatternsWpf.TreeFactory.Factories
                 return templateMethodParent;
             }
         }
-        
+
+        public class VisitorMethodPatternsFactory : AbstractPatternsFactory
+        {
+            protected override PatternDetails CreatePatternDetails()
+            {
+                var visitorParent = new PatternDetails
+                {
+                    Name = "Visitor",
+                    Header = "Visitor",
+                    Detailes = "Defines a new operation to a class without change - " +
+                               "Represent an operation to be performed on the elements of an object structure." +
+                               " Visitor lets you define a new operation without changing the classes of the" +
+                               " elements on which it operates.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Visitor-design-pattern"),
+                }
+                };
+
+                var visitorStructural = new PatternDetails
+                {
+                    Name = "VisitorStructural",
+                    Header = "Visitor Structural",
+                    Method = MethodService.VisitorStructural,
+                    Detailes =
+                        "This structural code demonstrates the Visitor pattern in which an object " +
+                        "traverses an object structure and performs the same operation on each node in " +
+                        "this structure. Different visitor objects define different operations.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Visitor-design-pattern#str"),
+                }
+                };
+
+
+                var visitorRealWorld = new PatternDetails
+                {
+                    Name = "VisitorRealWorld",
+                    Header = "Visitor Real World",
+                    Method = MethodService.VisitorRealWorld,
+                    Detailes = "This real-world code demonstrates the Visitor pattern in which two objects " +
+                               "traverse a list of Employees and performs the same operation on each Employee." +
+                               " The two visitor objects define different operations -- one adjusts vacation days and the other income.",
+                    ImageUrl = "",
+                    UrlsList = new List<Uri>
+                {
+                    new Uri("http://www.dofactory.com/net/Visitor-design-pattern#rea"),
+                }
+                };
+
+                visitorParent.Patterns.Add(visitorStructural);
+                visitorParent.Patterns.Add(visitorRealWorld);
+
+                return visitorParent;
+            }
+        }
 
     }
 }
